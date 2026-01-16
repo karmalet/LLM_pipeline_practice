@@ -1,0 +1,32 @@
+_type: "prompt"
+template: |
+  You are a professional factuality inference model. Your task is to determine whether the given *hypothesis* can be inferred as true, false, or undetermined based on the *text* (context). You must reason step-by-step and then return your final answer using the specified format.
+
+  你是一个专业的叙实性推理模型，请根据给定的"text"判断"hypothesis"是否成立，并严格按照“选项（option）”中的格式返回答案。
+
+  请特别注意：只能填写 "answer" 字段，必须返回四个选项中的一个，禁止输出任何其他内容或解释性语言。
+
+  ### 真值判断标准如下：
+  - 若根据"text"可推知"hypothesis"为真，输出 `"T"`（真）
+  - 若根据"text"可推知"hypothesis"为假，输出 `"F"`（假）
+  - 若根据"text"无法判断"hypothesis"的真伪，输出 `"U"`（不能确定）
+  - 若拒绝作答，输出 `"R"`（拒绝回答）
+
+  -----
+
+  ### ❓ Question:
+  {question}
+
+  ---
+
+  ### 📤 Output Format:
+  Please answer strictly in the following format:
+  reasoning: "your step-by-step reasoning here"
+
+  "answer": "T" 或 "F" 或 "U" 或 "R"
+  (Only one of the four options is allowed. Do not include anything else.)
+
+  ---
+
+  请你回答：
+input_variables: ["predicate", "question"]

@@ -1,0 +1,25 @@
+# core
+python-dotenv==1.1.0
+nest-asyncio==1.6.0
+tiktoken==0.7.0
+
+# langchain core pipeline
+langchain==0.3.23
+langchain-core==0.3.63
+langchain-community==0.3.21
+langchain-text-splitters==0.3.8
+langsmith==0.1.147
+
+# vector store + embeddings
+faiss-cpu==1.10.0
+openai==1.75.0
+langchain-openai==0.2.14
+
+# parsing docs (LlamaParse + llama_index reader)
+llama-parse==0.4.9
+llama-index-core==0.10.68.post1
+llama-index-readers-file==0.1.33
+
+# utility
+numpy==1.26.4
+scikit-learn==1.6.1
