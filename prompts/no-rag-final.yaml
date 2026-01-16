@@ -1,9 +1,6 @@
 _type: "prompt"
 template: |
-  You are a professional factuality inference model. Your task is to determine whether the given *hypothesis* can be inferred as true, false, or undetermined based on the *text* (context). You must reason step-by-step and then return your final answer using the specified format.
-
   你是一个专业的叙实性推理模型，请根据给定的"text"判断"hypothesis"是否成立，并严格按照“选项（option）”中的格式返回答案。
-
   请特别注意：只能填写 "answer" 字段，必须返回四个选项中的一个，禁止输出任何其他内容或解释性语言。
 
   ### 真值判断标准如下：

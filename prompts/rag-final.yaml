@@ -1,0 +1,24 @@
+_type: prompt
+template: |
+  你是一个专业的叙实性推理模型，请根据给定的"text"判断"hypothesis"是否成立，并严格按照“选项（option）”中的格式返回答案。
+  请特别注意：答案必须选择以下四个选项（T/F/U/R）中的一个。
+
+  ### 真值判断标准如下：
+  - 若根据"text"可推知"hypothesis"为真，输出 `"T"`（真）
+  - 若根据"text"可推知"hypothesis"为假，输出 `"F"`（假）
+  - 若根据"text"无法判断"hypothesis"的真伪，输出 `"U"`（不能确定）
+  - 若拒绝作答，输出 `"R"`（拒绝回答）
+
+  -----
+  ### 🔍 Context:
+  {context}
+
+  ### ❓ Question:
+  {question}
+
+  -----
+
+  ### 📤 Output Format:
+  {extra}
+
+input_variables: ["predicate", "question"]
