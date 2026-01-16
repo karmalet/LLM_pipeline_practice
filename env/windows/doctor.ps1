@@ -107,4 +107,50 @@ if ($mode -eq "plain") {
   Write-Host "OK: Plain-RAG assets"
 }
 
+# doctor.ps1 내부에 추가 (param ValidateSet에 deepseek-plain도 포함)
+# param([ValidateSet("no-rag","plain","deepseek-plain")] [string]$mode="no-rag")
+if ($mode -eq "deepseek-plain") {
+
+  $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
+  $venvPath = Join-Path $repoRoot ".venv"
+  if (!(Test-Path $venvPath)) { throw "No venv found. Run env\windows\setup_py311.ps1 first." }
+
+  $script = Join-Path $repoRoot "src\3_DeepSeekR1_Plain_RAG.py"
+  if (!(Test-Path $script)) { throw "Missing script: src\3_DeepSeekR1_Plain_RAG.py" }
+
+  $prompt = Join-Path $repoRoot "prompts\no-rag-final.yaml"
+  if (!(Test-Path $prompt)) { throw "Missing prompt: prompts\no-rag-final.yaml" }
+
+  $inputJson = Join-Path $repoRoot "data\Art_Nat_20250509.json"
+  if (!(Test-Path $inputJson)) { Write-Host "WARN: data\Art_Nat_20250509.json not found. Edit INPUT in the script if needed." }
+
+  # ---- Ollama 설치/실행 확인 ----
+  $ollama = Get-Command ollama -ErrorAction SilentlyContinue
+  if ($null -eq $ollama) {
+    throw "Ollama not found. Install Ollama for Windows, then retry. (https://ollama.com)"
+  }
+  Write-Host "OK: ollama found"
+
+  # 모델/임베딩 모델 확인(없으면 pull 안내)
+  $list = & ollama list 2>$null
+  if ($list -notmatch "deepseek-r1:14b") {
+    Write-Host "WARN: deepseek-r1:14b not found. Run:  ollama pull deepseek-r1:14b"
+  } else {
+    Write-Host "OK: deepseek-r1:14b exists"
+  }
+  if ($list -notmatch "nomic-embed-text") {
+    Write-Host "WARN: nomic-embed-text not found. Run:  ollama pull nomic-embed-text"
+  } else {
+    Write-Host "OK: nomic-embed-text exists"
+  }
+
+  # 결과 폴더(없어도 실행 중 생성되지만, 미리 확인해 친절히 안내)
+  $resultDir = Join-Path $repoRoot "Result"
+  $msglogDir = Join-Path $repoRoot "Msglog"
+  if (!(Test-Path $resultDir)) { Write-Host "INFO: Result/ will be created on first run." }
+  if (!(Test-Path $msglogDir)) { Write-Host "INFO: Msglog/ will be created on first run." }
+
+  Write-Host "OK: DeepSeek Plain-RAG assets"
+}
+
 Write-Host "Doctor check complete."
