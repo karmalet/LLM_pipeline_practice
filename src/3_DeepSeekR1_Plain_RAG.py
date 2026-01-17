@@ -35,6 +35,7 @@ DOC_DIR = "Bibliography"             # (없으면) 경고만 하고 넘어감
 MSGLOG_PATH = "Msglog/DeepSeekR1-PlainRAG-decision_msgs.jsonl"
 RESULT_TXT = f"Result/DeepSeekR1-PlainRAG-{DATA_name}.txt"
 PKL_OUT = "DeepSeekR1-PlainRAG-preds_golds.pkl"
+RAW_DIR = "Msglog/raw_deepseek_plainrag"
 
 
 # -----------------------------
@@ -76,6 +77,27 @@ def parse_json_response(text: str):
         return label, reason
     except Exception as e:
         return "R", f"JSON parse error: {e}"
+    
+def invoke_with_retry(chain, question: str, cfg: RunnableConfig):
+    # 1차 호출
+    msg = chain.invoke(question, config=cfg)
+    raw = getattr(msg, "content", "") or str(msg)
+    label, reason = parse_json_response(raw)
+
+    # 파싱 실패(= reason에 JSON parse error 포함)면 1회 재요청
+    if (label == "R") and ("JSON parse error" in (reason or "")):
+        repair = (
+            question
+            + "\n\n[格式修正] 上一次输出不符合要求。"
+              "请严格只输出一个JSON对象，不要任何其他文字："
+              "{\"label\":\"T|F|U|R\",\"reason\":\"...\"}"
+        )
+        msg2 = chain.invoke(repair, config=cfg)
+        raw2 = getattr(msg2, "content", "") or str(msg2)
+        label2, reason2 = parse_json_response(raw2)
+        return msg2, raw2, label2, reason2
+
+    return msg, raw, label, reason
 
 
 # -----------------------------
@@ -217,8 +239,9 @@ def build_plain_rag_chain(vectorstore):
         | prompt.partial(
             extra=(
                 "请用自然语言(不超过1000字)进行逐步推理，"
-                "最后只输出一个JSON对象，格式如下：\n"
-                "{ \"label\": \"T/F/U/R\", \"reason\": \"...\" }。\n"
+                "最后只输出一个JSON对象（不要Markdown，不要代码块，不要多余文字）。\n"
+                "JSON格式必须完全一致：\n"
+                "{\"label\":\"T|F|U|R\",\"reason\":\"1~3句简短依据，可引用参考资料中的关键短语\"}\n"
                 "不要输出其他任何文字。\n\n"
                 "【可用参考资料】\n"
                 "{context}\n"
@@ -249,6 +272,10 @@ if __name__ == "__main__":
     preds, golds = [], []
     gold_dict = {q["d_id"]: q["answer"] for q in data}
 
+    os.makedirs("Result", exist_ok=True)
+    os.makedirs("Msglog", exist_ok=True)
+    os.makedirs(RAW_DIR, exist_ok=True)
+
     for q in data:
         d_id = q["d_id"]
         question = format_nli_prompt(
@@ -265,7 +292,15 @@ if __name__ == "__main__":
         )
 
         # 3) 모델 호출
-        decision_msg = DECISION_CHAIN.invoke({"question": question})
+        decision_msg, raw, final_label, reasoning_txt = invoke_with_retry(DECISION_CHAIN, question, cfg)
+
+        # 콘솔에서 원문 일부 확인(너무 길면 앞부분만)
+        print("RAW_MODEL_OUTPUT(preview):")
+        print(raw[:800].replace("\n", " ") + (" ..." if len(raw) > 800 else ""))
+
+        # 문항별 raw 저장
+        with open(os.path.join(RAW_DIR, f"{d_id}.raw.txt"), "w", encoding="utf-8") as f:
+            f.write(raw)
 
         # 4) 최종 라벨 파싱
         final_label, reasoning_txt = parse_json_response(getattr(decision_msg, "content", ""))

@@ -1,0 +1,13 @@
+<think>
+首先，我需要分析给定的前提和假设。前提提到“政府声言愿意谈判”，这表明政府明确表达了谈判的意愿。而假设是“政府不愿意谈判”，这与前提直接矛盾。
+
+根据真值判断标准，如果文本明确支持假设为假，那么应输出“F”。在这种情况下，前提清楚地说明了政府愿意谈判，因此假设显然是不成立的。没有其他信息或不确定性因素影响判断，所以结论是明确的。
+</think>
+
+```json
+{"label":"F","reason":"因为前提表明政府声言愿意谈判，而假设说政府不愿意谈判，这与前提是矛盾的，因此可以推知假设为假。"}
+```
+
+```json
+{"label": "F", "reason": "The premise states the government is willing to negotiate, contradicting the hypothesis that they are unwilling."}
+```

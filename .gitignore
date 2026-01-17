@@ -1,0 +1,4 @@
+.env
+.venv/
+cache_for_rag_ollama_embeddings-reuse/
+faiss_index_deepseek_plainrag-reuse/

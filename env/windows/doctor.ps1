@@ -1,6 +1,6 @@
 # env/windows/doctor.ps1
 param(
-  [ValidateSet("no-rag","plain")]
+  [ValidateSet("no-rag","plain","deepseek-plain")]
   [string]$mode = "no-rag"
 )
 
@@ -112,39 +112,55 @@ if ($mode -eq "plain") {
 if ($mode -eq "deepseek-plain") {
 
   $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
-  $venvPath = Join-Path $repoRoot ".venv"
-  if (!(Test-Path $venvPath)) { throw "No venv found. Run env\windows\setup_py311.ps1 first." }
 
+  # venv 존재
+  $venvPath = Join-Path $repoRoot ".venv"
+  if (!(Test-Path $venvPath)) {
+    throw "No venv found. Run: env\windows\setup_py311.ps1 -profile deepseek"
+  }
+
+  # 실행 스크립트 존재
   $script = Join-Path $repoRoot "src\3_DeepSeekR1_Plain_RAG.py"
   if (!(Test-Path $script)) { throw "Missing script: src\3_DeepSeekR1_Plain_RAG.py" }
 
+  # 프롬프트 존재
   $prompt = Join-Path $repoRoot "prompts\no-rag-final.yaml"
   if (!(Test-Path $prompt)) { throw "Missing prompt: prompts\no-rag-final.yaml" }
 
-  $inputJson = Join-Path $repoRoot "data\Art_Nat_20250509.json"
-  if (!(Test-Path $inputJson)) { Write-Host "WARN: data\Art_Nat_20250509.json not found. Edit INPUT in the script if needed." }
-
-  # ---- Ollama 설치/실행 확인 ----
+  # Ollama 설치 확인
   $ollama = Get-Command ollama -ErrorAction SilentlyContinue
   if ($null -eq $ollama) {
-    throw "Ollama not found. Install Ollama for Windows, then retry. (https://ollama.com)"
+    throw "Ollama not found. Install Ollama for Windows, then retry."
   }
   Write-Host "OK: ollama found"
 
-  # 모델/임베딩 모델 확인(없으면 pull 안내)
-  $list = & ollama list 2>$null
-  if ($list -notmatch "deepseek-r1:14b") {
-    Write-Host "WARN: deepseek-r1:14b not found. Run:  ollama pull deepseek-r1:14b"
-  } else {
-    Write-Host "OK: deepseek-r1:14b exists"
-  }
-  if ($list -notmatch "nomic-embed-text") {
-    Write-Host "WARN: nomic-embed-text not found. Run:  ollama pull nomic-embed-text"
-  } else {
-    Write-Host "OK: nomic-embed-text exists"
+  # --- 자동 pull 옵션 (기본 ON) ---
+  # 원치 않으면 PowerShell에서: $env:AUTO_PULL_OLLAMA="0"
+  $autoPull = $env:AUTO_PULL_OLLAMA
+  if ([string]::IsNullOrWhiteSpace($autoPull)) { $autoPull = "1" }
+
+  function Ensure-OllamaModel([string]$name) {
+    $list = & ollama list 2>$null
+    if ($list -notmatch [regex]::Escape($name)) {
+      if ($autoPull -eq "1") {
+        Write-Host "INFO: $name not found. Pulling now..."
+        & ollama pull $name
+        if ($LASTEXITCODE -ne 0) {
+          throw "Failed to pull model: $name. Retry manually: ollama pull $name"
+        }
+        Write-Host "OK: pulled $name"
+      } else {
+        Write-Host "WARN: $name not found. Run: ollama pull $name"
+      }
+    } else {
+      Write-Host "OK: $name exists"
+    }
   }
 
-  # 결과 폴더(없어도 실행 중 생성되지만, 미리 확인해 친절히 안내)
+  Ensure-OllamaModel "deepseek-r1:14b"
+  Ensure-OllamaModel "nomic-embed-text"
+
+  # 결과 폴더 안내
   $resultDir = Join-Path $repoRoot "Result"
   $msglogDir = Join-Path $repoRoot "Msglog"
   if (!(Test-Path $resultDir)) { Write-Host "INFO: Result/ will be created on first run." }

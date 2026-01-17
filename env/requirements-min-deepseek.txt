@@ -1,0 +1,18 @@
+python-dotenv==1.1.0
+
+# LangChain core
+langchain==0.3.23
+langchain-core==0.3.63
+langchain-community==0.3.21
+langchain-text-splitters==0.3.8
+
+# Vector store
+faiss-cpu==1.10.0
+
+# Eval utils (당신 스크립트들이 이미 쓰는 구성)
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+
+# Ollama integration (import 경로: langchain_ollama)
+langchain-ollama==0.2.3
