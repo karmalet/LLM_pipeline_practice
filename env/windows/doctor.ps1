@@ -1,46 +1,58 @@
 # env/windows/doctor.ps1
 param(
-  [ValidateSet("no-rag","plain","deepseek-plain")]
+  [ValidateSet("no-rag","plain","deepseek-no-rag","deepseek-plain")]
   [string]$mode = "no-rag"
 )
 
 $ErrorActionPreference = "Stop"
 
-function Fail($msg) {
-  throw $msg
-}
+function Fail($msg) { throw $msg }
 
 # ----------------------------
 # 0) 프로젝트 루트 기준 경로
 # ----------------------------
 $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
+$isDeepSeek = ($mode -like "deepseek-*")
 
 # ----------------------------
 # 1) venv 존재 확인
 # ----------------------------
 $venvPath = Join-Path $repoRoot ".venv"
 if (!(Test-Path $venvPath)) {
-  Fail "No venv found. Run env\windows\setup_py311.ps1 first."
+  if ($isDeepSeek) {
+    Fail "No venv found. Run: env\windows\setup_py311.ps1 (DeepSeek profile if you use it)."
+  } else {
+    Fail "No venv found. Run env\windows\setup_py311.ps1 first."
+  }
 }
 
 # ----------------------------
 # 2) 기본 파일/폴더 구조 확인
 # ----------------------------
-$srcDir = Join-Path $repoRoot "src"
-$envFile = Join-Path $repoRoot ".env"
-$envExample = Join-Path $repoRoot ".env.example"
-$promptsDir = Join-Path $repoRoot "prompts"
-$dataDir = Join-Path $repoRoot "data"
+$srcDir      = Join-Path $repoRoot "src"
+$envFile     = Join-Path $repoRoot ".env"
+$envExample  = Join-Path $repoRoot ".env.example"
+$promptsDir  = Join-Path $repoRoot "prompts"
+$dataDir     = Join-Path $repoRoot "data"
 
 if (!(Test-Path $srcDir))      { Fail "Missing folder: src/" }
 if (!(Test-Path $promptsDir))  { Fail "Missing folder: prompts/" }
 if (!(Test-Path $dataDir))     { Fail "Missing folder: data/" }
 
+# .env는 GPT-5 모드에서는 필수, DeepSeek 모드에서는 선택(있으면 로드, 없어도 실행 가능)
 if (!(Test-Path $envFile)) {
-  if (Test-Path $envExample) {
-    Fail "Missing .env. Copy .env.example to .env and set OPENAI_API_KEY."
+  if ($isDeepSeek) {
+    if (Test-Path $envExample) {
+      Write-Host "WARN: .env not found. (DeepSeek runs can still work) If needed, copy .env.example -> .env."
+    } else {
+      Write-Host "WARN: .env and .env.example not found. (DeepSeek runs can still work) Add template if you want."
+    }
   } else {
-    Fail "Missing .env and .env.example. Please add environment template."
+    if (Test-Path $envExample) {
+      Fail "Missing .env. Copy .env.example to .env and set OPENAI_API_KEY."
+    } else {
+      Fail "Missing .env and .env.example. Please add environment template."
+    }
   }
 }
 
@@ -48,23 +60,33 @@ Write-Host "OK: file structure"
 
 # ----------------------------
 # 3) .env 내용(키) 형식 확인
-#    - 값 검증(유효키 여부)까지는 하지 않음
+#    - DeepSeek 모드에서는 OPENAI_API_KEY 강제하지 않음
 # ----------------------------
-$envText = Get-Content $envFile -Raw
+if (Test-Path $envFile) {
+  $envText = Get-Content $envFile -Raw
 
-if ($envText -notmatch "OPENAI_API_KEY=") {
-  Fail "OPENAI_API_KEY not set in .env"
-}
+  if (!$isDeepSeek) {
+    if ($envText -notmatch "OPENAI_API_KEY=") {
+      Fail "OPENAI_API_KEY not set in .env"
+    }
 
-# (선택) LlamaParse 사용 시
-# - 코드에서 LlamaParse를 사용한다면, 키가 없을 때 더 친절한 안내를 주는 것이 좋음
-if ($mode -eq "plain") {
-  if ($envText -notmatch "LLAMA_CLOUD_API_KEY=") {
-    Write-Host "WARN: LLAMA_CLOUD_API_KEY not found in .env (if you use LlamaParse, set it)."
+    # (선택) LlamaParse 사용 시
+    if ($mode -eq "plain") {
+      if ($envText -notmatch "LLAMA_CLOUD_API_KEY=") {
+        Write-Host "WARN: LLAMA_CLOUD_API_KEY not found in .env (if you use LlamaParse, set it)."
+      }
+    }
+
+    Write-Host "OK: env keys present (format check only)"
+  } else {
+    # DeepSeek 모드: .env가 있으면 읽기만(강제 키 없음)
+    Write-Host "OK: env file present (DeepSeek mode: key check skipped)"
+  }
+} else {
+  if ($isDeepSeek) {
+    Write-Host "OK: env file not present (DeepSeek mode: allowed)"
   }
 }
-
-Write-Host "OK: env keys present (format check only)"
 
 # ----------------------------
 # 4) 모드별 실행 파일 및 필수 리소스 확인
@@ -86,14 +108,12 @@ if ($mode -eq "plain") {
   if (!(Test-Path $plainScript)) { Fail "Missing script: src\2_GPT5_Plain_RAG.py" }
   if (!(Test-Path $plainPrompt)) { Fail "Missing prompt: prompts\rag-final.yaml" }
 
-  # 문헌 폴더는 프로젝트마다 이름이 다를 수 있어 “강제 실패” 대신 경고로 처리
   $biblioDir1 = Join-Path $repoRoot "Bibliography"
   $biblioDir2 = Join-Path $repoRoot "bibliography"
   if (!(Test-Path $biblioDir1) -and !(Test-Path $biblioDir2)) {
     Write-Host "WARN: Bibliography/ folder not found. If your Plain-RAG script loads local papers, add Bibliography/."
   }
 
-  # 인덱스/캐시 파일은 '없어도' 첫 실행 시 생성되므로 경고만
   $picklePath = Join-Path $repoRoot "llama_parsed_docs.pickle"
   if (!(Test-Path $picklePath)) {
     Write-Host "INFO: llama_parsed_docs.pickle not found (will be created on first run)."
@@ -107,30 +127,27 @@ if ($mode -eq "plain") {
   Write-Host "OK: Plain-RAG assets"
 }
 
-# doctor.ps1 내부에 추가 (param ValidateSet에 deepseek-plain도 포함)
-# param([ValidateSet("no-rag","plain","deepseek-plain")] [string]$mode="no-rag")
-if ($mode -eq "deepseek-plain") {
+# ----------------------------
+# 5) DeepSeek 모드 공통 체크 (Ollama + 모델 pull)
+# ----------------------------
+if ($isDeepSeek) {
 
-  $repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..\..")
-
-  # venv 존재
-  $venvPath = Join-Path $repoRoot ".venv"
-  if (!(Test-Path $venvPath)) {
-    throw "No venv found. Run: env\windows\setup_py311.ps1 -profile deepseek"
+  # (A) 실행 스크립트 존재
+  if ($mode -eq "deepseek-plain") {
+    $script = Join-Path $repoRoot "src\3_DeepSeekR1_Plain_RAG.py"
+  } else {
+    $script = Join-Path $repoRoot "src\3_DeepSeekR1_No_RAG.py"
   }
+  if (!(Test-Path $script)) { Fail "Missing script: $($script.Replace($repoRoot.Path + '\','src\'))" }
 
-  # 실행 스크립트 존재
-  $script = Join-Path $repoRoot "src\3_DeepSeekR1_Plain_RAG.py"
-  if (!(Test-Path $script)) { throw "Missing script: src\3_DeepSeekR1_Plain_RAG.py" }
-
-  # 프롬프트 존재
+  # (B) 프롬프트 존재 (DeepSeek No-RAG/Plain-RAG 모두 사용)
   $prompt = Join-Path $repoRoot "prompts\no-rag-final.yaml"
-  if (!(Test-Path $prompt)) { throw "Missing prompt: prompts\no-rag-final.yaml" }
+  if (!(Test-Path $prompt)) { Fail "Missing prompt: prompts\no-rag-final.yaml" }
 
-  # Ollama 설치 확인
+  # (C) Ollama 설치 확인
   $ollama = Get-Command ollama -ErrorAction SilentlyContinue
   if ($null -eq $ollama) {
-    throw "Ollama not found. Install Ollama for Windows, then retry."
+    Fail "Ollama not found. Install Ollama for Windows, then retry."
   }
   Write-Host "OK: ollama found"
 
@@ -146,19 +163,24 @@ if ($mode -eq "deepseek-plain") {
         Write-Host "INFO: $name not found. Pulling now..."
         & ollama pull $name
         if ($LASTEXITCODE -ne 0) {
-          throw "Failed to pull model: $name. Retry manually: ollama pull $name"
+          Fail "Failed to pull model: $name. Retry manually: ollama pull $name"
         }
         Write-Host "OK: pulled $name"
       } else {
-        Write-Host "WARN: $name not found. Run: ollama pull $name"
+        Write-Host "WARN: $name not found. Run:  ollama pull $name"
       }
     } else {
       Write-Host "OK: $name exists"
     }
   }
 
+  # DeepSeek 본체 모델은 공통 필수
   Ensure-OllamaModel "deepseek-r1:14b"
-  Ensure-OllamaModel "nomic-embed-text"
+
+  # nomic-embed-text는 Plain-RAG에서만 필요
+  if ($mode -eq "deepseek-plain") {
+    Ensure-OllamaModel "nomic-embed-text"
+  }
 
   # 결과 폴더 안내
   $resultDir = Join-Path $repoRoot "Result"
@@ -166,7 +188,11 @@ if ($mode -eq "deepseek-plain") {
   if (!(Test-Path $resultDir)) { Write-Host "INFO: Result/ will be created on first run." }
   if (!(Test-Path $msglogDir)) { Write-Host "INFO: Msglog/ will be created on first run." }
 
-  Write-Host "OK: DeepSeek Plain-RAG assets"
+  if ($mode -eq "deepseek-plain") {
+    Write-Host "OK: DeepSeek Plain-RAG assets"
+  } else {
+    Write-Host "OK: DeepSeek No-RAG assets"
+  }
 }
 
 Write-Host "Doctor check complete."

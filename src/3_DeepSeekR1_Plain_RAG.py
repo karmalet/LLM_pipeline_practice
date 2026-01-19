@@ -16,6 +16,14 @@ from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain.storage import LocalFileStore
 from langchain.embeddings import CacheBackedEmbeddings
 
+from typing import List, Dict, Any
+
+try:
+    from docx import Document as DocxDocument
+except Exception:
+    DocxDocument = None
+
+
 # -----------------------------
 # 0) 실험 설정
 # -----------------------------
@@ -146,6 +154,81 @@ def dump_decision_msg(path, d_id, question, msg, final_label, reasoning_txt, cfg
 # -----------------------------
 # 5) (Plain-RAG) 벡터스토어 구축/재사용
 # -----------------------------
+
+# -------Helper function ---------
+def _load_docs_via_llamaparse(doc_dir: str):
+    """
+    2_GPT5_Plain_RAG.py의 load_docs() 패턴을 최대한 그대로 따름:
+    - LlamaParse + SimpleDirectoryReader 로 doc/docx를 markdown으로 파싱
+    - 성공 시 LangChain Document 리스트 반환
+    """
+    try:
+        from llama_parse import LlamaParse
+        from llama_index.core import SimpleDirectoryReader
+    except Exception as e:
+        raise RuntimeError(f"LlamaParse import failed: {e}")
+
+    # LLAMA_CLOUD_API_KEY가 없으면 여기서 실패할 확률이 높음(환경에 따라 다름)
+    parser = LlamaParse(
+        result_type="markdown",
+        num_workers=8,
+        verbose=True,
+        language="ch_sim",
+    )
+    file_extractor = {".doc": parser, ".docx": parser}
+
+    # Bibliography/ 아래의 doc/docx 자동 수집
+    input_files = []
+    for root, _, files in os.walk(doc_dir):
+        for fn in files:
+            if fn.lower().endswith((".doc", ".docx")):
+                input_files.append(os.path.join(root, fn))
+
+    if not input_files:
+        return []
+
+    documents = SimpleDirectoryReader(
+        input_files=input_files,
+        file_extractor=file_extractor,
+    ).load_data()
+
+    # llama_index Document -> LangChain Document 변환
+    return [doc.to_langchain_format() for doc in documents]
+
+
+def _load_docx_locally(doc_dir: str):
+    """
+    로컬 폴백:
+    - python-docx로 .docx만 읽어서 LangChain Document 유사 dict로 반환
+    - .doc는 로컬에서 안정적으로 파싱하기 어렵기 때문에(추가 의존성 필요) 스킵/경고
+    """
+    docs = []
+
+    if DocxDocument is None:
+        print("WARN: python-docx not available. Cannot parse .docx locally.")
+        return docs
+
+    for root, _, files in os.walk(doc_dir):
+        for fn in files:
+            lower = fn.lower()
+            p = os.path.join(root, fn)
+
+            if lower.endswith(".docx"):
+                try:
+                    d = DocxDocument(p)
+                    text = "\n".join([para.text for para in d.paragraphs if para.text and para.text.strip()])
+                    if text.strip():
+                        docs.append({"page_content": text, "metadata": {"source": p}})
+                except Exception as e:
+                    print(f"WARN: failed to parse docx: {p} ({e})")
+
+            elif lower.endswith(".doc"):
+                # .doc는 python-docx로 못 읽습니다. (antiword, textract 등 필요)
+                print(f"WARN: .doc skipped (need external converter): {p}")
+
+    return docs
+# ------------------------------------------------------------------
+
 def build_vectorstore():
     # 5.1 문서 소스 준비: (가능하면) pickle 재사용
     documents = None
@@ -154,34 +237,77 @@ def build_vectorstore():
             documents = pickle.load(f)
         print(f"OK: loaded {DOC_PKL} ({len(documents)} docs)")
     else:
-        # pickle이 없으면, Bibliography/에서 텍스트 파일만 대충 읽는 fallback
-        # (비전공자용: "없으면 경고" + "일단 실행은 가능"이 목적)
-        print(f"WARN: {DOC_PKL} not found. Fallback to reading files in {DOC_DIR}/")
+        print(f"WARN: {DOC_PKL} not found. Building docs from {DOC_DIR}/ (doc/docx supported)")
+
         documents = []
+
+        # (1) 1순위: LlamaParse로 doc/docx 파싱 (2_GPT5_Plain_RAG.py load_docs() 방식 참고)
+        #     - 성공 시 품질이 가장 좋음(표/각주/구조가 비교적 잘 풀림)
+        try:
+            parsed = _load_docs_via_llamaparse(DOC_DIR)
+            if parsed:
+                documents = parsed
+                print(f"OK: loaded via LlamaParse = {len(documents)} docs")
+        except Exception as e:
+            print(f"WARN: LlamaParse route unavailable. Fallback to local docx parse. ({e})")
+
+        # (2) 2순위: 로컬 docx 파싱
+        if not documents:
+            if os.path.isdir(DOC_DIR):
+                documents = _load_docx_locally(DOC_DIR)
+            print(f"OK: local docx docs = {len(documents)}")
+
+        # (3) 마지막: txt/md도 함께 주워담기(있으면 보너스)
         if os.path.isdir(DOC_DIR):
             for root, _, files in os.walk(DOC_DIR):
                 for fn in files:
                     if fn.lower().endswith((".txt", ".md")):
                         p = os.path.join(root, fn)
-                        with open(p, "r", encoding="utf-8", errors="ignore") as rf:
-                            documents.append({"page_content": rf.read(), "metadata": {"source": p}})
-        print(f"OK: fallback docs = {len(documents)}")
+                        try:
+                            with open(p, "r", encoding="utf-8", errors="ignore") as rf:
+                                txt = rf.read()
+                            if txt.strip():
+                                documents.append({"page_content": txt, "metadata": {"source": p}})
+                        except Exception as e:
+                            print(f"WARN: failed to read text file: {p} ({e})")
+
+        print(f"OK: total docs collected = {len(documents)}")
+
+        # 문서가 하나도 없으면, 여기서 멈추고 사용자에게 명확히 안내(FAISS IndexError 방지)
+        if not documents:
+            raise ValueError(
+                f"No documents found in {DOC_DIR}/. "
+                "Put at least one .docx (recommended), or configure LlamaParse for .doc/.docx parsing."
+            )
+
+        # 다음 실행부터는 재사용 가능하도록 pickle 저장(가능한 형태로)
+        try:
+            with open(DOC_PKL, "wb") as f:
+                pickle.dump(documents, f)
+            print(f"OK: created {DOC_PKL} ({len(documents)} docs)")
+        except Exception as e:
+            print(f"WARN: failed to save {DOC_PKL}: {e}")
 
     # 문서 형태를 LangChain Document 유사 구조로 정규화
-    # (pickle이 LangChain Document 리스트라면 그대로 사용될 가능성이 높음)
-    # 여기서는 page_content 속성만 있으면 OK인 방식으로 처리
     raw_texts = []
     metas = []
     for d in documents:
-        txt = getattr(d, "page_content", None) or d.get("page_content", "")
-        meta = getattr(d, "metadata", None) or d.get("metadata", {})
-        raw_texts.append(txt)
-        metas.append(meta)
+        txt = getattr(d, "page_content", None) or (d.get("page_content", "") if isinstance(d, dict) else "")
+        meta = getattr(d, "metadata", None) or (d.get("metadata", {}) if isinstance(d, dict) else {})
+        if txt and str(txt).strip():
+            raw_texts.append(txt)
+            metas.append(meta)
+
+    if not raw_texts:
+        raise ValueError("Documents loaded but all contents are empty. Check parsing results.")
 
     # 5.2 split
     splitter = RecursiveCharacterTextSplitter(chunk_size=450, chunk_overlap=60)
     splits = splitter.create_documents(raw_texts, metadatas=metas)
     print(f"OK: split into {len(splits)} chunks")
+
+    if not splits:
+        raise ValueError("Split produced 0 chunks. Increase text size or verify document parsing.")
 
     # 5.3 embeddings (로컬) + cache
     embeddings = OllamaEmbeddings(model=EMBED_MODEL)
@@ -195,7 +321,11 @@ def build_vectorstore():
 
     # 5.4 FAISS: 디스크에 저장/재사용
     if os.path.isdir(FAISS_DIR):
-        vectorstore = FAISS.load_local(FAISS_DIR, embeddings=cached_embedder, allow_dangerous_deserialization=True)
+        vectorstore = FAISS.load_local(
+            FAISS_DIR,
+            embeddings=cached_embedder,
+            allow_dangerous_deserialization=True
+        )
         print(f"OK: loaded FAISS index from {FAISS_DIR}/")
     else:
         vectorstore = FAISS.from_documents(splits, cached_embedder)
@@ -204,7 +334,6 @@ def build_vectorstore():
         print(f"OK: built & saved FAISS index to {FAISS_DIR}/")
 
     return vectorstore
-
 
 # -----------------------------
 # 6) (Plain-RAG) 체인: 검색 → 컨텍스트 주입 → DeepSeek 추론
