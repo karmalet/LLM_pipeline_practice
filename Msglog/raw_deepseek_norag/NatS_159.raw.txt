@@ -1,0 +1,7 @@
+<think>
+嗯，我现在需要根据给定的text来判断hypothesis是否成立。首先看text内容：“平、促进了经济的发展，但另一方面也开始了破坏人类栖息之地的历程；环境的破坏给人类的健康带来了极大的威胁，很多环保人士都在感叹人类是在“自挖坟墓”。”
+
+这里的关键点是环保人士在感叹“自挖坟墓”，这直接支持了hypothesis：“人类确实是在‘自挖坟墓’。”因此，text明确表达了这一点，所以应选择T。
+</think>
+
+{"label":"T","reason":"Text explicitly states that many environmentalists are lamenting humanity's actions as 'digging their own graves', directly supporting the hypothesis."}

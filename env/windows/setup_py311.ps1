@@ -71,6 +71,7 @@ if ($profile -eq "gpt5") {
     Write-Host "  3) run: env\windows\run_gpt5_plain_rag.ps1"
 } else {
     Write-Host "  1) ensure Ollama is installed. install: https://www.ollama.com/ -> download"
-    Write-Host "  2) run: env\windows\run_deepseekr1_plain_rag.ps1"
+	Write-Host "  2-1) run baseline model: env\windows\run_deepseekr1_No_rag.ps1"
+    Write-Host "  2-2) run RAG model: env\windows\run_deepseekr1_plain_rag.ps1"
 }
 
