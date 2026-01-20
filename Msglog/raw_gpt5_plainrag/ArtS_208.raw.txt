@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_QkNHNhBp2rzTX4vryinCBn0b",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“清楚”是叙实/事实性谓词，预设其宾语小句为真。由“小张清楚小李已经离开这里了”可推出“小李已经离开这里了”为真，因此与之相反的假设“小李没有离开这里”为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 671,
+      "prompt_tokens": 3463,
+      "total_tokens": 4134,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9bdfee99-a777-41e3-993d-e5e2aa016260-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“清楚”是叙实/事实性谓词，预设其宾语小句为真。由“小张清楚小李已经离开这里了”可推出“小李已经离开这里了”为真，因此与之相反的假设“小李没有离开这里”为假。"
+      },
+      "id": "call_QkNHNhBp2rzTX4vryinCBn0b",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3463,
+    "output_tokens": 671,
+    "total_tokens": 4134,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Rq1YJb49XEn9VMI17PECvhgs",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“小张没说不会妥协”是否定了“说”的言语行为，只表明他未发表“不会妥协”的表态；而“说”属于非叙实的报道类动词，对其补语命题不承诺真值。因此无法据此判断“‘小张不会妥协’是否为真”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3561,
+      "prompt_tokens": 3181,
+      "total_tokens": 6742,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3456,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--36ce63c3-a15b-4e2a-8633-32c82553993b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“小张没说不会妥协”是否定了“说”的言语行为，只表明他未发表“不会妥协”的表态；而“说”属于非叙实的报道类动词，对其补语命题不承诺真值。因此无法据此判断“‘小张不会妥协’是否为真”。"
+      },
+      "id": "call_Rq1YJb49XEn9VMI17PECvhgs",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3181,
+    "output_tokens": 3561,
+    "total_tokens": 6742,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 3456
+    }
+  }
+}

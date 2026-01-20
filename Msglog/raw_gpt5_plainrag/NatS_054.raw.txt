@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_bW0B7NU63bZWvyv8QrhsLQgV",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“猜”是非叙实谓词，只表达说话人的不确定推测，不保证命题“她疯了”的真或假；因此也无法据此推出其否命题“她确实没疯”。结论：不能确定（U）。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1813,
+      "prompt_tokens": 3128,
+      "total_tokens": 4941,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1728,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--28aa97d0-f9c8-4507-8d30-5e2d5a9aa395-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“猜”是非叙实谓词，只表达说话人的不确定推测，不保证命题“她疯了”的真或假；因此也无法据此推出其否命题“她确实没疯”。结论：不能确定（U）。"
+      },
+      "id": "call_bW0B7NU63bZWvyv8QrhsLQgV",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3128,
+    "output_tokens": 1813,
+    "total_tokens": 4941,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1728
+    }
+  }
+}

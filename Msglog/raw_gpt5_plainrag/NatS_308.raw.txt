@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_KuF4XsuCSZ2y4kro6n8tlb8D",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本明确说“一开门徐科太就觉出了事态严重”，并以“他的头立即晕了”作为客观迹象强化该判断。“觉出”在此与后续症状共同指向“事态严重”为真。因此“事态确实不严重”与文本相矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 548,
+      "prompt_tokens": 3643,
+      "total_tokens": 4191,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--035e7c00-4ed9-497d-ba85-86a62b57e87a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本明确说“一开门徐科太就觉出了事态严重”，并以“他的头立即晕了”作为客观迹象强化该判断。“觉出”在此与后续症状共同指向“事态严重”为真。因此“事态确实不严重”与文本相矛盾，为假。"
+      },
+      "id": "call_KuF4XsuCSZ2y4kro6n8tlb8D",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3643,
+    "output_tokens": 548,
+    "total_tokens": 4191,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

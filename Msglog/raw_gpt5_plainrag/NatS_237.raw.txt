@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_1wQj2Rx8146H6UjF1CaDy5Pd",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“甚至幻想伊朗队已经成了巴西队和法国队”。\\n- “幻想”表明这是不符合事实的想象，而非现实。\\n- 因此，“伊朗队确实已经成了巴西队和法国队”不成立，命题为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 672,
+      "prompt_tokens": 3192,
+      "total_tokens": 3864,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--26106c8e-10a4-4e22-837f-be1009d6e238-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“甚至幻想伊朗队已经成了巴西队和法国队”。\n- “幻想”表明这是不符合事实的想象，而非现实。\n- 因此，“伊朗队确实已经成了巴西队和法国队”不成立，命题为假。"
+      },
+      "id": "call_1wQj2Rx8146H6UjF1CaDy5Pd",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3192,
+    "output_tokens": 672,
+    "total_tokens": 3864,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_IsHNoKUpGhTkUgoV6C4x1BpA",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “我猜佛林特感觉好多了”中的“猜”为非叙实动词，不预设宾语小句为真或为假。\\n- 后半句“只是他还没准备好要进食”并不蕴含“没有感觉好多了”，二者并非逻辑矛盾关系。\\n- 因此无法从文本确定“佛林特确实没有感觉好多了”为真或为假，结论不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1154,
+      "prompt_tokens": 3584,
+      "total_tokens": 4738,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--be26ec8b-923f-4144-9ab2-095dcd248d56-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “我猜佛林特感觉好多了”中的“猜”为非叙实动词，不预设宾语小句为真或为假。\n- 后半句“只是他还没准备好要进食”并不蕴含“没有感觉好多了”，二者并非逻辑矛盾关系。\n- 因此无法从文本确定“佛林特确实没有感觉好多了”为真或为假，结论不确定。"
+      },
+      "id": "call_IsHNoKUpGhTkUgoV6C4x1BpA",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3584,
+    "output_tokens": 1154,
+    "total_tokens": 4738,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

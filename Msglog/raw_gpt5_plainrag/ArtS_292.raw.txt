@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_gSTelveTXC6yjGbm95KigrXP",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“声明”属于言语行为，是否作出声明并不决定事件真假或行为是否发生。前提仅说明小张没有声明将会捐献全部遗产，不能推出他会或不会捐献。故无法根据前提判断“不会捐献全部遗产”为真或为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 481,
+      "prompt_tokens": 3514,
+      "total_tokens": 3995,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bdcc5fc8-64dd-43f4-bd72-0736532bac2c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“声明”属于言语行为，是否作出声明并不决定事件真假或行为是否发生。前提仅说明小张没有声明将会捐献全部遗产，不能推出他会或不会捐献。故无法根据前提判断“不会捐献全部遗产”为真或为假。"
+      },
+      "id": "call_gSTelveTXC6yjGbm95KigrXP",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3514,
+    "output_tokens": 481,
+    "total_tokens": 3995,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

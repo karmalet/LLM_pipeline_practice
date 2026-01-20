@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_vA9NNFqsr4uaMTbqi9lgw1MH",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本说“她知道他从这话里听出她实际上甘愿冒险”，其中“知道”是叙实动词，“听出”是感知性判断，均指向补句为真；且后文明说“什么样的险她都肯冒”。因此可确认为：她愿意冒险。假设“她实际上确实不愿意冒险”与之相反，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1273,
+      "prompt_tokens": 3150,
+      "total_tokens": 4423,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--32ae2c64-638b-49fc-9a74-10e42f6cc5b3-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本说“她知道他从这话里听出她实际上甘愿冒险”，其中“知道”是叙实动词，“听出”是感知性判断，均指向补句为真；且后文明说“什么样的险她都肯冒”。因此可确认为：她愿意冒险。假设“她实际上确实不愿意冒险”与之相反，为假。"
+      },
+      "id": "call_vA9NNFqsr4uaMTbqi9lgw1MH",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3150,
+    "output_tokens": 1273,
+    "total_tokens": 4423,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

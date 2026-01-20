@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_uC0gETbfuPNlKPzO1V0ugaCd",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"1) 触发词“幻想”表达的是设想/臆想，属于非叙实，不承诺其所引述命题为真。2) 文本仅说“我开始幻想所有信任的人都出卖了我”，并未断言这一情形真实发生。3) 因此无法从文本判断“所有信任的人确实都出卖了我”的真伪。结论：U。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 892,
+      "prompt_tokens": 3714,
+      "total_tokens": 4606,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--696b585f-0ff2-4e6b-96a4-a38a3b866532-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "1) 触发词“幻想”表达的是设想/臆想，属于非叙实，不承诺其所引述命题为真。2) 文本仅说“我开始幻想所有信任的人都出卖了我”，并未断言这一情形真实发生。3) 因此无法从文本判断“所有信任的人确实都出卖了我”的真伪。结论：U。"
+      },
+      "id": "call_uC0gETbfuPNlKPzO1V0ugaCd",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3714,
+    "output_tokens": 892,
+    "total_tokens": 4606,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

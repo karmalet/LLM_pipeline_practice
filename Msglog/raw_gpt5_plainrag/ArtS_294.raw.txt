@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Y3LazOtJNkL6WDtafDbKqQnu",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“声明”是言语行为，非叙实动词，不蕴涵其宾语小句的真值。前提“小张没有声明不认识小李”只说明他未发表“我不认识小李”的声明，既兼容他确实不认识（但未声明），也兼容他认识或未表态。因此无法由前提判断“‘小张不认识小李’为真”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1017,
+      "prompt_tokens": 3327,
+      "total_tokens": 4344,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1920
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ceac63c5-1721-4caf-a2be-8518f2e63e3c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“声明”是言语行为，非叙实动词，不蕴涵其宾语小句的真值。前提“小张没有声明不认识小李”只说明他未发表“我不认识小李”的声明，既兼容他确实不认识（但未声明），也兼容他认识或未表态。因此无法由前提判断“‘小张不认识小李’为真”。"
+      },
+      "id": "call_Y3LazOtJNkL6WDtafDbKqQnu",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3327,
+    "output_tokens": 1017,
+    "total_tokens": 4344,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1920
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

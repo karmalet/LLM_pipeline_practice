@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ppAHpzRhnOAle3EVx1ZvNeRp",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本为陈述句：“听见后面有人喊她”，且随后“她回头发现是吴刚”，共同表明感知事件真实发生。感知动词“听见”在此类肯定叙述中具有叙实效果，可推出确有其事。因此“后面确实有人喊她”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1958,
+      "prompt_tokens": 3310,
+      "total_tokens": 5268,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1856,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0e12517b-543d-43ce-a9fd-f26ec7742b62-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本为陈述句：“听见后面有人喊她”，且随后“她回头发现是吴刚”，共同表明感知事件真实发生。感知动词“听见”在此类肯定叙述中具有叙实效果，可推出确有其事。因此“后面确实有人喊她”为真。"
+      },
+      "id": "call_ppAHpzRhnOAle3EVx1ZvNeRp",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3310,
+    "output_tokens": 1958,
+    "total_tokens": 5268,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1856
+    }
+  }
+}

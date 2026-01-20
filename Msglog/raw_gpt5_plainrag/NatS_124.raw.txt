@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_eAn8M5XRN8X8XIboQUOyDQsB",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中使用“发现”这一叙实/事实性动词，通常使其补足语为真。\\n- “发现金额有误” ⇒ 金额确实有误为真。\\n- 假设“金额确实无误”与上述事实相矛盾。\\n- 因此，假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 744,
+      "prompt_tokens": 3397,
+      "total_tokens": 4141,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2624f834-579c-4ede-a2c8-78e1e5e1625a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中使用“发现”这一叙实/事实性动词，通常使其补足语为真。\n- “发现金额有误” ⇒ 金额确实有误为真。\n- 假设“金额确实无误”与上述事实相矛盾。\n- 因此，假设为假。"
+      },
+      "id": "call_eAn8M5XRN8X8XIboQUOyDQsB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3397,
+    "output_tokens": 744,
+    "total_tokens": 4141,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

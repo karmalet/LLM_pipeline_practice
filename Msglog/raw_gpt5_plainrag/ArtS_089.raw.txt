@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Bo9PuUwQ7BmCNUx9lPskiS8i",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“不承认”属于半叙实用法：肯定式“承认P”倾向预设P为真；否定式“（不/没）承认P”则不对P的真伪给出确定结论。给定句为“小张不承认[小李没打过小王]”，因此无法从中推出“小李没打过小王”或其否命题“小李打过小王”哪一个为真。故假设真伪不可判定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1999,
+      "prompt_tokens": 3525,
+      "total_tokens": 5524,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1856,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--61103a89-b8ba-4290-8a49-1fd3c596f551-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“不承认”属于半叙实用法：肯定式“承认P”倾向预设P为真；否定式“（不/没）承认P”则不对P的真伪给出确定结论。给定句为“小张不承认[小李没打过小王]”，因此无法从中推出“小李没打过小王”或其否命题“小李打过小王”哪一个为真。故假设真伪不可判定。"
+      },
+      "id": "call_Bo9PuUwQ7BmCNUx9lPskiS8i",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3525,
+    "output_tokens": 1999,
+    "total_tokens": 5524,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1856
+    }
+  }
+}

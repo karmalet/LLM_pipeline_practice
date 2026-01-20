@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_95YihiTt4pYQu9VTV3pMVR0g",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"步骤：\\n1) “觉出”语义接近“意识到/察觉到/发觉”，属于叙实/准事实性动词，一般预设其宾语小句为真。\\n2) 文中“小张觉出自己不应该离开”因此预设“自己不应该离开”为真。\\n3) 假设“小张不应该离开”与该预设一致。\\n结论：可据文本推出假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 966,
+      "prompt_tokens": 3179,
+      "total_tokens": 4145,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d83e6944-1f98-4bc5-9909-80c9a13fa4a2-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "步骤：\n1) “觉出”语义接近“意识到/察觉到/发觉”，属于叙实/准事实性动词，一般预设其宾语小句为真。\n2) 文中“小张觉出自己不应该离开”因此预设“自己不应该离开”为真。\n3) 假设“小张不应该离开”与该预设一致。\n结论：可据文本推出假设为真。"
+      },
+      "id": "call_95YihiTt4pYQu9VTV3pMVR0g",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3179,
+    "output_tokens": 966,
+    "total_tokens": 4145,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

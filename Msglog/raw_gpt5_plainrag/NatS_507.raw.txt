@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_9u6AWYxToSW0KfXpm3IJ3Bf5",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本叙述者陈述“小郭…才听出是粤语的‘没问题’”，动词“听出”在叙事实境下具有验证性，表示经辨识后确定其为真。故可推出该运动员说的确是粤语的“没问题”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 605,
+      "prompt_tokens": 3026,
+      "total_tokens": 3631,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b662ac1c-651e-43b9-8c4b-23f398482657-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本叙述者陈述“小郭…才听出是粤语的‘没问题’”，动词“听出”在叙事实境下具有验证性，表示经辨识后确定其为真。故可推出该运动员说的确是粤语的“没问题”。"
+      },
+      "id": "call_9u6AWYxToSW0KfXpm3IJ3Bf5",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3026,
+    "output_tokens": 605,
+    "total_tokens": 3631,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

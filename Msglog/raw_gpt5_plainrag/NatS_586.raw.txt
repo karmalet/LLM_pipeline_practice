@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_LAYYmIjWOxkNrtuo2wpsgUpm",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确说“珀尔修斯诬陷德米特里与罗马私通”。“诬陷”语义上指控内容为假，因而嵌入命题“德米特里与罗马私通”为假，其否定命题为真。因此可以推出：德米特里确实没有与罗马私通。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2668,
+      "prompt_tokens": 3660,
+      "total_tokens": 6328,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2560,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c5e865fa-ff79-4695-a7e0-4ff047643b52-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确说“珀尔修斯诬陷德米特里与罗马私通”。“诬陷”语义上指控内容为假，因而嵌入命题“德米特里与罗马私通”为假，其否定命题为真。因此可以推出：德米特里确实没有与罗马私通。"
+      },
+      "id": "call_LAYYmIjWOxkNrtuo2wpsgUpm",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3660,
+    "output_tokens": 2668,
+    "total_tokens": 6328,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2560
+    }
+  }
+}

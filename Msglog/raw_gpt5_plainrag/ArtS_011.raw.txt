@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_pEAHqnN1q9JNXGFHJX1i4Mmj",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“遇见”在此充当感知类谓词（类似“看见”），其宾语小句“[小李在批评小王]”在无情态词与否定的普通直陈句中通常被当作已发生的事实（半叙实，基态下体现叙实性）。因此由“小张遇见小李在批评小王”可推出“小李在批评小王”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 767,
+      "prompt_tokens": 3405,
+      "total_tokens": 4172,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5e3cbf4e-30a5-4a57-b940-a3d7da45006f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“遇见”在此充当感知类谓词（类似“看见”），其宾语小句“[小李在批评小王]”在无情态词与否定的普通直陈句中通常被当作已发生的事实（半叙实，基态下体现叙实性）。因此由“小张遇见小李在批评小王”可推出“小李在批评小王”。"
+      },
+      "id": "call_pEAHqnN1q9JNXGFHJX1i4Mmj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3405,
+    "output_tokens": 767,
+    "total_tokens": 4172,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

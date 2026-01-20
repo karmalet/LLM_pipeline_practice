@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_pKpzNudObVKVBPIJzB3uKMKE",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中明确叙述：代表们在台北国家戏剧院的演出手册上“看见”北京京剧院的《宰相刘罗锅》“已排定在8月中旬演出”。\\n- “看见”作为感知性叙实动词，配合官方节目单这一载体，通常表明所见信息（排期已定）在语境中被当作事实陈述。\\n- 因此可推出：该剧确实已排定在8月中旬演出。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1432,
+      "prompt_tokens": 3772,
+      "total_tokens": 5204,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d22ae9ee-991e-474a-b234-58a82775cbfb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中明确叙述：代表们在台北国家戏剧院的演出手册上“看见”北京京剧院的《宰相刘罗锅》“已排定在8月中旬演出”。\n- “看见”作为感知性叙实动词，配合官方节目单这一载体，通常表明所见信息（排期已定）在语境中被当作事实陈述。\n- 因此可推出：该剧确实已排定在8月中旬演出。"
+      },
+      "id": "call_pKpzNudObVKVBPIJzB3uKMKE",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3772,
+    "output_tokens": 1432,
+    "total_tokens": 5204,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

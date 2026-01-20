@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_WohrGz6dIy6cJFVUFbxs68x9",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅表明“她丝毫不怀疑刘云的提议是发自真心的”，这是主观态度（怀疑/不怀疑）而非事实性断言，不能由此推出提议确为真心。维生素E确有助于愈合仅解释她为何不怀疑，并不证明提议的真伪。因此无法确定假设真值。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1397,
+      "prompt_tokens": 3864,
+      "total_tokens": 5261,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--e712bab7-13e6-4bde-b57b-3496441b30ab-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅表明“她丝毫不怀疑刘云的提议是发自真心的”，这是主观态度（怀疑/不怀疑）而非事实性断言，不能由此推出提议确为真心。维生素E确有助于愈合仅解释她为何不怀疑，并不证明提议的真伪。因此无法确定假设真值。"
+      },
+      "id": "call_WohrGz6dIy6cJFVUFbxs68x9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3864,
+    "output_tokens": 1397,
+    "total_tokens": 5261,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

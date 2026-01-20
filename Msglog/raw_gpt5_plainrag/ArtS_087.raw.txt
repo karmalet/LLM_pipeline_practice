@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_dXqPFCGB8ajaKovmxaseE0ZB",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"1) 文中仅说“媒体没有揭露小张不会出席婚礼”，是否揭露并不决定命题本身的真值。2) 由“没有揭露 不会出席”无法推出“小张会出席”或“不会出席”。3) 因此，假设“小张会出席婚礼”的真伪无法从给定文本确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1203,
+      "prompt_tokens": 3664,
+      "total_tokens": 4867,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ebd42fcb-e58d-4ae2-9bc6-e238efb098a2-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "1) 文中仅说“媒体没有揭露小张不会出席婚礼”，是否揭露并不决定命题本身的真值。2) 由“没有揭露 不会出席”无法推出“小张会出席”或“不会出席”。3) 因此，假设“小张会出席婚礼”的真伪无法从给定文本确定。"
+      },
+      "id": "call_dXqPFCGB8ajaKovmxaseE0ZB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3664,
+    "output_tokens": 1203,
+    "total_tokens": 4867,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

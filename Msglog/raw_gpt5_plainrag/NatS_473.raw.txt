@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_n0CvzLhCRav3oaeQi7nFzEQi",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确说“我们清楚这些都是前进中的问题”。“清楚”是事实性（类同于“知道”）谓词，通常预设从句内容为真，因此可推出“这些确实都是前进中的问题”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 721,
+      "prompt_tokens": 3319,
+      "total_tokens": 4040,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6814324b-bd72-4c6e-a63a-97216d73ab16-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确说“我们清楚这些都是前进中的问题”。“清楚”是事实性（类同于“知道”）谓词，通常预设从句内容为真，因此可推出“这些确实都是前进中的问题”。"
+      },
+      "id": "call_n0CvzLhCRav3oaeQi7nFzEQi",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3319,
+    "output_tokens": 721,
+    "total_tokens": 4040,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_bMIWQvP59AA0SwgnxEJrCWTN",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“我猜”属于非叙实态度动词，表达的是说话者的猜测而非事实承诺，因此从“我猜这不是小李的钢笔”不能推出“这不是小李的钢笔”为真或为假，真值不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 537,
+      "prompt_tokens": 3160,
+      "total_tokens": 3697,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2f7af49c-b26f-4c78-a070-d24a7ffda34c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“我猜”属于非叙实态度动词，表达的是说话者的猜测而非事实承诺，因此从“我猜这不是小李的钢笔”不能推出“这不是小李的钢笔”为真或为假，真值不确定。"
+      },
+      "id": "call_bMIWQvP59AA0SwgnxEJrCWTN",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3160,
+    "output_tokens": 537,
+    "total_tokens": 3697,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

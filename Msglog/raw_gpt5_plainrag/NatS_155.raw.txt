@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_dCTMpfVkCU6pv2I5ssh8qZgk",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是说“三人渐渐感觉不太对劲”，属于“感觉”类动词的主观看法。\\n- 该类动词在肯定式下通常非叙实，不能由“感觉P”直接推出“P为真”。\\n- 虽有久未回来、找不到人的情节，但文本未直接断言“确实不太对劲”。\\n- 因而无法仅据文本确定假设的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1157,
+      "prompt_tokens": 3752,
+      "total_tokens": 4909,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--306c26c0-14c6-4f0b-9efc-2144fb9e7aad-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是说“三人渐渐感觉不太对劲”，属于“感觉”类动词的主观看法。\n- 该类动词在肯定式下通常非叙实，不能由“感觉P”直接推出“P为真”。\n- 虽有久未回来、找不到人的情节，但文本未直接断言“确实不太对劲”。\n- 因而无法仅据文本确定假设的真伪。"
+      },
+      "id": "call_dCTMpfVkCU6pv2I5ssh8qZgk",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3752,
+    "output_tokens": 1157,
+    "total_tokens": 4909,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

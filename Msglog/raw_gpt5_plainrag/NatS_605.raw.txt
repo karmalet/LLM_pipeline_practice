@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_R2cAUnj0S2Y7XwjDmxiv2Q9g",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“真羡慕你逍遥自在”中的“羡慕”表达的是说话人的主观看法/情感，而非事实性断言，不能保证“你确实逍遥自在”为真。文本中也无其他独立证据证明对方确实逍遥自在，因此真伪不定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 743,
+      "prompt_tokens": 3562,
+      "total_tokens": 4305,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f29e1ffc-c787-4dc8-b2f4-6c75ba7f97cf-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“真羡慕你逍遥自在”中的“羡慕”表达的是说话人的主观看法/情感，而非事实性断言，不能保证“你确实逍遥自在”为真。文本中也无其他独立证据证明对方确实逍遥自在，因此真伪不定。"
+      },
+      "id": "call_R2cAUnj0S2Y7XwjDmxiv2Q9g",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3562,
+    "output_tokens": 743,
+    "total_tokens": 4305,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

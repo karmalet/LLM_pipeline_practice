@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_etMCURICCyoLWHQBsZyAaH0R",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“哀叹没有网络的好日子一去不复返了”，即断言P：那些日子已不可能回来了。\\n- “哀叹”常将其后的命题作为既成事实来评价。\\n- 假设断言“不是一去不复返”（¬P），与文本中的P相矛盾。\\n- 因此假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1146,
+      "prompt_tokens": 3394,
+      "total_tokens": 4540,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--a148a4a6-a649-4141-b56b-4f5d03894c10-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“哀叹没有网络的好日子一去不复返了”，即断言P：那些日子已不可能回来了。\n- “哀叹”常将其后的命题作为既成事实来评价。\n- 假设断言“不是一去不复返”（¬P），与文本中的P相矛盾。\n- 因此假设为假。"
+      },
+      "id": "call_etMCURICCyoLWHQBsZyAaH0R",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3394,
+    "output_tokens": 1146,
+    "total_tokens": 4540,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

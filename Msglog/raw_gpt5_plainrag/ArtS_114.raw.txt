@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_T15D4pnIL5VQd4f87mGw0bUN",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“小张感觉小李没生病”中的“感觉”属于非叙实类态度动词，仅表达小张的主观判断，并不承诺宾语小句的真值。由此无法确定小李是否真的生病，因此无法判断“小李生病了”的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1312,
+      "prompt_tokens": 3119,
+      "total_tokens": 4431,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1216,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1280
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3c9747af-075a-4fbb-b9f8-949be5043e2a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“小张感觉小李没生病”中的“感觉”属于非叙实类态度动词，仅表达小张的主观判断，并不承诺宾语小句的真值。由此无法确定小李是否真的生病，因此无法判断“小李生病了”的真伪。"
+      },
+      "id": "call_T15D4pnIL5VQd4f87mGw0bUN",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3119,
+    "output_tokens": 1312,
+    "total_tokens": 4431,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1280
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1216
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_41qGc5pvomp5leJSzu8T05eQ",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本明确说“她拨通了他办公室的电话…她就又挂断了”，说明来电是她打的。假设“确实不是她的电话”与文本直述相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 590,
+      "prompt_tokens": 2673,
+      "total_tokens": 3263,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d4626bc8-973b-441e-aad7-4a376188aada-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本明确说“她拨通了他办公室的电话…她就又挂断了”，说明来电是她打的。假设“确实不是她的电话”与文本直述相矛盾，因此为假。"
+      },
+      "id": "call_41qGc5pvomp5leJSzu8T05eQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2673,
+    "output_tokens": 590,
+    "total_tokens": 3263,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

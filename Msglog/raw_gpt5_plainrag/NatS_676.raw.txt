@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rSv3MZOF9cp5Q7wEQzTosR1V",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中“传说”引出整个事件，属于传闻性叙述，不对后续命题“韦固遇见一位正在翻检书本的老人”做事实承诺。\\n- 虽然小句内含“遇见”这一事实性谓词，但被“传说”上位嵌套后，其真值不被保证。\\n- 因而无法据此确定是否“确实没有老人坐着翻检书本”。该否定命题既不能被证成也不能被否定。\\n- 结论：不能确定（U）。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1505,
+      "prompt_tokens": 3459,
+      "total_tokens": 4964,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1344,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--dabb1536-7087-4a81-979b-21672648f2d4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中“传说”引出整个事件，属于传闻性叙述，不对后续命题“韦固遇见一位正在翻检书本的老人”做事实承诺。\n- 虽然小句内含“遇见”这一事实性谓词，但被“传说”上位嵌套后，其真值不被保证。\n- 因而无法据此确定是否“确实没有老人坐着翻检书本”。该否定命题既不能被证成也不能被否定。\n- 结论：不能确定（U）。"
+      },
+      "id": "call_rSv3MZOF9cp5Q7wEQzTosR1V",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3459,
+    "output_tokens": 1505,
+    "total_tokens": 4964,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1344
+    }
+  }
+}

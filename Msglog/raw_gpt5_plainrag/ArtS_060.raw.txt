@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Z0TJcDgqm7qJbDyuek7CtYMW",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 句子“小张忘记需要锁门了”属于“忘记 + 命题性宾语（that-类从句）”的用法，对应英语“forget that X”。\\n- 文献与例证表明此类用法为叙实/预设型：无论肯定或否定，都预设（蕴涵）宾语小句为真。\\n- 因此可推出：命题“（小张）需要锁门”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1290,
+      "prompt_tokens": 3286,
+      "total_tokens": 4576,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ac124bd8-2c11-484e-b3ee-94bbe62a218a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 句子“小张忘记需要锁门了”属于“忘记 + 命题性宾语（that-类从句）”的用法，对应英语“forget that X”。\n- 文献与例证表明此类用法为叙实/预设型：无论肯定或否定，都预设（蕴涵）宾语小句为真。\n- 因此可推出：命题“（小张）需要锁门”为真。"
+      },
+      "id": "call_Z0TJcDgqm7qJbDyuek7CtYMW",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3286,
+    "output_tokens": 1290,
+    "total_tokens": 4576,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_IXIwOfCTeA7bqZJq4kOA4d3y",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “瞥见/看见”等感知类半叙实动词在肯定式下通常预设其宾语小句为真（如“我看见X”蕴涵“X发生”).\\n- 文中为肯定陈述：“她……瞥见詹石磴骑着自行车从地头经过”。\\n- 因此可推出“詹石磴骑着自行车从地头经过”确已发生。\\n- 随后的“假装没看见他”只是行为上的装作，不取消先前已见到的事实。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1569,
+      "prompt_tokens": 3373,
+      "total_tokens": 4942,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1408,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--350e7ca1-570e-413d-9f8e-14af49e06f72-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “瞥见/看见”等感知类半叙实动词在肯定式下通常预设其宾语小句为真（如“我看见X”蕴涵“X发生”).\n- 文中为肯定陈述：“她……瞥见詹石磴骑着自行车从地头经过”。\n- 因此可推出“詹石磴骑着自行车从地头经过”确已发生。\n- 随后的“假装没看见他”只是行为上的装作，不取消先前已见到的事实。"
+      },
+      "id": "call_IXIwOfCTeA7bqZJq4kOA4d3y",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3373,
+    "output_tokens": 1569,
+    "total_tokens": 4942,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1408
+    }
+  }
+}

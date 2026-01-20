@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hxYmhLiBtQglcgGrdwsFDlQ6",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) “觉察到”是事实性/知觉类述谓，通常预设其宾语从句内容为真。2) 文中“小张觉察到风向不会变化”据此承认“风向不会变化”的事实。故假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 472,
+      "prompt_tokens": 2794,
+      "total_tokens": 3266,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fb620291-9aa6-49e5-986a-0bcb68fa850a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) “觉察到”是事实性/知觉类述谓，通常预设其宾语从句内容为真。2) 文中“小张觉察到风向不会变化”据此承认“风向不会变化”的事实。故假设成立。"
+      },
+      "id": "call_hxYmhLiBtQglcgGrdwsFDlQ6",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2794,
+    "output_tokens": 472,
+    "total_tokens": 3266,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

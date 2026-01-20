@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_30Uw2js34beSpkjEcfl3prG6",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"步骤1：识别言语行为。“污蔑”表示对某命题的指控被评价为不实的诋毁。其宾语命题通常被说话方判定为假。步骤2：套用到文本。“美方……污蔑中方搞虚假宣传”表明文本立场认为“中方搞虚假宣传”这一命题不真实。步骤3：对比假设。假设称“中方确实搞虚假宣传了”，与文本立场相反。结论：为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 982,
+      "prompt_tokens": 3570,
+      "total_tokens": 4552,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--edbb3e99-655e-4c5c-9872-a8094046b9dc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "步骤1：识别言语行为。“污蔑”表示对某命题的指控被评价为不实的诋毁。其宾语命题通常被说话方判定为假。步骤2：套用到文本。“美方……污蔑中方搞虚假宣传”表明文本立场认为“中方搞虚假宣传”这一命题不真实。步骤3：对比假设。假设称“中方确实搞虚假宣传了”，与文本立场相反。结论：为假。"
+      },
+      "id": "call_30Uw2js34beSpkjEcfl3prG6",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3570,
+    "output_tokens": 982,
+    "total_tokens": 4552,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

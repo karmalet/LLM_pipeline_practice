@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_n7uLGNKmfyiy3UKoG2yE8hvN",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “目睹”是感知类动词（如看见/听见），在没有情态词或否定修饰时具有（半）叙实效应，通常蕴含其宾语小句为真。\\n- 文本断言“小张目睹小李被赦免了”，无“可能/未/没”等情态或否定。\\n- 因此可推出“小李被赦免了”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 963,
+      "prompt_tokens": 3428,
+      "total_tokens": 4391,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1b3fe92a-bd45-45d0-84b7-318f2ad5c48b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “目睹”是感知类动词（如看见/听见），在没有情态词或否定修饰时具有（半）叙实效应，通常蕴含其宾语小句为真。\n- 文本断言“小张目睹小李被赦免了”，无“可能/未/没”等情态或否定。\n- 因此可推出“小李被赦免了”为真。"
+      },
+      "id": "call_n7uLGNKmfyiy3UKoG2yE8hvN",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3428,
+    "output_tokens": 963,
+    "total_tokens": 4391,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

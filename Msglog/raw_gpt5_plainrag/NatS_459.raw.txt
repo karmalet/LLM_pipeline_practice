@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_kEbPGf5VMs4VISsX8IlcIEwU",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本中说话人“瞥见两本教科书陈旧得很”，并进一步给出具体证据：封面污迹斑斑、周边皱卷甚至破烂。\\n- “瞥见”属感知类（看见类）半叙实动词，通常蕴涵其宾语命题为真；细节描写加强了其叙实性。\\n- 因此可以确定：那两本教科书确实很陈旧。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 911,
+      "prompt_tokens": 3508,
+      "total_tokens": 4419,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ddfb86d8-156a-4c02-8e2f-888ce4fc0dfe-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本中说话人“瞥见两本教科书陈旧得很”，并进一步给出具体证据：封面污迹斑斑、周边皱卷甚至破烂。\n- “瞥见”属感知类（看见类）半叙实动词，通常蕴涵其宾语命题为真；细节描写加强了其叙实性。\n- 因此可以确定：那两本教科书确实很陈旧。"
+      },
+      "id": "call_kEbPGf5VMs4VISsX8IlcIEwU",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3508,
+    "output_tokens": 911,
+    "total_tokens": 4419,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

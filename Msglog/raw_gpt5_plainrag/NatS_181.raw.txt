@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_azxIV4gFgGXYSRk4D7ZByq0I",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) 文中说“马龙…后悔昨天不该外出钓鱼而没有训练”。2) “后悔”是叙实/事实性动词，通常预设其宾语命题为真（如“后悔做了X”→“确实做了X”）。3) 因此可推出：马龙昨天确实外出钓鱼了且没有训练。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 761,
+      "prompt_tokens": 3799,
+      "total_tokens": 4560,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f286198a-fce4-41db-abe6-a61cb76f750a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) 文中说“马龙…后悔昨天不该外出钓鱼而没有训练”。2) “后悔”是叙实/事实性动词，通常预设其宾语命题为真（如“后悔做了X”→“确实做了X”）。3) 因此可推出：马龙昨天确实外出钓鱼了且没有训练。"
+      },
+      "id": "call_azxIV4gFgGXYSRk4D7ZByq0I",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3799,
+    "output_tokens": 761,
+    "total_tokens": 4560,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

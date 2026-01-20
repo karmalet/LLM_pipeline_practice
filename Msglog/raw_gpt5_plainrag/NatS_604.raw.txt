@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Y6bJuauL3lcNrULZji3ufMh1",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本中人物直述“我真羡慕你的脸生得这么细皮白肉的”，即认可“我”的脸确为细皮白肉。该表达在语义上断言/预设该性质为真。假设声称“不是细皮白肉”，与前提相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 998,
+      "prompt_tokens": 3318,
+      "total_tokens": 4316,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1c76d9ab-719b-471e-b2b4-ffd630202966-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本中人物直述“我真羡慕你的脸生得这么细皮白肉的”，即认可“我”的脸确为细皮白肉。该表达在语义上断言/预设该性质为真。假设声称“不是细皮白肉”，与前提相矛盾，因此为假。"
+      },
+      "id": "call_Y6bJuauL3lcNrULZji3ufMh1",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3318,
+    "output_tokens": 998,
+    "total_tokens": 4316,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_o8Gwy4O7IDxo0v3zmQa06Lz2",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“假装”搭配动作性宾语时，往往表达“假动作，真发生”，即动作被实际做出（只是不出于通常原因或伴随的状态为假）。这里的宾语是动作“用颤抖的手收拾箱子内的东西”，属于可执行的假动作。因此可推知她确实在以颤抖的手势收拾箱子内东西，假的是情态/意图而非动作本身。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1351,
+      "prompt_tokens": 3927,
+      "total_tokens": 5278,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1216,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--11e6080e-c1c3-46cd-b55c-fcf173c1a4ab-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“假装”搭配动作性宾语时，往往表达“假动作，真发生”，即动作被实际做出（只是不出于通常原因或伴随的状态为假）。这里的宾语是动作“用颤抖的手收拾箱子内的东西”，属于可执行的假动作。因此可推知她确实在以颤抖的手势收拾箱子内东西，假的是情态/意图而非动作本身。"
+      },
+      "id": "call_o8Gwy4O7IDxo0v3zmQa06Lz2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3927,
+    "output_tokens": 1351,
+    "total_tokens": 5278,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1216
+    }
+  }
+}

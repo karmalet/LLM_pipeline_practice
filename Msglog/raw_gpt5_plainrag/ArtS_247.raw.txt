@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ZFoQQqcxkadIQnMp1DrYGZ8b",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “幻想”属于反叙实动词，通常预设其宾语小句为假。\\n- 文中“小张幻想自己是富翁”预设“自己是富翁”不成立。\\n- 因而可推出“小张不是富翁”。故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 797,
+      "prompt_tokens": 3906,
+      "total_tokens": 4703,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fe9982bb-0d67-4999-b9fc-c05ecb12dd64-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “幻想”属于反叙实动词，通常预设其宾语小句为假。\n- 文中“小张幻想自己是富翁”预设“自己是富翁”不成立。\n- 因而可推出“小张不是富翁”。故假设为真。"
+      },
+      "id": "call_ZFoQQqcxkadIQnMp1DrYGZ8b",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3906,
+    "output_tokens": 797,
+    "total_tokens": 4703,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_mTC23ykxxpEDvpa9uhWBq9Jy",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“小张感觉X”属于感觉类的非叙实谓词，只表达小张的主观感觉，并不确保宾语小句“X”为真或为假。由“他感觉小李不喜欢小王”不能推出“小李不喜欢小王”真的成立。缺少独立证据，真伪不定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 551,
+      "prompt_tokens": 3365,
+      "total_tokens": 3916,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f56f86ea-67a6-44a1-a044-d01e072a5e84-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“小张感觉X”属于感觉类的非叙实谓词，只表达小张的主观感觉，并不确保宾语小句“X”为真或为假。由“他感觉小李不喜欢小王”不能推出“小李不喜欢小王”真的成立。缺少独立证据，真伪不定。"
+      },
+      "id": "call_mTC23ykxxpEDvpa9uhWBq9Jy",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3365,
+    "output_tokens": 551,
+    "total_tokens": 3916,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

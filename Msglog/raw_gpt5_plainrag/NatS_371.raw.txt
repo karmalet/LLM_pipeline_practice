@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hiIScqAPbIQwt97ZnbLEe0DE",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本中说“看见一只老鼠追随而至”，半叙实动词“看见”在无情态/否定修饰下通常确证其宾语内容为真；且后文“将其踩个半死”再次指代该老鼠，进一步印证其存在与追随。故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1130,
+      "prompt_tokens": 3073,
+      "total_tokens": 4203,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0b2b632a-41b9-422d-ad2b-369638d0b3d1-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本中说“看见一只老鼠追随而至”，半叙实动词“看见”在无情态/否定修饰下通常确证其宾语内容为真；且后文“将其踩个半死”再次指代该老鼠，进一步印证其存在与追随。故假设为真。"
+      },
+      "id": "call_hiIScqAPbIQwt97ZnbLEe0DE",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3073,
+    "output_tokens": 1130,
+    "total_tokens": 4203,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

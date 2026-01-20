@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_7oqSvuroAxrxloNTGf7dxuxD",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“意识到”是事实性动词，通常断定其宾语命题为真。文本为“意识到‘法轮功’救不了我”，因此可推出“法轮功救不了我”为真。假设主张“法轮功确实救得了我”，与前述结论相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 489,
+      "prompt_tokens": 3038,
+      "total_tokens": 3527,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--a1a3e376-e950-4680-af69-00d429d19e22-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“意识到”是事实性动词，通常断定其宾语命题为真。文本为“意识到‘法轮功’救不了我”，因此可推出“法轮功救不了我”为真。假设主张“法轮功确实救得了我”，与前述结论相矛盾，故为假。"
+      },
+      "id": "call_7oqSvuroAxrxloNTGf7dxuxD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3038,
+    "output_tokens": 489,
+    "total_tokens": 3527,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

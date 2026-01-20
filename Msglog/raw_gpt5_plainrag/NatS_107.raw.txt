@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_lWqj0Nm3LRjvqAKyaLx7sv20",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本中说“发现农民负担状况并未得到改观”，而“发现”属事实性（factive）动词，默认其后内容为真；且“负担又有所加重”进一步支持未改观。因此假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 662,
+      "prompt_tokens": 3349,
+      "total_tokens": 4011,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--367feca2-91df-4d73-bcb8-69cbf43270ef-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本中说“发现农民负担状况并未得到改观”，而“发现”属事实性（factive）动词，默认其后内容为真；且“负担又有所加重”进一步支持未改观。因此假设为真。"
+      },
+      "id": "call_lWqj0Nm3LRjvqAKyaLx7sv20",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3349,
+    "output_tokens": 662,
+    "total_tokens": 4011,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

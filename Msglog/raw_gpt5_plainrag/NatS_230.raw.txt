@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Pai5YemsEyx2RzoaP9DjUvPb",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说“他幻想这样可以出其不意地抓住那个女德鲁依”。\\n- “幻想”是反叙实谓词，预设其宾语小句为假，因此“这样可以出其不意地抓住她”为假，即不可以。\\n- 叙述结果（到达被毁断崖，计划未达成）亦与“不可以出其不意抓住她”相吻合。\\n故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 4231,
+      "prompt_tokens": 3411,
+      "total_tokens": 7642,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 4096,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d661a90c-0f85-4ff4-8db6-5e1c14cdca94-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说“他幻想这样可以出其不意地抓住那个女德鲁依”。\n- “幻想”是反叙实谓词，预设其宾语小句为假，因此“这样可以出其不意地抓住她”为假，即不可以。\n- 叙述结果（到达被毁断崖，计划未达成）亦与“不可以出其不意抓住她”相吻合。\n故假设为真。"
+      },
+      "id": "call_Pai5YemsEyx2RzoaP9DjUvPb",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3411,
+    "output_tokens": 4231,
+    "total_tokens": 7642,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 4096
+    }
+  }
+}

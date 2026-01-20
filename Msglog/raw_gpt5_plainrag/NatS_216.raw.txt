@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ehSozUTXob1aNAKnZBHDI9FD",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是表达“使人怀疑他与丑闻有关”，属于怀疑态度。\\n- “怀疑”并不承诺命题真或假，无法据此确定他是否有关。\\n- 假设主张“确实无关”超出文本所给信息，因此真伪不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1253,
+      "prompt_tokens": 3414,
+      "total_tokens": 4667,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--039b0aec-1c33-48f3-86fd-32d1c907dc63-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是表达“使人怀疑他与丑闻有关”，属于怀疑态度。\n- “怀疑”并不承诺命题真或假，无法据此确定他是否有关。\n- 假设主张“确实无关”超出文本所给信息，因此真伪不能确定。"
+      },
+      "id": "call_ehSozUTXob1aNAKnZBHDI9FD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3414,
+    "output_tokens": 1253,
+    "total_tokens": 4667,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

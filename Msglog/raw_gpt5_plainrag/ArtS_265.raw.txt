@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rF0Q0HJqWtFEffmvfhTDEpAT",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“小张没有感觉小李没生病”是否定的“感觉”类动词结构，仅说明小张的主观感觉/判断，不对嵌入命题的真值作承诺；该类动词为非叙实，否定下也不必然推出命题真或假。因此无法确定“小李没生病”的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 943,
+      "prompt_tokens": 3043,
+      "total_tokens": 3986,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--68dd6cc4-a418-4c60-97d3-fd799e807384-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“小张没有感觉小李没生病”是否定的“感觉”类动词结构，仅说明小张的主观感觉/判断，不对嵌入命题的真值作承诺；该类动词为非叙实，否定下也不必然推出命题真或假。因此无法确定“小李没生病”的真伪。"
+      },
+      "id": "call_rF0Q0HJqWtFEffmvfhTDEpAT",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3043,
+    "output_tokens": 943,
+    "total_tokens": 3986,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

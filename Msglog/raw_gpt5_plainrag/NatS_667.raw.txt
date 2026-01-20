@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_qeJRjc276GM330zOWSI0YLgn",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“遇见”属于感知/经历类动词，通常带出其后所述事件为真实发生。文本中“朱庆来，遇见几位农民拦住一辆路过的外地收割机”断言该情景确曾发生，因此可推出确实有几位农民拦住一辆路过的外地收割机，故判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1846,
+      "prompt_tokens": 3423,
+      "total_tokens": 5269,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1728,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ba91cd61-229a-4241-9353-eb89ced2b076-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“遇见”属于感知/经历类动词，通常带出其后所述事件为真实发生。文本中“朱庆来，遇见几位农民拦住一辆路过的外地收割机”断言该情景确曾发生，因此可推出确实有几位农民拦住一辆路过的外地收割机，故判定为真。"
+      },
+      "id": "call_qeJRjc276GM330zOWSI0YLgn",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3423,
+    "output_tokens": 1846,
+    "total_tokens": 5269,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1728
+    }
+  }
+}

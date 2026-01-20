@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_94p5pioZSdAZCSxb3EcZ1MHp",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说“我并没有看见她们穿着你做的衣服”，是否定“看见”的报告，表示未观察到，并不能推出命题本身为假（未见到≠没有）。随后还询问“哪件是你做的”，体现说话人不确定、需确认。因此无法根据文本判断她们是否穿了你做的衣服。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 817,
+      "prompt_tokens": 3190,
+      "total_tokens": 4007,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f7e382b0-d8f1-4dae-b26a-1624acd8fd7f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说“我并没有看见她们穿着你做的衣服”，是否定“看见”的报告，表示未观察到，并不能推出命题本身为假（未见到≠没有）。随后还询问“哪件是你做的”，体现说话人不确定、需确认。因此无法根据文本判断她们是否穿了你做的衣服。"
+      },
+      "id": "call_94p5pioZSdAZCSxb3EcZ1MHp",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3190,
+    "output_tokens": 817,
+    "total_tokens": 4007,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_6evYwyzKX8D1LXStquEsCWaD",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“声称”是非叙实谓词，对其补语不作真值承诺；否定式“没有声称P”仅否定了发话行为，不涉及P本身的真假。由“小张没有声称小李偷吃了蛋糕”无法推出“小李是否偷吃了蛋糕”。因此，不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1065,
+      "prompt_tokens": 3462,
+      "total_tokens": 4527,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--851f633a-f61f-4569-a0a1-3c7a81bbc602-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“声称”是非叙实谓词，对其补语不作真值承诺；否定式“没有声称P”仅否定了发话行为，不涉及P本身的真假。由“小张没有声称小李偷吃了蛋糕”无法推出“小李是否偷吃了蛋糕”。因此，不能确定。"
+      },
+      "id": "call_6evYwyzKX8D1LXStquEsCWaD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3462,
+    "output_tokens": 1065,
+    "total_tokens": 4527,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

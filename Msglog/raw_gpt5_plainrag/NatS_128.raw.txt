@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_utdXyHoQ76rNakwHRGuHQOUu",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本明确说“发现天空已经布满了星星”，且后文“那样的星空真是久违了”进一步佐证当时天空确实布满星星。依据“发现”的肯定式具有叙实性，宾语命题为真。故“天空确实没有布满星星”与前提相矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 878,
+      "prompt_tokens": 3383,
+      "total_tokens": 4261,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2202e762-7220-4ea8-b8d0-a14e58fa3d43-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本明确说“发现天空已经布满了星星”，且后文“那样的星空真是久违了”进一步佐证当时天空确实布满星星。依据“发现”的肯定式具有叙实性，宾语命题为真。故“天空确实没有布满星星”与前提相矛盾，为假。"
+      },
+      "id": "call_utdXyHoQ76rNakwHRGuHQOUu",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3383,
+    "output_tokens": 878,
+    "total_tokens": 4261,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

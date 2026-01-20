@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_uEyPaqKD9P8hMOP4bXQr6ZkD",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本陈述“觉察出对方看出存折不对劲了”，即断言“对方看出了不对劲”这一事实成立。假设声称“对方确实没有看出存折不对劲”，与文本断言相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 412,
+      "prompt_tokens": 3160,
+      "total_tokens": 3572,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--673b7fc5-f46e-4e77-96e3-c41955f83e93-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本陈述“觉察出对方看出存折不对劲了”，即断言“对方看出了不对劲”这一事实成立。假设声称“对方确实没有看出存折不对劲”，与文本断言相矛盾，因此为假。"
+      },
+      "id": "call_uEyPaqKD9P8hMOP4bXQr6ZkD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3160,
+    "output_tokens": 412,
+    "total_tokens": 3572,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_axXjm4niY9f4P4R3CuGonYpw",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “诬陷X为Y”语义上指控为不实，否定宾语小句的真值。\\n- 文中称两人“著书诬陷夏淑琴是‘假证人’”，据此可推知“小夏是‘假证人’”为假。\\n- 因而其否定命题“夏淑琴不是假证人”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1975,
+      "prompt_tokens": 3756,
+      "total_tokens": 5731,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1856,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--05a3ad77-d027-49b7-ac44-bc714e27c8aa-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “诬陷X为Y”语义上指控为不实，否定宾语小句的真值。\n- 文中称两人“著书诬陷夏淑琴是‘假证人’”，据此可推知“小夏是‘假证人’”为假。\n- 因而其否定命题“夏淑琴不是假证人”为真。"
+      },
+      "id": "call_axXjm4niY9f4P4R3CuGonYpw",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3756,
+    "output_tokens": 1975,
+    "total_tokens": 5731,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1856
+    }
+  }
+}

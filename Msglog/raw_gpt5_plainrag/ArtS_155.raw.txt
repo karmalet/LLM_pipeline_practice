@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_KN034uQXJC6xQpnVaVfrrXCG",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“说”是非叙实动词，不预设其宾语命题为真或假。“小张没说不会妥协”只是否定了说话行为，并不推出事实层面的“会妥协”或“不会妥协”。因此无法据此判断小张是否会妥协。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1955,
+      "prompt_tokens": 3286,
+      "total_tokens": 5241,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1856,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--df2b452e-f248-4232-9437-9a5c5f34f35d-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“说”是非叙实动词，不预设其宾语命题为真或假。“小张没说不会妥协”只是否定了说话行为，并不推出事实层面的“会妥协”或“不会妥协”。因此无法据此判断小张是否会妥协。"
+      },
+      "id": "call_KN034uQXJC6xQpnVaVfrrXCG",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3286,
+    "output_tokens": 1955,
+    "total_tokens": 5241,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1856
+    }
+  }
+}

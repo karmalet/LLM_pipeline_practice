@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_U6zzkigwFVFxKq2MKrO0kUA2",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文本明确说“被曹某…骗取了共5600元现金”，随后“后二人觉察出被骗”。\\n- “觉察出被骗”与前述“被骗取”共同指明事实为：二人确实被骗了。\\n- 假设“二人确实没有被骗”与文本事实相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1583,
+      "prompt_tokens": 3683,
+      "total_tokens": 5266,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1472,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--31e5da37-d41b-457b-b435-b911874a953b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文本明确说“被曹某…骗取了共5600元现金”，随后“后二人觉察出被骗”。\n- “觉察出被骗”与前述“被骗取”共同指明事实为：二人确实被骗了。\n- 假设“二人确实没有被骗”与文本事实相矛盾，故为假。"
+      },
+      "id": "call_U6zzkigwFVFxKq2MKrO0kUA2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3683,
+    "output_tokens": 1583,
+    "total_tokens": 5266,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1472
+    }
+  }
+}

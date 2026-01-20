@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_n8O664AlNgaqA3jXpRkhoE72",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确陈述“我看见三个当地人正在卖力地兜售‘节电器’”，与假设内容一致；以“看见”为依据通常将所述事件作为事实叙述。因此可判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 785,
+      "prompt_tokens": 3460,
+      "total_tokens": 4245,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5d129f77-8266-4867-a09f-9b4e7b6e80ce-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确陈述“我看见三个当地人正在卖力地兜售‘节电器’”，与假设内容一致；以“看见”为依据通常将所述事件作为事实叙述。因此可判定为真。"
+      },
+      "id": "call_n8O664AlNgaqA3jXpRkhoE72",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3460,
+    "output_tokens": 785,
+    "total_tokens": 4245,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_zt0uBttmGxIEyXXY8KBMb0ig",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“记得”用于回忆已发生的过往事件时，通常蕴涵其宾语小句为真；句中“曾”标示过去事实，且后文具体描写握手情景进一步佐证该次探望确实发生。因此，假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2076,
+      "prompt_tokens": 3359,
+      "total_tokens": 5435,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1984,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5c707997-2f28-4814-a479-dc3c5c224081-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“记得”用于回忆已发生的过往事件时，通常蕴涵其宾语小句为真；句中“曾”标示过去事实，且后文具体描写握手情景进一步佐证该次探望确实发生。因此，假设为真。"
+      },
+      "id": "call_zt0uBttmGxIEyXXY8KBMb0ig",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3359,
+    "output_tokens": 2076,
+    "total_tokens": 5435,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1984
+    }
+  }
+}

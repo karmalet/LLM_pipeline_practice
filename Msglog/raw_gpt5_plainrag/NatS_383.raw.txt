@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_k1dOQPtu9T8XBHRnomcFpkmx",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明：这双军用棉鞋花150元，包全杰“直埋怨太贵了”。\\n- “埋怨”是主观态度表达，非事实性、非证实性谓词，不保证其宾语小句“太贵”客观为真。\\n- 即使这双鞋是他穿过“最贵”的，也不推出客观上“太贵”。\\n- 因而无法根据文本判定“确实太贵了”为真或为假，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 538,
+      "prompt_tokens": 3294,
+      "total_tokens": 3832,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c9787140-3725-4099-acc5-5759ea3dfabd-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明：这双军用棉鞋花150元，包全杰“直埋怨太贵了”。\n- “埋怨”是主观态度表达，非事实性、非证实性谓词，不保证其宾语小句“太贵”客观为真。\n- 即使这双鞋是他穿过“最贵”的，也不推出客观上“太贵”。\n- 因而无法根据文本判定“确实太贵了”为真或为假，结论为不能确定。"
+      },
+      "id": "call_k1dOQPtu9T8XBHRnomcFpkmx",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3294,
+    "output_tokens": 538,
+    "total_tokens": 3832,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

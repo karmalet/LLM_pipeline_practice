@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_yvj5kFUG19RD9sUo9feX5tmh",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"原句为“她…假装用颤抖的手收拾…”。“假装”一般带反叙实倾向，但对可控的动作类宾语常出现“假动作、真发生”的情形（如假装咳嗽/啼哭/摔倒），补句未必为假。因此既不能从文本推出她确实没用颤抖的手，也不能推出她确实用了颤抖的手。故真伪不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2764,
+      "prompt_tokens": 3634,
+      "total_tokens": 6398,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2624,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--7f3db816-05d2-48e3-94fd-4e7c2598fc6c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "原句为“她…假装用颤抖的手收拾…”。“假装”一般带反叙实倾向，但对可控的动作类宾语常出现“假动作、真发生”的情形（如假装咳嗽/啼哭/摔倒），补句未必为假。因此既不能从文本推出她确实没用颤抖的手，也不能推出她确实用了颤抖的手。故真伪不确定。"
+      },
+      "id": "call_yvj5kFUG19RD9sUo9feX5tmh",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3634,
+    "output_tokens": 2764,
+    "total_tokens": 6398,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2624
+    }
+  }
+}

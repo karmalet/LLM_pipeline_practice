@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_KZq6K45KiyZzUVM2KdJDWe79",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只说“我猜是在那边”，属于推测性表述。\\n- “猜”是非叙实谓词，不承诺其后命题的真值。\\n- 因此无法从文本推出“确实是在那边”为真或为假，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2337,
+      "prompt_tokens": 2465,
+      "total_tokens": 4802,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2240,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--05c50bcf-65c0-4b93-bf19-73e8a9eb9c3e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只说“我猜是在那边”，属于推测性表述。\n- “猜”是非叙实谓词，不承诺其后命题的真值。\n- 因此无法从文本推出“确实是在那边”为真或为假，结论为不能确定。"
+      },
+      "id": "call_KZq6K45KiyZzUVM2KdJDWe79",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2465,
+    "output_tokens": 2337,
+    "total_tokens": 4802,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2240
+    }
+  }
+}

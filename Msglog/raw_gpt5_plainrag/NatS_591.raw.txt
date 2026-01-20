@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_6BYF2jvhYYwPCOTbgbIzx7qM",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"1) “诬陷X做P”在语义上表示对P的虚假指控，预设P为假。2) 文中“庞涓诬陷孙膑带走楚王的珠宝”据此推得“孙膑带走楚王的珠宝”为假。3) 假设断言“孙膑确实带走了楚王的珠宝”为真，与上结论矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 708,
+      "prompt_tokens": 3853,
+      "total_tokens": 4561,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9fab2fc5-53e4-405e-9231-648a258fc1e7-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "1) “诬陷X做P”在语义上表示对P的虚假指控，预设P为假。2) 文中“庞涓诬陷孙膑带走楚王的珠宝”据此推得“孙膑带走楚王的珠宝”为假。3) 假设断言“孙膑确实带走了楚王的珠宝”为真，与上结论矛盾，故为假。"
+      },
+      "id": "call_6BYF2jvhYYwPCOTbgbIzx7qM",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3853,
+    "output_tokens": 708,
+    "total_tokens": 4561,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

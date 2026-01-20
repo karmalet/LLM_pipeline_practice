@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_KpTNDwEEptPXleChhm3SEhpG",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“人们感觉寒冷异常”，属于感觉类述谓，默认不承诺命题为真。\\n- 还解释这种感觉源于多年暖冬导致的“不适应”，更指向主观感受而非客观异常低温事实。\\n- 因此无法从文本推出“今冬确实寒冷异常”为真或为假，结论不可确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 630,
+      "prompt_tokens": 3452,
+      "total_tokens": 4082,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d9507d94-507e-43d1-abe9-8712d6360629-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“人们感觉寒冷异常”，属于感觉类述谓，默认不承诺命题为真。\n- 还解释这种感觉源于多年暖冬导致的“不适应”，更指向主观感受而非客观异常低温事实。\n- 因此无法从文本推出“今冬确实寒冷异常”为真或为假，结论不可确定。"
+      },
+      "id": "call_KpTNDwEEptPXleChhm3SEhpG",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3452,
+    "output_tokens": 630,
+    "total_tokens": 4082,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

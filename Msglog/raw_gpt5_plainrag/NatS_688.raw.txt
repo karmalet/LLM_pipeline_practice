@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_uIww7BEWzwo2qUoCw9DAESiK",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“证实，在北约空袭南联盟之后，才导致了科索沃暴力冲突升级”，其中“证实”为叙实性（事实性）谓词，承认其后命题为真。\\n- 被证实的命题是：暴力冲突是在北约空袭之后才升级。\\n- 假设声称：并不是在空袭之后才升级（否定上述命题）。\\n- 二者直接矛盾，因此假设为假，选F。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 849,
+      "prompt_tokens": 3128,
+      "total_tokens": 3977,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3423603e-76f5-4cfd-acd6-f7793212738b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“证实，在北约空袭南联盟之后，才导致了科索沃暴力冲突升级”，其中“证实”为叙实性（事实性）谓词，承认其后命题为真。\n- 被证实的命题是：暴力冲突是在北约空袭之后才升级。\n- 假设声称：并不是在空袭之后才升级（否定上述命题）。\n- 二者直接矛盾，因此假设为假，选F。"
+      },
+      "id": "call_uIww7BEWzwo2qUoCw9DAESiK",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3128,
+    "output_tokens": 849,
+    "total_tokens": 3977,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

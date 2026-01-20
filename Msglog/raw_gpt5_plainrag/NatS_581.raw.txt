@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_7y2uDnyaG1KrQYzyOAOHqSd9",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 句中谓词“污蔑”属于反叙实，表示对宾语小句内容的虚假指控。\\n- 文本说“她污蔑二人是娼妓出身”，因此可推出“小句‘二人是娼妓出身’为假”。\\n- 所以假设“二人确实是娼妓出身”与文本结论相反，应判为假（F）。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2175,
+      "prompt_tokens": 3483,
+      "total_tokens": 5658,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2048,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9e966905-70e8-4c70-b2f0-6c1ccb7cd56a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 句中谓词“污蔑”属于反叙实，表示对宾语小句内容的虚假指控。\n- 文本说“她污蔑二人是娼妓出身”，因此可推出“小句‘二人是娼妓出身’为假”。\n- 所以假设“二人确实是娼妓出身”与文本结论相反，应判为假（F）。"
+      },
+      "id": "call_7y2uDnyaG1KrQYzyOAOHqSd9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3483,
+    "output_tokens": 2175,
+    "total_tokens": 5658,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2048
+    }
+  }
+}

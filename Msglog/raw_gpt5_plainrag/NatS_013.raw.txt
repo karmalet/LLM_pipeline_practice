@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_3wGUn8X7pzbxraJJiK0FSOlw",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中说“领导们…哀叹没有网络的好日子一去不复返了”，这是对“哀叹”这一态度/评价的转述。 \\n- “哀叹”表达主语的情感与看法，并不必然断言其宾语小句为真。 \\n- 文段没有以事实性语词直接陈述“好日子确已一去不复返”，因此无法据此确定命题真值。 \\n- 结论：根据该前提，假设的真伪不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2335,
+      "prompt_tokens": 3393,
+      "total_tokens": 5728,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2176,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f00b0f43-fe97-4f22-b264-819685fd96b1-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中说“领导们…哀叹没有网络的好日子一去不复返了”，这是对“哀叹”这一态度/评价的转述。 \n- “哀叹”表达主语的情感与看法，并不必然断言其宾语小句为真。 \n- 文段没有以事实性语词直接陈述“好日子确已一去不复返”，因此无法据此确定命题真值。 \n- 结论：根据该前提，假设的真伪不能确定。"
+      },
+      "id": "call_3wGUn8X7pzbxraJJiK0FSOlw",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3393,
+    "output_tokens": 2335,
+    "total_tokens": 5728,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2176
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_YadSDSzxWAmBe1mTmtMq1yG3",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明“小张以为/认为p（爱情没有道理可讲）”。\\n- “以为/认为”在此为非叙实用法，不保证p为真；且没有“其实/但”等标记指示反事实或确证。\\n- 因而无法从文本推出p或其否命题¬p的真值。\\n- 假设“爱情有道理可讲”(¬p)的真伪据文本无法确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1288,
+      "prompt_tokens": 3806,
+      "total_tokens": 5094,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4afece8a-e00d-41a2-9f7a-4abb08a8f4ae-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明“小张以为/认为p（爱情没有道理可讲）”。\n- “以为/认为”在此为非叙实用法，不保证p为真；且没有“其实/但”等标记指示反事实或确证。\n- 因而无法从文本推出p或其否命题¬p的真值。\n- 假设“爱情有道理可讲”(¬p)的真伪据文本无法确定。"
+      },
+      "id": "call_YadSDSzxWAmBe1mTmtMq1yG3",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3806,
+    "output_tokens": 1288,
+    "total_tokens": 5094,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_7pdxhRZivYZomjtZFxk12yTR",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"Step-by-step: 1) 原文仅为“我猜傅也是党员”，谓词为“猜”。2) “猜”属非叙实/非事实性述谓，不承诺所嵌命题为真。3) 因此无法从该句推出“傅确实也是党员”。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 359,
+      "prompt_tokens": 3224,
+      "total_tokens": 3583,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fd6a6a78-e833-4293-b35b-9faec52fa885-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "Step-by-step: 1) 原文仅为“我猜傅也是党员”，谓词为“猜”。2) “猜”属非叙实/非事实性述谓，不承诺所嵌命题为真。3) 因此无法从该句推出“傅确实也是党员”。结论：不能确定。"
+      },
+      "id": "call_7pdxhRZivYZomjtZFxk12yTR",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3224,
+    "output_tokens": 359,
+    "total_tokens": 3583,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

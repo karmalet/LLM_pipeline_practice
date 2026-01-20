@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_X3T4oONMPYjD8mxyuyB204XJ",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说明“刘备声言刘璋无礼、待人不公”，其中“声言”属于非叙实类表达，只表明有人这样说，并不预设或蕴涵命题真值。由此既不能推出“刘璋待人不公”为真，也不能推出其反命题“刘璋待人公正”为真。因此，假设无法从文本判断。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 439,
+      "prompt_tokens": 3817,
+      "total_tokens": 4256,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6c1680fe-3295-40f0-8f7d-e75a2ae419c4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说明“刘备声言刘璋无礼、待人不公”，其中“声言”属于非叙实类表达，只表明有人这样说，并不预设或蕴涵命题真值。由此既不能推出“刘璋待人不公”为真，也不能推出其反命题“刘璋待人公正”为真。因此，假设无法从文本判断。"
+      },
+      "id": "call_X3T4oONMPYjD8mxyuyB204XJ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3817,
+    "output_tokens": 439,
+    "total_tokens": 4256,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

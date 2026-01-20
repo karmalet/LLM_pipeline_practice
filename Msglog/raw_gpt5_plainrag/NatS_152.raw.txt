@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_yDZCNjteeLUEhE5vLBIWf6Wv",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说“人们感觉寒冷异常”，并解释这种感觉可能来自对暖冬的习惯，并未断言今冬客观上是否存在“寒冷异常”。既不能据此推出“确实没有寒冷异常”，也不能推出相反结论，因此真伪不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 479,
+      "prompt_tokens": 3756,
+      "total_tokens": 4235,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--e1a7e675-da77-4980-aede-0e8a13bb9e5c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说“人们感觉寒冷异常”，并解释这种感觉可能来自对暖冬的习惯，并未断言今冬客观上是否存在“寒冷异常”。既不能据此推出“确实没有寒冷异常”，也不能推出相反结论，因此真伪不确定。"
+      },
+      "id": "call_yDZCNjteeLUEhE5vLBIWf6Wv",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3756,
+    "output_tokens": 479,
+    "total_tokens": 4235,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

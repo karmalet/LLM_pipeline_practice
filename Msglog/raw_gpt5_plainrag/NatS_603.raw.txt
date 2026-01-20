@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_KOdDxYWiKMn2BJCBWGbVFOQW",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中人物直接说“我真羡慕你的脸生得这么细皮白肉的”。\\n- “羡慕”通常以对方实际拥有的优点/属性为前提（否则无从羡慕）。\\n- 文中无任何否定或反讽迹象，且语境为近距离观察（捏住两颊）。\\n- 故可推出“我”的脸确为细皮白肉。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1413,
+      "prompt_tokens": 3505,
+      "total_tokens": 4918,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--7d845f72-3eba-4490-ba25-a7a5d0922a1f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中人物直接说“我真羡慕你的脸生得这么细皮白肉的”。\n- “羡慕”通常以对方实际拥有的优点/属性为前提（否则无从羡慕）。\n- 文中无任何否定或反讽迹象，且语境为近距离观察（捏住两颊）。\n- 故可推出“我”的脸确为细皮白肉。"
+      },
+      "id": "call_KOdDxYWiKMn2BJCBWGbVFOQW",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3505,
+    "output_tokens": 1413,
+    "total_tokens": 4918,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

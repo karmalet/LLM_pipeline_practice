@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_HMZw87OLoj8Pxnss7zU4JTrS",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说“让我觉察出原来星期五真的可以属于某一部分人”。\\n- “觉察出”为叙实/事实性谓词，预设其宾语小句为真。\\n- 宾语小句“星期五真的可以属于某一部分人”与假设“星期五确实可以只属于某一部分人”一致（在与“属于每一个人”对比下体现“只属于某一部分人”的转向）。\\n因此判断为真（T）。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3280,
+      "prompt_tokens": 3512,
+      "total_tokens": 6792,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3136,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6afca68b-3be6-4d1a-a116-236934363ac9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说“让我觉察出原来星期五真的可以属于某一部分人”。\n- “觉察出”为叙实/事实性谓词，预设其宾语小句为真。\n- 宾语小句“星期五真的可以属于某一部分人”与假设“星期五确实可以只属于某一部分人”一致（在与“属于每一个人”对比下体现“只属于某一部分人”的转向）。\n因此判断为真（T）。"
+      },
+      "id": "call_HMZw87OLoj8Pxnss7zU4JTrS",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3512,
+    "output_tokens": 3280,
+    "total_tokens": 6792,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 3136
+    }
+  }
+}

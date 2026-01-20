@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ZRpd53cRC1Dp0cmFYP3InekY",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“怀疑”属于非叙实态度谓词，不承诺其补句的真值。“小张怀疑小李不是卧底”仅表明小张有此怀疑，并不蕴含或预设“小李不是卧底”为真。因此该命题可能真也可能假，无法由文本确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2020,
+      "prompt_tokens": 3555,
+      "total_tokens": 5575,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1920,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4a57cb5f-db92-4749-a61e-396a16b27391-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“怀疑”属于非叙实态度谓词，不承诺其补句的真值。“小张怀疑小李不是卧底”仅表明小张有此怀疑，并不蕴含或预设“小李不是卧底”为真。因此该命题可能真也可能假，无法由文本确定。"
+      },
+      "id": "call_ZRpd53cRC1Dp0cmFYP3InekY",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3555,
+    "output_tokens": 2020,
+    "total_tokens": 5575,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1920
+    }
+  }
+}

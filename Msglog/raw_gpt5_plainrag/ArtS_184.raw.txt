@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ykRXJ3nUtPdt7a7adRutLulJ",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“意识到”是叙实/事实类动词，无论肯定还是否定，都预设其宾语小句为真。由“小张没有意识到小李哭了”可推知“小李哭了”为真，因此假设“小李没哭”是假的。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1180,
+      "prompt_tokens": 3619,
+      "total_tokens": 4799,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1280
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--186c8aa9-5284-4018-b926-f074f9018e8d-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“意识到”是叙实/事实类动词，无论肯定还是否定，都预设其宾语小句为真。由“小张没有意识到小李哭了”可推知“小李哭了”为真，因此假设“小李没哭”是假的。"
+      },
+      "id": "call_ykRXJ3nUtPdt7a7adRutLulJ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3619,
+    "output_tokens": 1180,
+    "total_tokens": 4799,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1280
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_dNPKExzBF8x7mYMAuxrtRviB",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本中通过“可以听出”明确断言“健康就是人生的第一财富”。假设则声称“健康确实不是人生的第一财富”，与文本断言相矛盾，因此假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1612,
+      "prompt_tokens": 3093,
+      "total_tokens": 4705,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1536,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0fd2fd61-8056-486d-b843-1ef686c32413-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本中通过“可以听出”明确断言“健康就是人生的第一财富”。假设则声称“健康确实不是人生的第一财富”，与文本断言相矛盾，因此假设为假。"
+      },
+      "id": "call_dNPKExzBF8x7mYMAuxrtRviB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3093,
+    "output_tokens": 1612,
+    "total_tokens": 4705,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1536
+    }
+  }
+}

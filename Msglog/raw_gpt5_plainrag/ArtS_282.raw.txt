@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_iyWDo5jG2oNYLDjaDMiFn6fy",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"1) “想”是非叙实/非事实动词，不能预设或决定其所嵌小句的真值。2) “我想小李不会生气”仅表达说话者的主观推测与预测（还带有情态“不会”），不是事实报道。3) 因此无法由该句推出“小李没生气”为真或为假。结论：不能确定（U）。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 446,
+      "prompt_tokens": 3246,
+      "total_tokens": 3692,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f2824d69-3154-4160-9420-918a91125133-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "1) “想”是非叙实/非事实动词，不能预设或决定其所嵌小句的真值。2) “我想小李不会生气”仅表达说话者的主观推测与预测（还带有情态“不会”），不是事实报道。3) 因此无法由该句推出“小李没生气”为真或为假。结论：不能确定（U）。"
+      },
+      "id": "call_iyWDo5jG2oNYLDjaDMiFn6fy",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3246,
+    "output_tokens": 446,
+    "total_tokens": 3692,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_g2eGwDuIG6Y4GiXPowGfBllo",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “在梦里…看见”表明所见发生于梦境，而非对现实的断言。\\n- 后文“把梦境当作现实”也暗示梦境与现实有别。\\n- 文本未提供现实中是否存在“人们有说有笑地进进出出”的证据，既不能推出其为真，也不能推出其为假。\\n因此，对假设的真伪无法确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2238,
+      "prompt_tokens": 3744,
+      "total_tokens": 5982,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2112,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9bea3282-f6ef-4b65-b2ff-355ed486aa20-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “在梦里…看见”表明所见发生于梦境，而非对现实的断言。\n- 后文“把梦境当作现实”也暗示梦境与现实有别。\n- 文本未提供现实中是否存在“人们有说有笑地进进出出”的证据，既不能推出其为真，也不能推出其为假。\n因此，对假设的真伪无法确定。"
+      },
+      "id": "call_g2eGwDuIG6Y4GiXPowGfBllo",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3744,
+    "output_tokens": 2238,
+    "total_tokens": 5982,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2112
+    }
+  }
+}

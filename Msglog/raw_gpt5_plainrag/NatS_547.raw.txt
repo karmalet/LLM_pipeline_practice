@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_iWv32irleVNLsGv3Kg9SBtnD",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“望见”属感知类半叙实动词，文本中无情态、否定或似然标记削弱其叙实性，叙述者直接陈述看到了该场景，故可推得确有一位旅游者半躺在休闲椅上。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 801,
+      "prompt_tokens": 3009,
+      "total_tokens": 3810,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b9ec203b-ec85-486e-9f3a-d455258b2b87-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“望见”属感知类半叙实动词，文本中无情态、否定或似然标记削弱其叙实性，叙述者直接陈述看到了该场景，故可推得确有一位旅游者半躺在休闲椅上。"
+      },
+      "id": "call_iWv32irleVNLsGv3Kg9SBtnD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3009,
+    "output_tokens": 801,
+    "total_tokens": 3810,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

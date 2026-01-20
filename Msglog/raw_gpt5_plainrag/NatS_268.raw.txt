@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_JoT0IxERJ8lp8ppYp1gLd5NO",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中：他“假装给人写信”。\\n- 依据给定语料的规律：“假装”+动作性宾语时，宾语小句为真（如“假装看电影→看了电影”“假装着啼哭→啼哭了”），即至少部分实现了该动作。\\n- “给人写信”属动作性宾语，因此可推出“他在（至少部分地）给人写信”为真。\\n- 假设“他确实没在给人写信”与此结论相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1250,
+      "prompt_tokens": 3919,
+      "total_tokens": 5169,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--967aeb2c-6ea8-4dd3-a116-7a654ca73a72-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中：他“假装给人写信”。\n- 依据给定语料的规律：“假装”+动作性宾语时，宾语小句为真（如“假装看电影→看了电影”“假装着啼哭→啼哭了”），即至少部分实现了该动作。\n- “给人写信”属动作性宾语，因此可推出“他在（至少部分地）给人写信”为真。\n- 假设“他确实没在给人写信”与此结论相矛盾，故为假。"
+      },
+      "id": "call_JoT0IxERJ8lp8ppYp1gLd5NO",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3919,
+    "output_tokens": 1250,
+    "total_tokens": 5169,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

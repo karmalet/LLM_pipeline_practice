@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_5p4obz0fWQI9jD3IuFdPXUGX",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅表述“他批评青年学生在上课前不背诵《古兰经》”。“批评”属于非叙实（非事实承诺）类言语行为，不预设其宾语命题为真，因此无法由此确定学生是否真的在上课前背诵或不背诵《古兰经》。故对假设真伪不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 820,
+      "prompt_tokens": 3608,
+      "total_tokens": 4428,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--7bb4bf5c-155c-423c-9b74-30a4b78a77a0-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅表述“他批评青年学生在上课前不背诵《古兰经》”。“批评”属于非叙实（非事实承诺）类言语行为，不预设其宾语命题为真，因此无法由此确定学生是否真的在上课前背诵或不背诵《古兰经》。故对假设真伪不能确定。"
+      },
+      "id": "call_5p4obz0fWQI9jD3IuFdPXUGX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3608,
+    "output_tokens": 820,
+    "total_tokens": 4428,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

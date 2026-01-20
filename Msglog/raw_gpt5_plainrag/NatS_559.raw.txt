@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_jbHrTXwKKcWwnh5jdAnB9yk9",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"前提说“从窗子可以望见母亲已在后园沙地上清理菜圃”，感知动词“望见”在肯定式下具有叙实性，通常蕴含其所述情形为真；且无否定或不确定标记。因此可确定母亲确实在后园沙地上清理菜圃。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 880,
+      "prompt_tokens": 3226,
+      "total_tokens": 4106,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--37858a82-9f8f-4365-8cf6-f1f61c6e8e6f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "前提说“从窗子可以望见母亲已在后园沙地上清理菜圃”，感知动词“望见”在肯定式下具有叙实性，通常蕴含其所述情形为真；且无否定或不确定标记。因此可确定母亲确实在后园沙地上清理菜圃。"
+      },
+      "id": "call_jbHrTXwKKcWwnh5jdAnB9yk9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3226,
+    "output_tokens": 880,
+    "total_tokens": 4106,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_NaH9M3vYHnHgef9EI1iesSCz",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"原句含“我以为”，属于主观判断的非事实谓词，不能保证其所嵌内容为真或为假。文本仅表明说话人的看法是“正说明…”，但并未给出客观真值。因此无法据此断定“确实不能说明”为真或为假，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 555,
+      "prompt_tokens": 3267,
+      "total_tokens": 3822,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ae15a232-01a9-45c4-9dc3-c06662b5615c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "原句含“我以为”，属于主观判断的非事实谓词，不能保证其所嵌内容为真或为假。文本仅表明说话人的看法是“正说明…”，但并未给出客观真值。因此无法据此断定“确实不能说明”为真或为假，结论为不能确定。"
+      },
+      "id": "call_NaH9M3vYHnHgef9EI1iesSCz",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3267,
+    "output_tokens": 555,
+    "total_tokens": 3822,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

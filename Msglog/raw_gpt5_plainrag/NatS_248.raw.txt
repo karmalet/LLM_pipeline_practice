@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_pPZ7lp2D0cwHg8DTqnIoxnS9",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本用“记得”引出补足语“她很开朗、活泼、大方”。“记得”通常为事实性（具事实预设）的谓词，使其补足语为真。因此可推出：她确实很开朗、活泼、大方。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1115,
+      "prompt_tokens": 2897,
+      "total_tokens": 4012,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--52edc403-1276-40f8-9606-ff6595355b64-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本用“记得”引出补足语“她很开朗、活泼、大方”。“记得”通常为事实性（具事实预设）的谓词，使其补足语为真。因此可推出：她确实很开朗、活泼、大方。"
+      },
+      "id": "call_pPZ7lp2D0cwHg8DTqnIoxnS9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2897,
+    "output_tokens": 1115,
+    "total_tokens": 4012,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

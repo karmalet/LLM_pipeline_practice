@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rjePwdhsMndJJzRFvf7mFv0V",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“遇见”属感知/遭遇类动词，类似“看见”，在简单直陈句中具有（半）叙实性，通常蕴涵其后所述情景真实。由“小张遇见小李在批评小王”可推知：小李确实在批评小王。假设“小李没在批评小王”与前提相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1853,
+      "prompt_tokens": 3337,
+      "total_tokens": 5190,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1728,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6118e728-3b38-4350-9a65-f4c4a9f725b4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“遇见”属感知/遭遇类动词，类似“看见”，在简单直陈句中具有（半）叙实性，通常蕴涵其后所述情景真实。由“小张遇见小李在批评小王”可推知：小李确实在批评小王。假设“小李没在批评小王”与前提相矛盾，因此为假。"
+      },
+      "id": "call_rjePwdhsMndJJzRFvf7mFv0V",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3337,
+    "output_tokens": 1853,
+    "total_tokens": 5190,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1728
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_gno4ntrp2DSPPjuV3oKr9n2F",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本“记得…曾去看望先生”属对已发生事件的记忆陈述；在过去现实事态下，“记得”蕴涵其宾语命题为真，且后文细节描写（简朴住所、久久握手）进一步佐证确实去看望过。因此“确实没去看望先生”与前提矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1332,
+      "prompt_tokens": 3489,
+      "total_tokens": 4821,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1216,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1ff1d897-cfe8-4546-b8e2-9010f4233e89-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本“记得…曾去看望先生”属对已发生事件的记忆陈述；在过去现实事态下，“记得”蕴涵其宾语命题为真，且后文细节描写（简朴住所、久久握手）进一步佐证确实去看望过。因此“确实没去看望先生”与前提矛盾，为假。"
+      },
+      "id": "call_gno4ntrp2DSPPjuV3oKr9n2F",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3489,
+    "output_tokens": 1332,
+    "total_tokens": 4821,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1216
+    }
+  }
+}

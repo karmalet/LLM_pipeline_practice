@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hGPZuKKLJO45wJjgEBugwkLu",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“瞥见”属视觉感知类半叙实动词，类似“看见/看到”，在无情态词（如“可能”）或弱化标记（如“仿佛、恍惚”）时，通常预设/蕴涵其宾语小句为真。原句“暖暖瞥见，薛传薪也站在那些游客中间”未出现削弱因素，因此可以推断薛传薪确实站在那些游客中间。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 653,
+      "prompt_tokens": 3324,
+      "total_tokens": 3977,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3d6341ba-1852-44a7-9af6-e06e323187f8-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“瞥见”属视觉感知类半叙实动词，类似“看见/看到”，在无情态词（如“可能”）或弱化标记（如“仿佛、恍惚”）时，通常预设/蕴涵其宾语小句为真。原句“暖暖瞥见，薛传薪也站在那些游客中间”未出现削弱因素，因此可以推断薛传薪确实站在那些游客中间。"
+      },
+      "id": "call_hGPZuKKLJO45wJjgEBugwkLu",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3324,
+    "output_tokens": 653,
+    "total_tokens": 3977,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_74S6AmR1NRuLopZGJKaP0Wkd",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文本说“我常常看见父亲……取出诗集来”，属直接目击，表明该动作发生过且多次发生。\\n- 假设称“父亲确实不曾取出诗集”，与“常常看见取出”直接矛盾。\\n- 因此，假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 618,
+      "prompt_tokens": 3460,
+      "total_tokens": 4078,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2c85a345-2171-47d7-88b6-0dea82b1f0cc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文本说“我常常看见父亲……取出诗集来”，属直接目击，表明该动作发生过且多次发生。\n- 假设称“父亲确实不曾取出诗集”，与“常常看见取出”直接矛盾。\n- 因此，假设为假。"
+      },
+      "id": "call_74S6AmR1NRuLopZGJKaP0Wkd",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3460,
+    "output_tokens": 618,
+    "total_tokens": 4078,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

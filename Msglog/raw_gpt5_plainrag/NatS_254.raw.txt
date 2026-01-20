@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_DKYuIC8ziZdmYlits98gkCdo",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中“记得”引出具体过往事件，通常带叙实性预设，宾语小句被视为真。\\n- 后续“冰棍都化在手里了也没想起来吃”与“每人发了一根冰棍”相互印证，增强事实性。\\n- 因此可推知：总理确实给我们每人发了一根冰棍。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2812,
+      "prompt_tokens": 3623,
+      "total_tokens": 6435,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2688,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8b004567-1988-4083-a328-d098cf365be5-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中“记得”引出具体过往事件，通常带叙实性预设，宾语小句被视为真。\n- 后续“冰棍都化在手里了也没想起来吃”与“每人发了一根冰棍”相互印证，增强事实性。\n- 因此可推知：总理确实给我们每人发了一根冰棍。"
+      },
+      "id": "call_DKYuIC8ziZdmYlits98gkCdo",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3623,
+    "output_tokens": 2812,
+    "total_tokens": 6435,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2688
+    }
+  }
+}

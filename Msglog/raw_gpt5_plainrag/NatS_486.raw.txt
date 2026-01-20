@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ebPMyJ42CUCa0318tAHYNCL8",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说明林健锋“声言”部分传媒报道不尽不实；“声言/声称”为非事实性言语动词，其宾语真值不被承诺。因此无法据此判断传媒报道是否全部属实或不属实，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1691,
+      "prompt_tokens": 3876,
+      "total_tokens": 5567,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1600,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 2176
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--a9987a75-0f77-44df-a928-3f10599581fc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说明林健锋“声言”部分传媒报道不尽不实；“声言/声称”为非事实性言语动词，其宾语真值不被承诺。因此无法据此判断传媒报道是否全部属实或不属实，结论为不能确定。"
+      },
+      "id": "call_ebPMyJ42CUCa0318tAHYNCL8",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3876,
+    "output_tokens": 1691,
+    "total_tokens": 5567,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 2176
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1600
+    }
+  }
+}

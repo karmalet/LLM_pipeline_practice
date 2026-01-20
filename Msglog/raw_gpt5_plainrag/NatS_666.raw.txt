@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_vIuvo0Y6f1z1yXAuuGGeJPvO",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明“除了内省体验外，并未遇见到任何机器具有这些特性”，这是对是否遇见/观察到的描述。\\n- 未遇见并不等于不存在，因此不能据此推出“确实有一些机器具有这些特性”为真或为假。\\n- 两者可相容：可能存在但尚未被遇见。故结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1077,
+      "prompt_tokens": 2921,
+      "total_tokens": 3998,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--831c0f0a-fe1f-4715-8805-5d39c359024a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明“除了内省体验外，并未遇见到任何机器具有这些特性”，这是对是否遇见/观察到的描述。\n- 未遇见并不等于不存在，因此不能据此推出“确实有一些机器具有这些特性”为真或为假。\n- 两者可相容：可能存在但尚未被遇见。故结论：不能确定。"
+      },
+      "id": "call_vIuvo0Y6f1z1yXAuuGGeJPvO",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2921,
+    "output_tokens": 1077,
+    "total_tokens": 3998,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

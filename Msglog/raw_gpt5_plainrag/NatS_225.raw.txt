@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_HBoiC7wWFPTeCmCaLBIGZ8W2",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"依据前提中的“幻想”，这是反叙实谓词，预设其宾语小句（她会活泼地动起来）为假。因此，“她画的小女孩艾丽斯确实活泼地动了起来”不成立，结论为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 921,
+      "prompt_tokens": 3524,
+      "total_tokens": 4445,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bad680a7-42f3-4863-985f-340fdb2c3d33-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "依据前提中的“幻想”，这是反叙实谓词，预设其宾语小句（她会活泼地动起来）为假。因此，“她画的小女孩艾丽斯确实活泼地动了起来”不成立，结论为假。"
+      },
+      "id": "call_HBoiC7wWFPTeCmCaLBIGZ8W2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3524,
+    "output_tokens": 921,
+    "total_tokens": 4445,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

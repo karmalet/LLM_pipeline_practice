@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_V4diX0oJ6zo1W3MTfaAds3Hr",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “埋怨”是态度/情感类动词，通常为非叙实，不承诺其宾语小句为真。\\n- 句子只说明小张抱怨的内容，而非说话者对事实的认可。\\n- 因此，无法仅据该句断定“小李吃光了去年的大米”是否为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2353,
+      "prompt_tokens": 3374,
+      "total_tokens": 5727,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2240,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9902d5af-5ea8-4622-8f39-a6375038cddc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “埋怨”是态度/情感类动词，通常为非叙实，不承诺其宾语小句为真。\n- 句子只说明小张抱怨的内容，而非说话者对事实的认可。\n- 因此，无法仅据该句断定“小李吃光了去年的大米”是否为真。"
+      },
+      "id": "call_V4diX0oJ6zo1W3MTfaAds3Hr",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3374,
+    "output_tokens": 2353,
+    "total_tokens": 5727,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2240
+    }
+  }
+}

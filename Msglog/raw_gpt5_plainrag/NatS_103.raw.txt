@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hDLRNSfKfQriG8WN19l7WWrB",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"步骤：1) 前提说“迪马承认有过这两次谈话”。2) 按叙事实践，“承认”通常为事实性动词，预设/蕴涵其宾语命题为真。3) 因此可推出确实有过这两次谈话。结论：T。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 744,
+      "prompt_tokens": 3529,
+      "total_tokens": 4273,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f8979535-0257-4ed9-aadc-978a5aaed49b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "步骤：1) 前提说“迪马承认有过这两次谈话”。2) 按叙事实践，“承认”通常为事实性动词，预设/蕴涵其宾语命题为真。3) 因此可推出确实有过这两次谈话。结论：T。"
+      },
+      "id": "call_hDLRNSfKfQriG8WN19l7WWrB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3529,
+    "output_tokens": 744,
+    "total_tokens": 4273,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

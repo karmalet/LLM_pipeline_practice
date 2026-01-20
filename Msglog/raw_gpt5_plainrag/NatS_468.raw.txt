@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_W22t9vSJ0Bp8mxhf0149Nuko",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本明确说“他们的这点劳作实在微不足道”，且“他们心里也十分清楚”这一点；“非常重要”与“微不足道”语义相反，故假设与前提矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 660,
+      "prompt_tokens": 3706,
+      "total_tokens": 4366,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4903d32f-8ee2-41f9-8903-1244f5f590dd-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本明确说“他们的这点劳作实在微不足道”，且“他们心里也十分清楚”这一点；“非常重要”与“微不足道”语义相反，故假设与前提矛盾，为假。"
+      },
+      "id": "call_W22t9vSJ0Bp8mxhf0149Nuko",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3706,
+    "output_tokens": 660,
+    "total_tokens": 4366,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

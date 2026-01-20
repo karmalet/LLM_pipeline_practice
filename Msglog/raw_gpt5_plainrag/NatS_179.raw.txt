@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_A9678DaxMdmMPKyhvegD1Zo2",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明“不少应聘人员感叹这简直就是考博士后”，这是主观感叹/类比。\\n- 感叹不等于事实陈述，不能据此断定其确实是博士后考试。\\n- 缺乏进一步信息来证明或否定该命题，因此真伪不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1708,
+      "prompt_tokens": 3080,
+      "total_tokens": 4788,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1600,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--14d02f0d-e2b8-4fef-abbc-a93d3b86100f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明“不少应聘人员感叹这简直就是考博士后”，这是主观感叹/类比。\n- 感叹不等于事实陈述，不能据此断定其确实是博士后考试。\n- 缺乏进一步信息来证明或否定该命题，因此真伪不确定。"
+      },
+      "id": "call_A9678DaxMdmMPKyhvegD1Zo2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3080,
+    "output_tokens": 1708,
+    "total_tokens": 4788,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1600
+    }
+  }
+}

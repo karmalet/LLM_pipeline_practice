@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_t4MRoEKakn0tnP84F0IhNh5k",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“各医院纷纷声言口罩和隔离衣不足”，“声言”属于非叙实述谓，不保证其宾语为真。\\n- 后半句提到“卫生部门所报的数字少得离奇”，该“数字”并未明确指向物资充足与否，也无法证实“充足”。\\n- 因此，无法根据文本判断口罩和隔离衣是否确实充足。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 707,
+      "prompt_tokens": 3575,
+      "total_tokens": 4282,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--78f64d39-fe71-49a3-a89f-9338a84a8ebd-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“各医院纷纷声言口罩和隔离衣不足”，“声言”属于非叙实述谓，不保证其宾语为真。\n- 后半句提到“卫生部门所报的数字少得离奇”，该“数字”并未明确指向物资充足与否，也无法证实“充足”。\n- 因此，无法根据文本判断口罩和隔离衣是否确实充足。"
+      },
+      "id": "call_t4MRoEKakn0tnP84F0IhNh5k",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3575,
+    "output_tokens": 707,
+    "total_tokens": 4282,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

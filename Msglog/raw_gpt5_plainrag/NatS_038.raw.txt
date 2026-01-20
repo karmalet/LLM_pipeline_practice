@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_f3a8MwekDW6tufyTqitQaNKI",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本说“大地震暴露出印度政府在应对重大突发灾难方面经验不足”，明确断言其缺乏经验；而假设主张“确实经验丰富”，与前述结论相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 723,
+      "prompt_tokens": 3083,
+      "total_tokens": 3806,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f00f3b63-ae5a-4985-b5bf-69818be74419-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本说“大地震暴露出印度政府在应对重大突发灾难方面经验不足”，明确断言其缺乏经验；而假设主张“确实经验丰富”，与前述结论相矛盾，因此为假。"
+      },
+      "id": "call_f3a8MwekDW6tufyTqitQaNKI",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3083,
+    "output_tokens": 723,
+    "total_tokens": 3806,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

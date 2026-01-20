@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_8rmFg1jrdwNRAH5DUgywGXFH",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本只说“不少人”经不住高回报诱惑，常常“幻想”自己能成为上线、能赚钱，并且不愿考虑作为下线被骗的风险。\\n- 这描述的是心理预期与风险忽视，而非实际结果。\\n- 文中未给出这些人最终是否成为上线或是否赚钱的事实信息。\\n- 因此无法据此确定“参与传销的不少人确实不能成为上线、不能挣到钱”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3399,
+      "prompt_tokens": 3705,
+      "total_tokens": 7104,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3264,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9e796b36-cc16-41c3-b228-6be31029d8e6-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本只说“不少人”经不住高回报诱惑，常常“幻想”自己能成为上线、能赚钱，并且不愿考虑作为下线被骗的风险。\n- 这描述的是心理预期与风险忽视，而非实际结果。\n- 文中未给出这些人最终是否成为上线或是否赚钱的事实信息。\n- 因此无法据此确定“参与传销的不少人确实不能成为上线、不能挣到钱”。"
+      },
+      "id": "call_8rmFg1jrdwNRAH5DUgywGXFH",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3705,
+    "output_tokens": 3399,
+    "total_tokens": 7104,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 3264
+    }
+  }
+}

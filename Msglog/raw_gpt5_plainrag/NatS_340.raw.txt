@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_LJXJ8bKuvfp4rS5dZolrBLjd",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本中“我总觉着…”的谓词是“觉着”，属于非叙实动词，不预设其宾语小句为真。该句仅表明说话人的主观看法“没有深刻内涵的作品无法立足市场和深入民心”，并不能据此断定事实真伪。假设断言相反命题“确实可以…”，文本同样未提供支持或反证，故无法根据给定文本判断其真伪。结论：U。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2063,
+      "prompt_tokens": 3968,
+      "total_tokens": 6031,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1920,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6a64986f-7988-458d-84ff-a37284a2ccb6-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本中“我总觉着…”的谓词是“觉着”，属于非叙实动词，不预设其宾语小句为真。该句仅表明说话人的主观看法“没有深刻内涵的作品无法立足市场和深入民心”，并不能据此断定事实真伪。假设断言相反命题“确实可以…”，文本同样未提供支持或反证，故无法根据给定文本判断其真伪。结论：U。"
+      },
+      "id": "call_LJXJ8bKuvfp4rS5dZolrBLjd",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3968,
+    "output_tokens": 2063,
+    "total_tokens": 6031,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1920
+    }
+  }
+}

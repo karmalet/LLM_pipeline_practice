@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rSHuOutA6TYiBxuYkxXNAnXB",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) “认识到”属叙实/事实性谓词，通常预设其宾语小句为真；2) 文中说“小张认识到革命将会胜利”，因此将“革命将会胜利”当作成立的命题（即便为将来时，叙实预设仍保留）；3) 故可据此判断假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 691,
+      "prompt_tokens": 3289,
+      "total_tokens": 3980,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d18fdca4-6490-4775-bb80-2becc8e1fa50-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) “认识到”属叙实/事实性谓词，通常预设其宾语小句为真；2) 文中说“小张认识到革命将会胜利”，因此将“革命将会胜利”当作成立的命题（即便为将来时，叙实预设仍保留）；3) 故可据此判断假设为真。"
+      },
+      "id": "call_rSHuOutA6TYiBxuYkxXNAnXB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3289,
+    "output_tokens": 691,
+    "total_tokens": 3980,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

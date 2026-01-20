@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_HUUsYUpCRK3A3JMG1cupH3MT",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说松村俊夫“污蔑”李秀英是“假”证人。\\n- “污蔑”表示虚假指控，所涉命题（李秀英是“假”证人）为假。\\n- 于是可推得：李秀英并非假证人，假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 488,
+      "prompt_tokens": 3605,
+      "total_tokens": 4093,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--e9c78267-6158-4061-8446-339fab890f6f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说松村俊夫“污蔑”李秀英是“假”证人。\n- “污蔑”表示虚假指控，所涉命题（李秀英是“假”证人）为假。\n- 于是可推得：李秀英并非假证人，假设为真。"
+      },
+      "id": "call_HUUsYUpCRK3A3JMG1cupH3MT",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3605,
+    "output_tokens": 488,
+    "total_tokens": 4093,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_L6BOmw4xRfXlo0JlDpLhm5Hj",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中明确叙述：“看见路越走越细”，为感知动词“看见”+陈述小句，按叙实/半叙实动词的语义，叙述者将所见内容作为事实呈现。\\n- 无否定或反事实环境，不存在反转或不确定标记。\\n- 因此可推出“路确实越走越细”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 572,
+      "prompt_tokens": 3624,
+      "total_tokens": 4196,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--33a70d2f-2c2d-48c1-ace1-37af149ea17d-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中明确叙述：“看见路越走越细”，为感知动词“看见”+陈述小句，按叙实/半叙实动词的语义，叙述者将所见内容作为事实呈现。\n- 无否定或反事实环境，不存在反转或不确定标记。\n- 因此可推出“路确实越走越细”为真。"
+      },
+      "id": "call_L6BOmw4xRfXlo0JlDpLhm5Hj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3624,
+    "output_tokens": 572,
+    "total_tokens": 4196,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

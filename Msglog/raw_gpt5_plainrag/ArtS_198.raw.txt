@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_XfwmMN6HfbJWCPOpsFAfkKFm",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“猜到”带有成功/实现义，接近“猜中”。从“小张猜到小李喜欢小王”可推知命题“小李喜欢小王”为真。因此假设“小李不喜欢小王”与之矛盾，判为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1369,
+      "prompt_tokens": 3326,
+      "total_tokens": 4695,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--940b6192-8b06-465b-ab9d-f339bdc166a4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“猜到”带有成功/实现义，接近“猜中”。从“小张猜到小李喜欢小王”可推知命题“小李喜欢小王”为真。因此假设“小李不喜欢小王”与之矛盾，判为假。"
+      },
+      "id": "call_XfwmMN6HfbJWCPOpsFAfkKFm",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3326,
+    "output_tokens": 1369,
+    "total_tokens": 4695,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_7VnTupoRAnxeHu53cjOClOS9",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“猜到”在汉语中通常是成功体用法，倾向于预设其宾语小句为真，即从“小张猜到小李生病了”可推知“小李生病了”。因此假设“小李没生病”与前提相矛盾，判为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2658,
+      "prompt_tokens": 3059,
+      "total_tokens": 5717,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2560,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--934bc545-60a4-4a4b-bfbb-641f32274995-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“猜到”在汉语中通常是成功体用法，倾向于预设其宾语小句为真，即从“小张猜到小李生病了”可推知“小李生病了”。因此假设“小李没生病”与前提相矛盾，判为假。"
+      },
+      "id": "call_7VnTupoRAnxeHu53cjOClOS9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3059,
+    "output_tokens": 2658,
+    "total_tokens": 5717,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2560
+    }
+  }
+}

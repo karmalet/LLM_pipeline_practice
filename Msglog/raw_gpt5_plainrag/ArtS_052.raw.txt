@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_UL4fWTemcuGHUrU4wAEZ6MvQ",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) 句中谓词为“记得”，其宾语“小李吃了早饭”描述的是已发生的现实性事态；2) 语言学证据表明，在这种现实性小句中，“记得”通常预设/蕴涵宾语命题为真且不可取消；3) 因此可推出“小李吃了早饭了”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2098,
+      "prompt_tokens": 3543,
+      "total_tokens": 5641,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1984,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--e067990a-1f75-41d3-89fa-45b83b8e0f29-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) 句中谓词为“记得”，其宾语“小李吃了早饭”描述的是已发生的现实性事态；2) 语言学证据表明，在这种现实性小句中，“记得”通常预设/蕴涵宾语命题为真且不可取消；3) 因此可推出“小李吃了早饭了”为真。"
+      },
+      "id": "call_UL4fWTemcuGHUrU4wAEZ6MvQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3543,
+    "output_tokens": 2098,
+    "total_tokens": 5641,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1984
+    }
+  }
+}

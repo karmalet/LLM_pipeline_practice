@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_lOCvuoUlPdoNe83FZevEknRn",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本说“觉着自己一下子被一阵大风吹倒”。“觉着”属感觉/主观判断动词，非叙实，不预设其宾语小句为真；上下文也无独立证据证实或否定被风吹倒这一事实，故真伪不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2723,
+      "prompt_tokens": 2981,
+      "total_tokens": 5704,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2624,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--dd6f321f-0547-44d9-8464-db549c0f6c72-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本说“觉着自己一下子被一阵大风吹倒”。“觉着”属感觉/主观判断动词，非叙实，不预设其宾语小句为真；上下文也无独立证据证实或否定被风吹倒这一事实，故真伪不确定。"
+      },
+      "id": "call_lOCvuoUlPdoNe83FZevEknRn",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2981,
+    "output_tokens": 2723,
+    "total_tokens": 5704,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2624
+    }
+  }
+}

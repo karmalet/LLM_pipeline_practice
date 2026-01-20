@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Kxk8JpRYXCjfULJtdznUvfBi",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “望见”属感知类（看见/望见）半叙实动词，通常预设其所述情景为真。\\n- 文中叙述者说“远远望见几顶鲜艳的帐篷点缀在苍凉的戈壁滩上”，为直接感知的陈述。\\n- 因而可推得当时确实存在几顶鲜艳的帐篷点缀其上，假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1673,
+      "prompt_tokens": 3212,
+      "total_tokens": 4885,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1536,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--633dac14-abe2-44a3-a670-e453b69c4dcc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “望见”属感知类（看见/望见）半叙实动词，通常预设其所述情景为真。\n- 文中叙述者说“远远望见几顶鲜艳的帐篷点缀在苍凉的戈壁滩上”，为直接感知的陈述。\n- 因而可推得当时确实存在几顶鲜艳的帐篷点缀其上，假设成立。"
+      },
+      "id": "call_Kxk8JpRYXCjfULJtdznUvfBi",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3212,
+    "output_tokens": 1673,
+    "total_tokens": 4885,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1536
+    }
+  }
+}

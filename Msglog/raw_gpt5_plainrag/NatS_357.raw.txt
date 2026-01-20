@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_8bXf3m2mgumncKe4hkX5229d",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本明确指出“对海尔产品满意率最高的是北京的消费者”。\\n- 假设陈述“满意率最高的确实是北京的消费者”与文本一致。\\n- 因此可直接判定假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 276,
+      "prompt_tokens": 2967,
+      "total_tokens": 3243,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 192,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--a69d4a1f-4978-424c-be66-9e9e57dff8a4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本明确指出“对海尔产品满意率最高的是北京的消费者”。\n- 假设陈述“满意率最高的确实是北京的消费者”与文本一致。\n- 因此可直接判定假设为真。"
+      },
+      "id": "call_8bXf3m2mgumncKe4hkX5229d",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2967,
+    "output_tokens": 276,
+    "total_tokens": 3243,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 192
+    }
+  }
+}

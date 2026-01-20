@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_woysrE77lQYjotSz2yRTVbYo",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"1) 文中“声言自己是文盲”仅是自称，非事实性承诺。2) 随后描述其“认识秤，会算账，偶尔还能开张发票、收据，字也写得不赖”，显示具备读写与书写能力，与“文盲”相矛盾。故可判定屠夫并非文盲，假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2940,
+      "prompt_tokens": 3206,
+      "total_tokens": 6146,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2816,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--dfe95ecd-a204-4807-8ff8-4e4f7dfa2c1e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "1) 文中“声言自己是文盲”仅是自称，非事实性承诺。2) 随后描述其“认识秤，会算账，偶尔还能开张发票、收据，字也写得不赖”，显示具备读写与书写能力，与“文盲”相矛盾。故可判定屠夫并非文盲，假设为假。"
+      },
+      "id": "call_woysrE77lQYjotSz2yRTVbYo",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3206,
+    "output_tokens": 2940,
+    "total_tokens": 6146,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2816
+    }
+  }
+}

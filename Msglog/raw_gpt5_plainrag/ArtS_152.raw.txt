@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_0ZVZESZnswv7eRt6aWk6N4SU",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“声言”是非叙实谓词，只表达一方的说法，不预设其内容为真。文本仅说明政府“声称不愿意谈判”，无法据此断定政府真实是否愿意谈判。因此对“政府愿意谈判”无法判断真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1374,
+      "prompt_tokens": 3328,
+      "total_tokens": 4702,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--45aa934a-edf4-4409-a860-8b431935e1e0-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“声言”是非叙实谓词，只表达一方的说法，不预设其内容为真。文本仅说明政府“声称不愿意谈判”，无法据此断定政府真实是否愿意谈判。因此对“政府愿意谈判”无法判断真伪。"
+      },
+      "id": "call_0ZVZESZnswv7eRt6aWk6N4SU",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3328,
+    "output_tokens": 1374,
+    "total_tokens": 4702,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

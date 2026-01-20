@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_56XbQYYFr8K45nGQd3ZQ2mep",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本表述“真后悔嫁到台湾来”是对已发生行为的后悔，常规解读为她确已嫁到台湾。假设称“她没嫁到台湾来”与前提相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 982,
+      "prompt_tokens": 2801,
+      "total_tokens": 3783,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3017e19b-8605-4a9c-94d1-93bc26680bab-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本表述“真后悔嫁到台湾来”是对已发生行为的后悔，常规解读为她确已嫁到台湾。假设称“她没嫁到台湾来”与前提相矛盾，故为假。"
+      },
+      "id": "call_56XbQYYFr8K45nGQd3ZQ2mep",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2801,
+    "output_tokens": 982,
+    "total_tokens": 3783,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_P7F0mgGgjxR7SllmeMr6wBq4",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本明确说“笔者…发现该产品确实具有扩大别人说话音量的作用”，并描述有效距离与噪声情况。\\n- 假设与该陈述一致，即认定产品确有放大他人说话音量的功能。\\n- 因此可根据文本直接断定假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1129,
+      "prompt_tokens": 3600,
+      "total_tokens": 4729,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9e87f0fa-df96-49a7-96a4-4ffa837355ef-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本明确说“笔者…发现该产品确实具有扩大别人说话音量的作用”，并描述有效距离与噪声情况。\n- 假设与该陈述一致，即认定产品确有放大他人说话音量的功能。\n- 因此可根据文本直接断定假设为真。"
+      },
+      "id": "call_P7F0mgGgjxR7SllmeMr6wBq4",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3600,
+    "output_tokens": 1129,
+    "total_tokens": 4729,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_NVCNHoxcptGFC8qu0rbEgcN1",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只是说“令她时时感叹：‘中华文化的影响真是无处不在。’”。“感叹”表达主观感受，不是事实性（叙实）谓词，不能保证所嵌命题为真。尽管列举了一些现象，但不足以严格推出“无处不在”。因此无法根据文本判断该命题真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 693,
+      "prompt_tokens": 3761,
+      "total_tokens": 4454,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f85ae9be-9f78-4409-b46e-a27fe9807720-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只是说“令她时时感叹：‘中华文化的影响真是无处不在。’”。“感叹”表达主观感受，不是事实性（叙实）谓词，不能保证所嵌命题为真。尽管列举了一些现象，但不足以严格推出“无处不在”。因此无法根据文本判断该命题真伪。"
+      },
+      "id": "call_NVCNHoxcptGFC8qu0rbEgcN1",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3761,
+    "output_tokens": 693,
+    "total_tokens": 4454,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

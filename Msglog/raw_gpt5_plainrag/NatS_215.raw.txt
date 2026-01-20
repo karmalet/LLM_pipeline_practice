@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_o0q3qZCvPJlxSNXyYPmcCZ8N",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“使人怀疑他与当前基民盟的丑闻有关”，属于怀疑类表述。\\n- “怀疑”并不断言命题为真，只表达不确定的可能性。\\n- 因此无法据此确定他确实与该丑闻有关，真值不明。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 935,
+      "prompt_tokens": 3413,
+      "total_tokens": 4348,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9eee05a2-501a-4131-b95c-03df7e1d81a8-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“使人怀疑他与当前基民盟的丑闻有关”，属于怀疑类表述。\n- “怀疑”并不断言命题为真，只表达不确定的可能性。\n- 因此无法据此确定他确实与该丑闻有关，真值不明。"
+      },
+      "id": "call_o0q3qZCvPJlxSNXyYPmcCZ8N",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3413,
+    "output_tokens": 935,
+    "total_tokens": 4348,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

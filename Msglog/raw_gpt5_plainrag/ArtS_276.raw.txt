@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_u9zagN3B5Vz97m7bwjLQA5G2",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“觉着”属“感觉”类非叙实动词；否定式“没觉着p”仅表明主语不持有p的看法。按语料与分析，否定后可能诱发“p为假”的倾向性推断，但不构成必然蕴含。因此，无法仅据“小张没觉着小李喜欢小王”确定“（不）喜欢”的真实状态，结论不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3777,
+      "prompt_tokens": 3122,
+      "total_tokens": 6899,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3648,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3e1333a5-754e-4299-bd12-24bf3bf73cd1-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“觉着”属“感觉”类非叙实动词；否定式“没觉着p”仅表明主语不持有p的看法。按语料与分析，否定后可能诱发“p为假”的倾向性推断，但不构成必然蕴含。因此，无法仅据“小张没觉着小李喜欢小王”确定“（不）喜欢”的真实状态，结论不确定。"
+      },
+      "id": "call_u9zagN3B5Vz97m7bwjLQA5G2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3122,
+    "output_tokens": 3777,
+    "total_tokens": 6899,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 3648
+    }
+  }
+}

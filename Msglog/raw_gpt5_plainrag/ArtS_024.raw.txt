@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_BQbzyGcjBpDKYFwCjxKBYklc",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“觉察出/察觉到”属于事实性感知动词，通常预设其补足语为真。前提说“小张觉察出字迹有变化”，若已觉察出，则客观上确有变化。因此假设“字迹有变化”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 603,
+      "prompt_tokens": 3287,
+      "total_tokens": 3890,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ba470da4-2fa2-4589-9c24-39839987fc32-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“觉察出/察觉到”属于事实性感知动词，通常预设其补足语为真。前提说“小张觉察出字迹有变化”，若已觉察出，则客观上确有变化。因此假设“字迹有变化”为真。"
+      },
+      "id": "call_BQbzyGcjBpDKYFwCjxKBYklc",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3287,
+    "output_tokens": 603,
+    "total_tokens": 3890,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

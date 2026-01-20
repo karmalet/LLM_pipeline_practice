@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_lXdhjIu6yA2USYcDyyKuUlBq",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“意识到”属于事实性（factive）动词，通常预设其后宾语从句内容为真。文本中说“我现在意识到‘法轮功’救不了我”，因此命题“法轮功救不了我”为真。假设与该命题一致（“确实”仅加强肯定），故判断为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 555,
+      "prompt_tokens": 3446,
+      "total_tokens": 4001,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c323fef1-5d5c-442d-9a92-8f4cd1c89e88-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“意识到”属于事实性（factive）动词，通常预设其后宾语从句内容为真。文本中说“我现在意识到‘法轮功’救不了我”，因此命题“法轮功救不了我”为真。假设与该命题一致（“确实”仅加强肯定），故判断为真。"
+      },
+      "id": "call_lXdhjIu6yA2USYcDyyKuUlBq",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3446,
+    "output_tokens": 555,
+    "total_tokens": 4001,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

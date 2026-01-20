@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_zptUcuPURGTPkmC7m521bPlQ",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “觉出”属感知/察觉类叙实动词，通常预设其宾语小句为真。\\n- 文本“小张觉出小李不是卧底”据此默认“小李不是卧底”为事实。\\n- 因而假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1051,
+      "prompt_tokens": 3272,
+      "total_tokens": 4323,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1536
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--38b11629-e28a-421d-b72a-816a471b5531-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “觉出”属感知/察觉类叙实动词，通常预设其宾语小句为真。\n- 文本“小张觉出小李不是卧底”据此默认“小李不是卧底”为事实。\n- 因而假设成立。"
+      },
+      "id": "call_zptUcuPURGTPkmC7m521bPlQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3272,
+    "output_tokens": 1051,
+    "total_tokens": 4323,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1536
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

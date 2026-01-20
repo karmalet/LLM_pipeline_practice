@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_eJUMOp5FiU6y2nBP4PLgeCNQ",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说“已被3000例实践证实是一种行之有效的治疗方法”。\\n- “证实”型谓词使其补足语（“行之有效”）为真。\\n- 因此可推出该系列治疗方法确实行之有效，假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 609,
+      "prompt_tokens": 2993,
+      "total_tokens": 3602,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6a22c0b6-1546-433b-95ee-94ee13c21901-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说“已被3000例实践证实是一种行之有效的治疗方法”。\n- “证实”型谓词使其补足语（“行之有效”）为真。\n- 因此可推出该系列治疗方法确实行之有效，假设为真。"
+      },
+      "id": "call_eJUMOp5FiU6y2nBP4PLgeCNQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2993,
+    "output_tokens": 609,
+    "total_tokens": 3602,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

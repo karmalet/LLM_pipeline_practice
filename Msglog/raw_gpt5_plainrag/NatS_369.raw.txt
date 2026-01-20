@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_iiWKt4EWDUAEwoj5GMbb32qW",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"前提为肯定陈述“看见不远处一家企业的烟囱冒出滚滚黑烟”。“看见”为感知类半叙实动词，在非疑问、非否定环境下预设其宾语小句为真。因此可推出烟囱确实冒出滚滚黑烟，判定为T。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1386,
+      "prompt_tokens": 3502,
+      "total_tokens": 4888,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1280,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--17491d11-7fcc-48f1-bf42-91f668cdb0e4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "前提为肯定陈述“看见不远处一家企业的烟囱冒出滚滚黑烟”。“看见”为感知类半叙实动词，在非疑问、非否定环境下预设其宾语小句为真。因此可推出烟囱确实冒出滚滚黑烟，判定为T。"
+      },
+      "id": "call_iiWKt4EWDUAEwoj5GMbb32qW",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3502,
+    "output_tokens": 1386,
+    "total_tokens": 4888,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1280
+    }
+  }
+}

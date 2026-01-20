@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_5km4tRIdWDU2gUFOyCNCSG3s",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说传单“称夏普…污蔑孩子是黑白混血”。\\n- “污蔑”是反叙实谓词，预设其所述命题为假，即“孩子是黑白混血”为假。\\n- 因此可推得孩子不是黑白混血。\\n- 假设“孩子确实不是黑白混血”与上述推断一致，判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1086,
+      "prompt_tokens": 3592,
+      "total_tokens": 4678,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5f3e69f9-d859-4189-8760-6b2cc2986c45-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说传单“称夏普…污蔑孩子是黑白混血”。\n- “污蔑”是反叙实谓词，预设其所述命题为假，即“孩子是黑白混血”为假。\n- 因此可推得孩子不是黑白混血。\n- 假设“孩子确实不是黑白混血”与上述推断一致，判定为真。"
+      },
+      "id": "call_5km4tRIdWDU2gUFOyCNCSG3s",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3592,
+    "output_tokens": 1086,
+    "total_tokens": 4678,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

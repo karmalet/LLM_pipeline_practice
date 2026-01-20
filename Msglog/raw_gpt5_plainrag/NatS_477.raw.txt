@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_6IEEY7J21i1EabuC7id1NDUa",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“清楚”属事实性/叙实性谓词，通常预设其补句为真。文本表述“我越来越清楚，美国高科技由信息产业（含网络）和生物制药推动”，等同断言该命题成立；假设与补句内容一致，仅加“确实”加强语气，故判断为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1004,
+      "prompt_tokens": 3001,
+      "total_tokens": 4005,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8d6a1d46-0ba4-489f-a799-98f33c8c8bac-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“清楚”属事实性/叙实性谓词，通常预设其补句为真。文本表述“我越来越清楚，美国高科技由信息产业（含网络）和生物制药推动”，等同断言该命题成立；假设与补句内容一致，仅加“确实”加强语气，故判断为真。"
+      },
+      "id": "call_6IEEY7J21i1EabuC7id1NDUa",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3001,
+    "output_tokens": 1004,
+    "total_tokens": 4005,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

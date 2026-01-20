@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_QU2mhU811I2pP89oiSW0mS3d",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“看出”属认知/感知类近似事实性动词，通常预设其宾语小句为真。前提表述为“看出…显然别有用心”，因此可推知该老板确有别有用心。假设说其确实不是别有用心，与前提相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 493,
+      "prompt_tokens": 3262,
+      "total_tokens": 3755,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5b33de7b-0ac9-4e0e-b016-6811640e82e4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“看出”属认知/感知类近似事实性动词，通常预设其宾语小句为真。前提表述为“看出…显然别有用心”，因此可推知该老板确有别有用心。假设说其确实不是别有用心，与前提相矛盾，故为假。"
+      },
+      "id": "call_QU2mhU811I2pP89oiSW0mS3d",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3262,
+    "output_tokens": 493,
+    "total_tokens": 3755,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

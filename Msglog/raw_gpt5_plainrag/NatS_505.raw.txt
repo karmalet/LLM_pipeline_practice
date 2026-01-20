@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_YclY0aR2cKVbC1ZSmXZGiYIu",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确表示“从其话语中不难听出，商业银行对国家助学贷款的积极性并不是很高”。这直接支持假设“积极性确实不是很高”。因此结论为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 269,
+      "prompt_tokens": 3456,
+      "total_tokens": 3725,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 192,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5d30f509-650c-432e-b870-e068ace39011-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确表示“从其话语中不难听出，商业银行对国家助学贷款的积极性并不是很高”。这直接支持假设“积极性确实不是很高”。因此结论为真。"
+      },
+      "id": "call_YclY0aR2cKVbC1ZSmXZGiYIu",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3456,
+    "output_tokens": 269,
+    "total_tokens": 3725,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 192
+    }
+  }
+}

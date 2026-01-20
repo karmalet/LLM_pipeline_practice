@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_aPfctBMpqEZxwNCECZtF7zww",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “目睹/看见”属于感知动词，通常对其所述事件具有较强的叙实性。\\n- 文中直接陈述：艾瑞阿卡斯两岁时“目睹了父亲残暴地杀害母亲”，这在叙事实用上断言该事件确已发生。\\n- 因而可推出：父亲确实残暴地杀害了母亲。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 637,
+      "prompt_tokens": 3818,
+      "total_tokens": 4455,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b0c82b1b-98b3-4c37-a80e-e6c9e87eab16-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “目睹/看见”属于感知动词，通常对其所述事件具有较强的叙实性。\n- 文中直接陈述：艾瑞阿卡斯两岁时“目睹了父亲残暴地杀害母亲”，这在叙事实用上断言该事件确已发生。\n- 因而可推出：父亲确实残暴地杀害了母亲。"
+      },
+      "id": "call_aPfctBMpqEZxwNCECZtF7zww",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3818,
+    "output_tokens": 637,
+    "total_tokens": 4455,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_E3GkeIQlcy4eSDevA9BzcqTX",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“承认”是典型叙实/事实性动词，带出其后的命题为真。文本说“军方才承认，马洛费耶夫将军于18日视察解放了的工厂区时中了武装分子埋伏而失踪”，据此可推知该事件确已发生，故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1264,
+      "prompt_tokens": 3318,
+      "total_tokens": 4582,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8a0fa1fa-6ccc-440a-aca2-1701990ee3b7-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“承认”是典型叙实/事实性动词，带出其后的命题为真。文本说“军方才承认，马洛费耶夫将军于18日视察解放了的工厂区时中了武装分子埋伏而失踪”，据此可推知该事件确已发生，故假设为真。"
+      },
+      "id": "call_E3GkeIQlcy4eSDevA9BzcqTX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3318,
+    "output_tokens": 1264,
+    "total_tokens": 4582,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

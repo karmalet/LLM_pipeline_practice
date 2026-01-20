@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Q33gf92bVx9Prt6RGKEe3xQv",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中先说他“老是幻想”雕塑能变成理想中的某人。\\n- 关键在于后续：明确叙述“后来真的这个奇迹就出现了”，雕塑从石头变成真人，正是他所期待的人。\\n- 因此在该叙述所构建的情境中，该转变实际发生，证明“能变成”成立，命题为真。\\n- 虽然“幻想”一般预设非现实，但这里被后续事实叙述所覆盖，不影响结论。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2010,
+      "prompt_tokens": 3927,
+      "total_tokens": 5937,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1856,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d4ce350e-335c-4611-9859-4e7389ada058-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中先说他“老是幻想”雕塑能变成理想中的某人。\n- 关键在于后续：明确叙述“后来真的这个奇迹就出现了”，雕塑从石头变成真人，正是他所期待的人。\n- 因此在该叙述所构建的情境中，该转变实际发生，证明“能变成”成立，命题为真。\n- 虽然“幻想”一般预设非现实，但这里被后续事实叙述所覆盖，不影响结论。"
+      },
+      "id": "call_Q33gf92bVx9Prt6RGKEe3xQv",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3927,
+    "output_tokens": 2010,
+    "total_tokens": 5937,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1856
+    }
+  }
+}

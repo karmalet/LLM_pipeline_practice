@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_9yhGlCbdqvNTdpIpgzZF9TJf",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本中明确指出“同时也暴露出外币现钞管理方面存在一定的问题”。“暴露出…存在”是对问题存在的直接陈述，因此可推知假设“外币现钞管理方面确实存在一定的问题”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 342,
+      "prompt_tokens": 3245,
+      "total_tokens": 3587,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3dc85d47-b385-4612-9430-20714117a16c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本中明确指出“同时也暴露出外币现钞管理方面存在一定的问题”。“暴露出…存在”是对问题存在的直接陈述，因此可推知假设“外币现钞管理方面确实存在一定的问题”为真。"
+      },
+      "id": "call_9yhGlCbdqvNTdpIpgzZF9TJf",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3245,
+    "output_tokens": 342,
+    "total_tokens": 3587,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

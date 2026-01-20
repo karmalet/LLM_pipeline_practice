@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_s8NJYvrGLDEf6ACYxTpYVvDV",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确称飞机“目睹导弹在前方爆炸”，属亲历感知述谓且未被否定，按半叙实/感知类动词预设其宾语小句为真，可推出导弹确实在前方爆炸。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 665,
+      "prompt_tokens": 3598,
+      "total_tokens": 4263,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8846ca46-7911-4dfd-9708-a285f3a64e11-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确称飞机“目睹导弹在前方爆炸”，属亲历感知述谓且未被否定，按半叙实/感知类动词预设其宾语小句为真，可推出导弹确实在前方爆炸。"
+      },
+      "id": "call_s8NJYvrGLDEf6ACYxTpYVvDV",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3598,
+    "output_tokens": 665,
+    "total_tokens": 4263,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_wGZD6vcZmFfGh0gshtGrg5tA",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “怀疑”是非叙实的态度动词，对宾语命题不提供事实承诺。\\n- “小张没有怀疑今年的棉花产量会增加”仅表明主体不怀疑/倾向相信“会增加”，可产生否定提升类读法，但不等于事实为真。\\n- 因而既不能据此断定“会增加”，也不能断定“不会增加”。对假设真伪无法确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 4487,
+      "prompt_tokens": 3385,
+      "total_tokens": 7872,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 4352,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bb421e7f-f78c-4ad3-989c-b55a51ec0e66-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “怀疑”是非叙实的态度动词，对宾语命题不提供事实承诺。\n- “小张没有怀疑今年的棉花产量会增加”仅表明主体不怀疑/倾向相信“会增加”，可产生否定提升类读法，但不等于事实为真。\n- 因而既不能据此断定“会增加”，也不能断定“不会增加”。对假设真伪无法确定。"
+      },
+      "id": "call_wGZD6vcZmFfGh0gshtGrg5tA",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3385,
+    "output_tokens": 4487,
+    "total_tokens": 7872,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 4352
+    }
+  }
+}

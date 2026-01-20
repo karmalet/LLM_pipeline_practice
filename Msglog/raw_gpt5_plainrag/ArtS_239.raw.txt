@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_VTs2zUi3aIeWvr42NUOregfW",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “承认”属于半叙实：肯定式“承认p”倾向于让说话者认为p为真；否定式“不承认p”并不推出p或¬p。\\n- 文本为“小张不承认[小李打过小王]”，仅表明小张未作承认或否认，不涉及事实真伪。\\n- 因此无法由此判断“[小李没打过小王]”是否为真，结论不可确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1230,
+      "prompt_tokens": 3541,
+      "total_tokens": 4771,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bc723696-8895-472f-9bda-16c18879afcc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “承认”属于半叙实：肯定式“承认p”倾向于让说话者认为p为真；否定式“不承认p”并不推出p或¬p。\n- 文本为“小张不承认[小李打过小王]”，仅表明小张未作承认或否认，不涉及事实真伪。\n- 因此无法由此判断“[小李没打过小王]”是否为真，结论不可确定。"
+      },
+      "id": "call_VTs2zUi3aIeWvr42NUOregfW",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3541,
+    "output_tokens": 1230,
+    "total_tokens": 4771,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

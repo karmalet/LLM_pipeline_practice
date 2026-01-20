@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_8y41TKM22YAJXWX5GIFGNltX",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"给定文本是条件性建议：“如果觉察出自己有希望中选……就再打电话”。“有希望中选”只是前提条件的假设，并未被陈述为已发生的事实。因此不能据此判断“自己确实有希望中选”是否为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1180,
+      "prompt_tokens": 3091,
+      "total_tokens": 4271,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f8521d6c-e1f3-41b7-b0b5-7377e50b721e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "给定文本是条件性建议：“如果觉察出自己有希望中选……就再打电话”。“有希望中选”只是前提条件的假设，并未被陈述为已发生的事实。因此不能据此判断“自己确实有希望中选”是否为真。"
+      },
+      "id": "call_8y41TKM22YAJXWX5GIFGNltX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3091,
+    "output_tokens": 1180,
+    "total_tokens": 4271,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

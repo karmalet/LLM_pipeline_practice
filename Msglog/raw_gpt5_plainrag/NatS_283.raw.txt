@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_d005s9ar9EeFrnBHGPewp2DP",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本陈述“谢元立敏锐地觉察出机械手是发展的必然趋势”。“觉察出”属结果性的认知/发现类动词，通常预设其所带命题为真，叙述者据此将该命题当作事实。因此可判断：机械手确实是发展的必然趋势。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2791,
+      "prompt_tokens": 3072,
+      "total_tokens": 5863,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2688,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bb3d0be4-b46f-4194-8a3d-a2da464cbafc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本陈述“谢元立敏锐地觉察出机械手是发展的必然趋势”。“觉察出”属结果性的认知/发现类动词，通常预设其所带命题为真，叙述者据此将该命题当作事实。因此可判断：机械手确实是发展的必然趋势。"
+      },
+      "id": "call_d005s9ar9EeFrnBHGPewp2DP",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3072,
+    "output_tokens": 2791,
+    "total_tokens": 5863,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2688
+    }
+  }
+}

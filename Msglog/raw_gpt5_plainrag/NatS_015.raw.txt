@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_RrxVmlgrHc4cRW2KpVpjFW0F",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是说“她过去常常哀叹没有合适自己的白马王子”，属于对主观情绪/看法的转述。\\n- “哀叹”并非事实性（非叙实）谓词，不能保证其所说“没有合适的白马王子”为真或为假。\\n- 因而无法据此判断“确实存在合适自己的白马王子”是否为真。结论：U。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2567,
+      "prompt_tokens": 3525,
+      "total_tokens": 6092,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6ca2767a-bf96-4183-99d8-d24c3eaed3b5-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是说“她过去常常哀叹没有合适自己的白马王子”，属于对主观情绪/看法的转述。\n- “哀叹”并非事实性（非叙实）谓词，不能保证其所说“没有合适的白马王子”为真或为假。\n- 因而无法据此判断“确实存在合适自己的白马王子”是否为真。结论：U。"
+      },
+      "id": "call_RrxVmlgrHc4cRW2KpVpjFW0F",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3525,
+    "output_tokens": 2567,
+    "total_tokens": 6092,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

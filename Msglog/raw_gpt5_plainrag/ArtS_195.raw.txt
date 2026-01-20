@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Gxf7zEzTZeadGpPOoxbXGjBU",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“领悟到P”属于叙实/事实性动词，一般预设其宾语小句P为真；该预设在否定下仍保留。因此由“小张没有领悟到[勇敢不是最困难的事]”可推出P为真，即“勇敢不是最困难的事”成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 806,
+      "prompt_tokens": 3503,
+      "total_tokens": 4309,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3ae141d1-9f9a-4ea3-aa84-82f027a3e54a-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“领悟到P”属于叙实/事实性动词，一般预设其宾语小句P为真；该预设在否定下仍保留。因此由“小张没有领悟到[勇敢不是最困难的事]”可推出P为真，即“勇敢不是最困难的事”成立。"
+      },
+      "id": "call_Gxf7zEzTZeadGpPOoxbXGjBU",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3503,
+    "output_tokens": 806,
+    "total_tokens": 4309,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

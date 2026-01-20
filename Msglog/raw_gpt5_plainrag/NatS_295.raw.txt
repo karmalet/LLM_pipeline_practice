@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_FY29m3oqr98858V9cZ73CrP7",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本说“我就觉察出这是一匹挣脱了笼头的野马”。“觉察出”属事实性/叙实动词，通常预设其宾语小句为真，因此可推出“这是一匹挣脱了笼头的野马”在文中为真，假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 869,
+      "prompt_tokens": 3382,
+      "total_tokens": 4251,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b761b1c3-9e01-44cf-b243-6a0ca2ddb677-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本说“我就觉察出这是一匹挣脱了笼头的野马”。“觉察出”属事实性/叙实动词，通常预设其宾语小句为真，因此可推出“这是一匹挣脱了笼头的野马”在文中为真，假设成立。"
+      },
+      "id": "call_FY29m3oqr98858V9cZ73CrP7",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3382,
+    "output_tokens": 869,
+    "total_tokens": 4251,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

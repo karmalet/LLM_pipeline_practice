@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_PPuCwhVLnipqGRpDVhlAnmFw",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“后悔”是叙实谓词，通常预设其补语命题为真。文本说“安娜非常后悔带了这个小讨债鬼去”，可推出她确实带去了。因此假设“安娜确实没带这个小讨债鬼去”与文本矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1893,
+      "prompt_tokens": 3613,
+      "total_tokens": 5506,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1792,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fadf51d0-2153-481d-9873-2854999776a3-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“后悔”是叙实谓词，通常预设其补语命题为真。文本说“安娜非常后悔带了这个小讨债鬼去”，可推出她确实带去了。因此假设“安娜确实没带这个小讨债鬼去”与文本矛盾，为假。"
+      },
+      "id": "call_PPuCwhVLnipqGRpDVhlAnmFw",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3613,
+    "output_tokens": 1893,
+    "total_tokens": 5506,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1792
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_S3sMLk5lx1vg9Zejb2Ei56wI",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"1) 句子“我说我羡慕她的丈夫以她为中心”中，“羡慕”属于情感类事实性（factive）谓词，通常预设其宾语小句为真。2) 因而可推知“她的丈夫以她为中心”成立。3) 假设声称“她的丈夫确实没有以她为中心”，与上述预设相反，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1153,
+      "prompt_tokens": 3561,
+      "total_tokens": 4714,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--e9f8d3b9-fe31-4cee-897c-c9b86ad85f80-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "1) 句子“我说我羡慕她的丈夫以她为中心”中，“羡慕”属于情感类事实性（factive）谓词，通常预设其宾语小句为真。2) 因而可推知“她的丈夫以她为中心”成立。3) 假设声称“她的丈夫确实没有以她为中心”，与上述预设相反，故为假。"
+      },
+      "id": "call_S3sMLk5lx1vg9Zejb2Ei56wI",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3561,
+    "output_tokens": 1153,
+    "total_tokens": 4714,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

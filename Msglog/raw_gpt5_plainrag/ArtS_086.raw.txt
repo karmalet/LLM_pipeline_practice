@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_AUIus5e5Mu1PJfd7ENaupcNB",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “揭露P”在肯定式下通常带有事实性倾向（若揭露成功，一般默认P为真）。\\n- 但否定式“小张没有揭露P”只述说“揭露”这一行为未发生，不对P的真值作承诺。\\n- 因此，仅据前提“没有揭露”无法推出“小李是卧底”真或假，结论是不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3069,
+      "prompt_tokens": 3486,
+      "total_tokens": 6555,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2944,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1280
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4d627c76-2376-4a91-9302-42eeb95423d8-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “揭露P”在肯定式下通常带有事实性倾向（若揭露成功，一般默认P为真）。\n- 但否定式“小张没有揭露P”只述说“揭露”这一行为未发生，不对P的真值作承诺。\n- 因此，仅据前提“没有揭露”无法推出“小李是卧底”真或假，结论是不确定。"
+      },
+      "id": "call_AUIus5e5Mu1PJfd7ENaupcNB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3486,
+    "output_tokens": 3069,
+    "total_tokens": 6555,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1280
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2944
+    }
+  }
+}

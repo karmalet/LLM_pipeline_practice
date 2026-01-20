@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_TJxb7pZTArHsAARN226zBhBj",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说“让消费者感觉买车用车是件很头疼很复杂的事”。“感觉”属于非事实性态度表达，不能据此推出命题本身真或假。假设声称“确实不是头疼复杂的事”也无法从文本确定，因此无法判断。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1247,
+      "prompt_tokens": 3247,
+      "total_tokens": 4494,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--cf2b6033-c735-436f-b919-dfafe22f31da-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说“让消费者感觉买车用车是件很头疼很复杂的事”。“感觉”属于非事实性态度表达，不能据此推出命题本身真或假。假设声称“确实不是头疼复杂的事”也无法从文本确定，因此无法判断。"
+      },
+      "id": "call_TJxb7pZTArHsAARN226zBhBj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3247,
+    "output_tokens": 1247,
+    "total_tokens": 4494,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

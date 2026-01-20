@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_tCZsMSASwb9WGo2abwfBissB",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"前提说他“望见许多人涌出城来看他上绞架”。感知动词“望见/看见”通常使其宾语小句为真，可推知确有许多人出来看。假设“确实没有人从城里出来看他上绞架”与前提直接矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 683,
+      "prompt_tokens": 3401,
+      "total_tokens": 4084,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2f8a854f-56c1-461f-bcdd-d99eb3d5c31c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "前提说他“望见许多人涌出城来看他上绞架”。感知动词“望见/看见”通常使其宾语小句为真，可推知确有许多人出来看。假设“确实没有人从城里出来看他上绞架”与前提直接矛盾，因此为假。"
+      },
+      "id": "call_tCZsMSASwb9WGo2abwfBissB",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3401,
+    "output_tokens": 683,
+    "total_tokens": 4084,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

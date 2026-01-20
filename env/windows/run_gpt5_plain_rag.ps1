@@ -9,7 +9,7 @@ $ErrorActionPreference = "Stop"
 
 # 3) 실행
 # - 'py' 런처가 없는 PC에서도 동작하도록 venv의 python을 사용
-$scriptPath = Join-Path $PSScriptRoot "..\..\src\2_GPT5_Plain_RAG.py"
+$scriptPath = Join-Path $PSScriptRoot "..\..\src\2_GPT5_Plain_RAG_localsave.py"
 
 Write-Host ""
 Write-Host "=============================="

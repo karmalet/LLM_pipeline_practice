@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_TwYaodo6mQ90MOpKCGBjlsS8",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“我曾目睹日寇飞机对闸北狂轰滥炸”。\\n- “目睹”为感知类述谓，正向断言其所述事件确实发生。\\n- 因而“日寇飞机对闸北狂轰滥炸”为真。\\n- 假设称“确实没有…狂轰滥炸”，与前提矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 707,
+      "prompt_tokens": 3294,
+      "total_tokens": 4001,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--37bc2224-7d4b-4258-957f-a003ac9761df-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“我曾目睹日寇飞机对闸北狂轰滥炸”。\n- “目睹”为感知类述谓，正向断言其所述事件确实发生。\n- 因而“日寇飞机对闸北狂轰滥炸”为真。\n- 假设称“确实没有…狂轰滥炸”，与前提矛盾，故为假。"
+      },
+      "id": "call_TwYaodo6mQ90MOpKCGBjlsS8",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3294,
+    "output_tokens": 707,
+    "total_tokens": 4001,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

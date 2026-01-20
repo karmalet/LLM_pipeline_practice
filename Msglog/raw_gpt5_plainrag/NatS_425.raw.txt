@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_gJYIeWzVAd9jAkQIFyyZr44G",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本明确写道：报告“批评加拿大对小麦、奶制品和禽、蛋的进口实行限制”。\\n- “批评某人因做了X”通常预设X已发生，此处即加拿大实行了进口限制。\\n- 因此，依据文本可判定假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 932,
+      "prompt_tokens": 3597,
+      "total_tokens": 4529,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ad9715ec-eaa5-408b-b1af-0edcf368f786-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本明确写道：报告“批评加拿大对小麦、奶制品和禽、蛋的进口实行限制”。\n- “批评某人因做了X”通常预设X已发生，此处即加拿大实行了进口限制。\n- 因此，依据文本可判定假设为真。"
+      },
+      "id": "call_gJYIeWzVAd9jAkQIFyyZr44G",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3597,
+    "output_tokens": 932,
+    "total_tokens": 4529,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

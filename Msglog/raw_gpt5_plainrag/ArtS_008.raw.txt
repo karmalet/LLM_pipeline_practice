@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_G1PqBstiP9zJ5lQMamoKcskR",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- “听见”属于感知类（半叙实）动词，在无情态干预的肯定式中通常承认其宾语小句为真。\\n- 文本“小张听见[小李没说话]”据此可推出“小李没说话”为真。\\n- 假设“【小李说话了】”与该结论相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2554,
+      "prompt_tokens": 3604,
+      "total_tokens": 6158,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8f7c4b9a-de67-4122-a7a9-6ecc27105928-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- “听见”属于感知类（半叙实）动词，在无情态干预的肯定式中通常承认其宾语小句为真。\n- 文本“小张听见[小李没说话]”据此可推出“小李没说话”为真。\n- 假设“【小李说话了】”与该结论相矛盾，故为假。"
+      },
+      "id": "call_G1PqBstiP9zJ5lQMamoKcskR",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3604,
+    "output_tokens": 2554,
+    "total_tokens": 6158,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

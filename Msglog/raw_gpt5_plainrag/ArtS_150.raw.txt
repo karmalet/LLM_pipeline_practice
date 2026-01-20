@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_TJfARDXN7zPb6uwv7p45MkI4",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- “声言”属于非叙实/非事实类态度动词，报道的是说话/主张本身，不预设所嵌小句的真值。\\n- 文本只说明“小张声言小李无意挑衅”，并不能据此断定“小李是否有意挑衅”。\\n- 因而“有意挑衅”与“无意挑衅”两种可能都未被排除，假设真伪无法由给定前提确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 3665,
+      "prompt_tokens": 3506,
+      "total_tokens": 7171,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3520,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4b9d9f13-fbc6-4616-bde3-ab4fbf36e4fa-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- “声言”属于非叙实/非事实类态度动词，报道的是说话/主张本身，不预设所嵌小句的真值。\n- 文本只说明“小张声言小李无意挑衅”，并不能据此断定“小李是否有意挑衅”。\n- 因而“有意挑衅”与“无意挑衅”两种可能都未被排除，假设真伪无法由给定前提确定。"
+      },
+      "id": "call_TJfARDXN7zPb6uwv7p45MkI4",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3506,
+    "output_tokens": 3665,
+    "total_tokens": 7171,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 3520
+    }
+  }
+}

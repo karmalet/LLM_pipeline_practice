@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ZzXdK3eQph4jOp0pc6A9GkLc",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本只说“手枪选手感觉准星泛虚光”，来源为“感觉”，属主观感知，非事实性断言。\\n- “感觉P”既不保证P为真，也不推出非P为真。\\n- 因而无法根据文本确定准星是否真的（不）泛虚光。\\n- 假设断言“确实没有泛虚光”，文本不足以证成或反驳，故结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1606,
+      "prompt_tokens": 3079,
+      "total_tokens": 4685,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1472,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--dfdfde0a-2fe1-4e79-99e0-b5a049d65bd7-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本只说“手枪选手感觉准星泛虚光”，来源为“感觉”，属主观感知，非事实性断言。\n- “感觉P”既不保证P为真，也不推出非P为真。\n- 因而无法根据文本确定准星是否真的（不）泛虚光。\n- 假设断言“确实没有泛虚光”，文本不足以证成或反驳，故结论为不能确定。"
+      },
+      "id": "call_ZzXdK3eQph4jOp0pc6A9GkLc",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3079,
+    "output_tokens": 1606,
+    "total_tokens": 4685,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1472
+    }
+  }
+}

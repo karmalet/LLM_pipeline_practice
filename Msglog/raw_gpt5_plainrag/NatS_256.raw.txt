@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_JcsFNXqS8l5EjFd5J4oGWN4j",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中直接表述：1988年1月8日，他被辽宁省体委聘为省自行车队主教练。\\n- 该事实出现在“至今确切地记得”的框架下，“确切地”强化记忆的可靠性，通常承认补语命题为真。\\n- 因此可以推出：他确实被辽宁省体委聘为省自行车队主教练。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 509,
+      "prompt_tokens": 3288,
+      "total_tokens": 3797,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b2a53819-047c-4c9a-bbda-29aa192e75ee-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中直接表述：1988年1月8日，他被辽宁省体委聘为省自行车队主教练。\n- 该事实出现在“至今确切地记得”的框架下，“确切地”强化记忆的可靠性，通常承认补语命题为真。\n- 因此可以推出：他确实被辽宁省体委聘为省自行车队主教练。"
+      },
+      "id": "call_JcsFNXqS8l5EjFd5J4oGWN4j",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3288,
+    "output_tokens": 509,
+    "total_tokens": 3797,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

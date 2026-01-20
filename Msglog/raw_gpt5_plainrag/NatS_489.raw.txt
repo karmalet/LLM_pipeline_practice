@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_zjQecL8Ewdo8TDyb6cUX1vsV",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是说“弗莱舍…声言自己喜欢这个工作”。\\n- “声言/声称”属非叙实谓词，不预设其宾语命题为真，只表明说话人的主观表态。\\n- 因此，无法据此推出他确实喜欢这份工作，真伪不定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1451,
+      "prompt_tokens": 3582,
+      "total_tokens": 5033,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1344,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d664619d-d2ac-48a1-83e2-6605f0618660-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是说“弗莱舍…声言自己喜欢这个工作”。\n- “声言/声称”属非叙实谓词，不预设其宾语命题为真，只表明说话人的主观表态。\n- 因此，无法据此推出他确实喜欢这份工作，真伪不定。"
+      },
+      "id": "call_zjQecL8Ewdo8TDyb6cUX1vsV",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3582,
+    "output_tokens": 1451,
+    "total_tokens": 5033,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1344
+    }
+  }
+}

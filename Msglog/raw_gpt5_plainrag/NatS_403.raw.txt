@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ETCfYsTNWQEs8IQIe3CYZ4hs",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确说明“目睹该队26年保持不败的纪录被打破”，并给出具体赛果“0:1，自1975年以来第一次输给吉林汉姆队”。这直接表明格里姆斯比城队26年不败纪录已被打破，故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 993,
+      "prompt_tokens": 3259,
+      "total_tokens": 4252,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--75d713cc-cc12-498f-99ad-2ac8f07604ca-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确说明“目睹该队26年保持不败的纪录被打破”，并给出具体赛果“0:1，自1975年以来第一次输给吉林汉姆队”。这直接表明格里姆斯比城队26年不败纪录已被打破，故假设为真。"
+      },
+      "id": "call_ETCfYsTNWQEs8IQIe3CYZ4hs",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3259,
+    "output_tokens": 993,
+    "total_tokens": 4252,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

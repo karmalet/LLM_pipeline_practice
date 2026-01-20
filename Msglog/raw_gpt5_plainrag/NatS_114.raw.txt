@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_O64dvr2I5oznkglo0tfRu0oq",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“发现”是事实性谓词，表明其后命题为真：范永光发现他的一个姘妇与齐涛在一起吃饭，故该事件确实发生。假设称其“确实没在一起吃饭”与文本相矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2525,
+      "prompt_tokens": 3378,
+      "total_tokens": 5903,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bcea78fe-0463-44c9-b053-f9b89b9b617b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“发现”是事实性谓词，表明其后命题为真：范永光发现他的一个姘妇与齐涛在一起吃饭，故该事件确实发生。假设称其“确实没在一起吃饭”与文本相矛盾，因此为假。"
+      },
+      "id": "call_O64dvr2I5oznkglo0tfRu0oq",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3378,
+    "output_tokens": 2525,
+    "total_tokens": 5903,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

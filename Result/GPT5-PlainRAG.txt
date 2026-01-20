@@ -1,0 +1,19 @@
+GPT-5-PlainRAG
+
+[Classification Report]
+              precision    recall  f1-score   support
+
+           F     0.9479    0.8536    0.8983       362
+           T     0.9650    0.8102    0.8808       374
+           U     0.6611    0.9015    0.7628       264
+
+    accuracy                         0.8500      1000
+   macro avg     0.8580    0.8551    0.8473      1000
+weighted avg     0.8786    0.8500    0.8560      1000
+
+
+[Confusion Matrix] (labels: T,F,U,R)
+[[303   1  70   0]
+ [  1 309  52   0]
+ [ 10  16 238   0]
+ [  0   0   0   0]]

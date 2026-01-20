@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_xJeYgGYnpUNdtsWvyd1gtjZO",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本说“现在谁也不再怀疑信息是个大产业”，即对命题P（信息是个大产业）已无怀疑并被普遍接受。结合“怀疑”类动词表达对宾语命题真实或很可能真实的立场，且其否定“不再怀疑”更趋于确认P。因此可推出假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 879,
+      "prompt_tokens": 3419,
+      "total_tokens": 4298,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f4171628-1ce3-4622-a89d-3196f90a94fa-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本说“现在谁也不再怀疑信息是个大产业”，即对命题P（信息是个大产业）已无怀疑并被普遍接受。结合“怀疑”类动词表达对宾语命题真实或很可能真实的立场，且其否定“不再怀疑”更趋于确认P。因此可推出假设为真。"
+      },
+      "id": "call_xJeYgGYnpUNdtsWvyd1gtjZO",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3419,
+    "output_tokens": 879,
+    "total_tokens": 4298,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

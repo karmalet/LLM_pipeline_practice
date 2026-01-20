@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_NTvttyXyhZEFHDaKMAtFigLr",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"步骤1：汉语“装作XP”通常是反叙实，用于表达说话者认为XP为假。\\n步骤2：此处XP为“（小张）不知道两人的关系”。\\n步骤3：若“不知道”是假，则为“知道”。因此可推得小张知道两人的关系，假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1831,
+      "prompt_tokens": 3405,
+      "total_tokens": 5236,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1728,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d522339c-3db6-471d-b47f-010e1bfe5e96-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "步骤1：汉语“装作XP”通常是反叙实，用于表达说话者认为XP为假。\n步骤2：此处XP为“（小张）不知道两人的关系”。\n步骤3：若“不知道”是假，则为“知道”。因此可推得小张知道两人的关系，假设成立。"
+      },
+      "id": "call_NTvttyXyhZEFHDaKMAtFigLr",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3405,
+    "output_tokens": 1831,
+    "total_tokens": 5236,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1728
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_t7jTSYdbyDgkYwUSiZKXakJ9",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中引述巴尔舍夫斯基称：美国必须“意识到”与中国保持稳定与和平的关系对美国和世界都十分重要。\\n- “意识到”属于叙实（factive）动词，通常预设其后命题为真；该预设在引述环境中也可投射。\\n- 因此可据文推出：该关系确实十分重要，命题为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1789,
+      "prompt_tokens": 3432,
+      "total_tokens": 5221,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1664,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c2945416-95bf-4bd1-9941-49b9c4c89e32-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中引述巴尔舍夫斯基称：美国必须“意识到”与中国保持稳定与和平的关系对美国和世界都十分重要。\n- “意识到”属于叙实（factive）动词，通常预设其后命题为真；该预设在引述环境中也可投射。\n- 因此可据文推出：该关系确实十分重要，命题为真。"
+      },
+      "id": "call_t7jTSYdbyDgkYwUSiZKXakJ9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3432,
+    "output_tokens": 1789,
+    "total_tokens": 5221,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1664
+    }
+  }
+}

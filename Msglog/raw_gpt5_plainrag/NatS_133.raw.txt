@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_qgh9Exxw9pDn4wzU82qr4ky3",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中首先陈述“他感觉身体不适”，单凭感觉并不预设为真。\\n- 但随即“经检查确诊为胃癌”，提供了客观医学证据，说明当时确有躯体病变，与“不适”一致。\\n- 结合上下文，可合理推断“他身体确实不适”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2030,
+      "prompt_tokens": 3404,
+      "total_tokens": 5434,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1920,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--734d1f7e-4d65-439e-9056-699948af7aa1-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中首先陈述“他感觉身体不适”，单凭感觉并不预设为真。\n- 但随即“经检查确诊为胃癌”，提供了客观医学证据，说明当时确有躯体病变，与“不适”一致。\n- 结合上下文，可合理推断“他身体确实不适”为真。"
+      },
+      "id": "call_qgh9Exxw9pDn4wzU82qr4ky3",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3404,
+    "output_tokens": 2030,
+    "total_tokens": 5434,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1920
+    }
+  }
+}

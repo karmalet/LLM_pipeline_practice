@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_kNjBB70fCljpKKEPd3i07QaG",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明“有人哀叹中国电影没救了”，这是基于情绪/态度的评价，非事实性断言。\\n- “哀叹”不具备事实性承载力，不能据此推断命题“没救了”为真，也无法推出相反命题“还有救”为真。\\n- 因而对假设“我国电影确实还有救”无法从文本判断其真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 578,
+      "prompt_tokens": 3329,
+      "total_tokens": 3907,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--85637da7-d0c4-4dea-8fc2-7568fd204d54-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明“有人哀叹中国电影没救了”，这是基于情绪/态度的评价，非事实性断言。\n- “哀叹”不具备事实性承载力，不能据此推断命题“没救了”为真，也无法推出相反命题“还有救”为真。\n- 因而对假设“我国电影确实还有救”无法从文本判断其真伪。"
+      },
+      "id": "call_kNjBB70fCljpKKEPd3i07QaG",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3329,
+    "output_tokens": 578,
+    "total_tokens": 3907,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

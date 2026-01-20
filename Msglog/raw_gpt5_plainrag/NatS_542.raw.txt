@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Kumy3L3rXVoTJZoIM8IlzusQ",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"文本说“听见后面有人喊她”，且她回头确认是吴刚。这是肯定式“听见”（半叙实动词），预设所听到的事件为真，并被后句进一步实指验证。因此“后面确实没有人喊她”与前提矛盾，为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1061,
+      "prompt_tokens": 3284,
+      "total_tokens": 4345,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--494440d0-2bbf-41ef-902f-5546272cfaf5-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "文本说“听见后面有人喊她”，且她回头确认是吴刚。这是肯定式“听见”（半叙实动词），预设所听到的事件为真，并被后句进一步实指验证。因此“后面确实没有人喊她”与前提矛盾，为假。"
+      },
+      "id": "call_Kumy3L3rXVoTJZoIM8IlzusQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3284,
+    "output_tokens": 1061,
+    "total_tokens": 4345,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

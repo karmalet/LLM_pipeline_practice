@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_L0BBUWxxSQwprkiLyTTMy8zj",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“别人也不大可能猜到他在六七年前还是个…摇滚主唱手”，通常是把“他六七年前是主唱”作为真实背景，只是他人难以猜到。\\n- 因而前提实际上肯定了“他当时是主唱”。\\n- 假设称“他在六七年前确实不是个摇滚主唱手”，与前提相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1220,
+      "prompt_tokens": 3456,
+      "total_tokens": 4676,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c60ced81-5f5f-48e5-9cfc-b0aaa90f2517-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“别人也不大可能猜到他在六七年前还是个…摇滚主唱手”，通常是把“他六七年前是主唱”作为真实背景，只是他人难以猜到。\n- 因而前提实际上肯定了“他当时是主唱”。\n- 假设称“他在六七年前确实不是个摇滚主唱手”，与前提相矛盾，故为假。"
+      },
+      "id": "call_L0BBUWxxSQwprkiLyTTMy8zj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3456,
+    "output_tokens": 1220,
+    "total_tokens": 4676,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

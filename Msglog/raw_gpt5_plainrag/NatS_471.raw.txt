@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_fpic4NyruQZMCIKkH8EqxSrM",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中明确说“人们都清楚，西部大开发需要资金和技术”。\\n- 该陈述被呈现为共识性事实，未被否定，只是补充说明更根本需要知识和人才。\\n- 因而可推出：西部大开发确实需要资金和技术，命题为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 618,
+      "prompt_tokens": 3038,
+      "total_tokens": 3656,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f51f7103-9725-40be-942b-399573346efc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中明确说“人们都清楚，西部大开发需要资金和技术”。\n- 该陈述被呈现为共识性事实，未被否定，只是补充说明更根本需要知识和人才。\n- 因而可推出：西部大开发确实需要资金和技术，命题为真。"
+      },
+      "id": "call_fpic4NyruQZMCIKkH8EqxSrM",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3038,
+    "output_tokens": 618,
+    "total_tokens": 3656,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_I7UiaEzdtLgsZda1g5CF1rLC",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是转述“法国一家报纸感叹”，属于非叙实式的主观评价/报道，不预设其内容为真。\\n- 报纸原话为“几乎没有遭到反对”，其语义弱于“没有遭到反对”；即便该转述为真，也不蕴含“确实没有遭到反对”。\\n因此无法根据给定文本确定假设为真或为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1090,
+      "prompt_tokens": 3428,
+      "total_tokens": 4518,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--45724205-df09-450b-a3ba-b495f2ba4699-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是转述“法国一家报纸感叹”，属于非叙实式的主观评价/报道，不预设其内容为真。\n- 报纸原话为“几乎没有遭到反对”，其语义弱于“没有遭到反对”；即便该转述为真，也不蕴含“确实没有遭到反对”。\n因此无法根据给定文本确定假设为真或为假。"
+      },
+      "id": "call_I7UiaEzdtLgsZda1g5CF1rLC",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3428,
+    "output_tokens": 1090,
+    "total_tokens": 4518,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

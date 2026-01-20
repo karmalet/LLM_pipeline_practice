@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_DSxyWmXHvn74PWGOEg4eGIrS",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是引述“有些国家感觉自己是甲级队”，属于“感觉”类动词的主观判断，非叙实，不预设其宾语命题为真。\\n- 虽然主语为复数可能使命题倾向于真，但文本未给出独立证据，无法从“感觉”推出“确实是甲级队”。\\n- 因此无法确定假设真假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1342,
+      "prompt_tokens": 3516,
+      "total_tokens": 4858,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1216,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--243c5675-5fd5-4e7f-b828-c446ff032213-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是引述“有些国家感觉自己是甲级队”，属于“感觉”类动词的主观判断，非叙实，不预设其宾语命题为真。\n- 虽然主语为复数可能使命题倾向于真，但文本未给出独立证据，无法从“感觉”推出“确实是甲级队”。\n- 因此无法确定假设真假。"
+      },
+      "id": "call_DSxyWmXHvn74PWGOEg4eGIrS",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3516,
+    "output_tokens": 1342,
+    "total_tokens": 4858,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1216
+    }
+  }
+}

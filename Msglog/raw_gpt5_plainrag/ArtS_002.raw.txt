@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_svZinwj8KXbjZLPT1oOr9udy",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “看见”是半叙实动词，在无情态词的直陈句中具有叙实性，通常预设其宾语小句为真（如“他看见了张三打李四 ⇒ 张三打了李四”）。\\n- 本句为直陈式“看见”，不存在“可能/是否”等抑制叙实性的因素。\\n- 因此可推出：小李在游泳为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2755,
+      "prompt_tokens": 3399,
+      "total_tokens": 6154,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2624,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 3328
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--821b6205-dd23-43e6-8866-45afc542cce9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “看见”是半叙实动词，在无情态词的直陈句中具有叙实性，通常预设其宾语小句为真（如“他看见了张三打李四 ⇒ 张三打了李四”）。\n- 本句为直陈式“看见”，不存在“可能/是否”等抑制叙实性的因素。\n- 因此可推出：小李在游泳为真。"
+      },
+      "id": "call_svZinwj8KXbjZLPT1oOr9udy",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3399,
+    "output_tokens": 2755,
+    "total_tokens": 6154,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 3328
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2624
+    }
+  }
+}

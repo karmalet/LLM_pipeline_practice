@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_1TWuMQHYWNGkCFl2FGRvTZkO",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“认为/不认为”属于非叙实动词。句子“小张不认为小李生病了”只表达小张的信念立场，并不预设或蕴含“小李生病了”真假；否定也不导出其宾语小句为假。因此无法据此判断“小李生病了”是否为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 427,
+      "prompt_tokens": 2943,
+      "total_tokens": 3370,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--7d2374e8-5f2a-4873-8fbd-2585ee00cb92-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“认为/不认为”属于非叙实动词。句子“小张不认为小李生病了”只表达小张的信念立场，并不预设或蕴含“小李生病了”真假；否定也不导出其宾语小句为假。因此无法据此判断“小李生病了”是否为真。"
+      },
+      "id": "call_1TWuMQHYWNGkCFl2FGRvTZkO",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2943,
+    "output_tokens": 427,
+    "total_tokens": 3370,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

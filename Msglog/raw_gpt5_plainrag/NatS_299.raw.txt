@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_fdFkI5EY3alEqQOtozeox0Fg",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“觉察出[对方看出存折不对劲了]”中，“觉察出”属感知/认知类近事实性动词，通常使所带命题为真；且语境无否定或不确定标记。因此可推出：对方确实看出了存折不对劲。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 676,
+      "prompt_tokens": 3217,
+      "total_tokens": 3893,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--cd7a84ac-b2a8-4074-8270-366fb2fc2f17-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“觉察出[对方看出存折不对劲了]”中，“觉察出”属感知/认知类近事实性动词，通常使所带命题为真；且语境无否定或不确定标记。因此可推出：对方确实看出了存折不对劲。"
+      },
+      "id": "call_fdFkI5EY3alEqQOtozeox0Fg",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3217,
+    "output_tokens": 676,
+    "total_tokens": 3893,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

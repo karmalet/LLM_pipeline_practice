@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_xHwBhuTP7NrrMM2HAdUlFxlC",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说“小张感叹生活没变好”，这是对主观情绪/态度的报道。\\n- “感叹”属于情绪类态度动词，通常不对宾语小句的真值做事实承诺，只能反映小张的感受或看法。\\n- 因此无法据此确定客观上“生活是否变好了”。\\n- 假设“生活变好了”既无法被文本证成，也无法被文本确证为假，故判定为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2453,
+      "prompt_tokens": 3078,
+      "total_tokens": 5531,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2304,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--09d7a3ef-4e99-48a1-9939-fcb3df2d1e3e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说“小张感叹生活没变好”，这是对主观情绪/态度的报道。\n- “感叹”属于情绪类态度动词，通常不对宾语小句的真值做事实承诺，只能反映小张的感受或看法。\n- 因此无法据此确定客观上“生活是否变好了”。\n- 假设“生活变好了”既无法被文本证成，也无法被文本确证为假，故判定为不能确定。"
+      },
+      "id": "call_xHwBhuTP7NrrMM2HAdUlFxlC",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3078,
+    "output_tokens": 2453,
+    "total_tokens": 5531,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2304
+    }
+  }
+}

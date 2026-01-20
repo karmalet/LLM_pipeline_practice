@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_DUxoLP9cru3rDuVWhOcFCmFM",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中说“老头…诬陷我撞了他”，其中“诬陷”明确表示指控为虚假。\\n- 因此根据文本可推知“我撞了他”为假。\\n- 假设“我确实撞了他”与文本矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 547,
+      "prompt_tokens": 3719,
+      "total_tokens": 4266,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--93453867-d36f-48d1-989b-93bd6386a3b5-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中说“老头…诬陷我撞了他”，其中“诬陷”明确表示指控为虚假。\n- 因此根据文本可推知“我撞了他”为假。\n- 假设“我确实撞了他”与文本矛盾，故为假。"
+      },
+      "id": "call_DUxoLP9cru3rDuVWhOcFCmFM",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3719,
+    "output_tokens": 547,
+    "total_tokens": 4266,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

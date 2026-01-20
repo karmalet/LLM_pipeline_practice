@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_8saRWdQVP80HXHOcumSrtiEj",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- “瞥见”属感知动词，肯定式通常预设其所见事件为真。\\n- 文本说“我瞥见外头飘着雪花”，据此可推外头确在飘雪花。\\n- 假设称“外头确实没飘雪花”，与文本推出事实相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1010,
+      "prompt_tokens": 3401,
+      "total_tokens": 4411,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--80235ccb-76e8-492c-aba4-5c2cd2d985b7-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- “瞥见”属感知动词，肯定式通常预设其所见事件为真。\n- 文本说“我瞥见外头飘着雪花”，据此可推外头确在飘雪花。\n- 假设称“外头确实没飘雪花”，与文本推出事实相矛盾，故为假。"
+      },
+      "id": "call_8saRWdQVP80HXHOcumSrtiEj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3401,
+    "output_tokens": 1010,
+    "total_tokens": 4411,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_9u8aUeFScIGVEClo9EhsibKe",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确叙述：记者在旅馆“遇见……王雪松一家刚从海边回来”。“刚从海边回来”作为对“王雪松一家”的陈述性修饰成分被直接断言，未出现推测或否定。因此可推出他们确实刚从海边回来。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 674,
+      "prompt_tokens": 2934,
+      "total_tokens": 3608,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--86bc4a4c-6ca9-4755-bd07-0cc77c9ea1ee-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确叙述：记者在旅馆“遇见……王雪松一家刚从海边回来”。“刚从海边回来”作为对“王雪松一家”的陈述性修饰成分被直接断言，未出现推测或否定。因此可推出他们确实刚从海边回来。"
+      },
+      "id": "call_9u8aUeFScIGVEClo9EhsibKe",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2934,
+    "output_tokens": 674,
+    "total_tokens": 3608,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_RfFCmCtIae2IFhfKpPC5bhIx",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中叙述者“恰巧遇见清滨公园处有一伙人正在扭秧歌”，属于亲历性描写，具有叙实性。\\n- 因而命题“清滨公园处有一伙人正在扭秧歌”被断定为真。\\n- 假设与前提一致，故判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 948,
+      "prompt_tokens": 3093,
+      "total_tokens": 4041,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--09d31f0d-6b4b-475c-b1db-5b718d00060e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中叙述者“恰巧遇见清滨公园处有一伙人正在扭秧歌”，属于亲历性描写，具有叙实性。\n- 因而命题“清滨公园处有一伙人正在扭秧歌”被断定为真。\n- 假设与前提一致，故判定为真。"
+      },
+      "id": "call_RfFCmCtIae2IFhfKpPC5bhIx",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3093,
+    "output_tokens": 948,
+    "total_tokens": 4041,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

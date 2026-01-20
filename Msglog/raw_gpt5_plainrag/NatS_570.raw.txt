@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Nf0aWGhJYu6nIgHQKoRCZNMn",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “污蔑”表示对他人作不实指控，所述命题为假。\\n- 文中说“污蔑大陆迫害台商”，推出“大陆迫害台商”为假。\\n- 因而可推得：大陆没有迫害台商。假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2080,
+      "prompt_tokens": 3202,
+      "total_tokens": 5282,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1984,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--213caf2b-c709-4558-b1f7-7855a19067a6-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “污蔑”表示对他人作不实指控，所述命题为假。\n- 文中说“污蔑大陆迫害台商”，推出“大陆迫害台商”为假。\n- 因而可推得：大陆没有迫害台商。假设成立。"
+      },
+      "id": "call_Nf0aWGhJYu6nIgHQKoRCZNMn",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3202,
+    "output_tokens": 2080,
+    "total_tokens": 5282,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1984
+    }
+  }
+}

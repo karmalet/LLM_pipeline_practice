@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_6mOzNI6kw7w4wC2XyEl1rvxn",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“觉察出”属于事实性/证实类谓词，通常使其补足语命题为真。前提说“小张觉察出字迹有变化”，可推得“字迹有变化”为真。假设“字迹没有变化”与此前提矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 800,
+      "prompt_tokens": 3231,
+      "total_tokens": 4031,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4e9afa8c-d5b9-4382-a9cc-8b9181bf71e6-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“觉察出”属于事实性/证实类谓词，通常使其补足语命题为真。前提说“小张觉察出字迹有变化”，可推得“字迹有变化”为真。假设“字迹没有变化”与此前提矛盾，因此为假。"
+      },
+      "id": "call_6mOzNI6kw7w4wC2XyEl1rvxn",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3231,
+    "output_tokens": 800,
+    "total_tokens": 4031,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

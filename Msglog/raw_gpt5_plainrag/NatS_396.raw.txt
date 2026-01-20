@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_AWwQcHqKiZx7lIp8ujJHnVJa",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“记者并没有见到队友埋怨她传球不力”，这是关于是否被看到“埋怨”的报道事实，不等于她传球一定不差。\\n- 队友“安慰”并“提醒她传球时该注意的动作”反而可能暗示存在问题，但并不能证明一定存在或不存在。\\n- 因此，无法从文本确定“她确实没有传球不力”是真或假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 391,
+      "prompt_tokens": 3319,
+      "total_tokens": 3710,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d8279bc9-359e-4cc4-8d6e-ad306c14b027-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“记者并没有见到队友埋怨她传球不力”，这是关于是否被看到“埋怨”的报道事实，不等于她传球一定不差。\n- 队友“安慰”并“提醒她传球时该注意的动作”反而可能暗示存在问题，但并不能证明一定存在或不存在。\n- 因此，无法从文本确定“她确实没有传球不力”是真或假。"
+      },
+      "id": "call_AWwQcHqKiZx7lIp8ujJHnVJa",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3319,
+    "output_tokens": 391,
+    "total_tokens": 3710,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

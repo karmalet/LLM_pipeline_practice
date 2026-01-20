@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_OtNyBnBREhRMzL4ih63TLFEc",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"前提中“假装”的宾语是状态“（对这情形）一点也不感兴趣”，按给定资料，‘假装’搭配状态类宾语时预设该宾语命题为假。此外，句子还明说“实际上却关心地侧耳倾听”，进一步表明她并非不感兴趣。因此“吉尔确实一点也不感兴趣”为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1206,
+      "prompt_tokens": 3914,
+      "total_tokens": 5120,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b3551fa4-8960-47d7-b254-cc58e7873364-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "前提中“假装”的宾语是状态“（对这情形）一点也不感兴趣”，按给定资料，‘假装’搭配状态类宾语时预设该宾语命题为假。此外，句子还明说“实际上却关心地侧耳倾听”，进一步表明她并非不感兴趣。因此“吉尔确实一点也不感兴趣”为假。"
+      },
+      "id": "call_OtNyBnBREhRMzL4ih63TLFEc",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3914,
+    "output_tokens": 1206,
+    "total_tokens": 5120,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_H4zvcoJvoDuyWff99ePc18KD",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅为“我猜你没办法去其他地方了”，属于主观猜测，不是事实性断言，且“猜”不预设命题为真。因此无法据此确定“你没办法去其他地方”是否成立，更无法确认相反命题“你确实有办法去其他地方”的真伪，信息不足。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 431,
+      "prompt_tokens": 2951,
+      "total_tokens": 3382,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2af99a65-36d6-4aa9-b393-5fac6c2a22fb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅为“我猜你没办法去其他地方了”，属于主观猜测，不是事实性断言，且“猜”不预设命题为真。因此无法据此确定“你没办法去其他地方”是否成立，更无法确认相反命题“你确实有办法去其他地方”的真伪，信息不足。结论：不能确定。"
+      },
+      "id": "call_H4zvcoJvoDuyWff99ePc18KD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2951,
+    "output_tokens": 431,
+    "total_tokens": 3382,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

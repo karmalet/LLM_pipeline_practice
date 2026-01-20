@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_L7XQGrDionnfCEV1jnxZBcqy",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中“远远望见他一动不动地趴在地头”使用感知类半叙实动词“望见”，在肯定陈述句中预设其宾语小句为真。\\n- 因而可以推出：徐海确实一动不动地趴在地头。\\n- 假设“徐海确实没有一动不动地趴在地头”与上述事实相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 584,
+      "prompt_tokens": 3550,
+      "total_tokens": 4134,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--839de53e-e8a1-4b8d-901e-4256c1665514-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中“远远望见他一动不动地趴在地头”使用感知类半叙实动词“望见”，在肯定陈述句中预设其宾语小句为真。\n- 因而可以推出：徐海确实一动不动地趴在地头。\n- 假设“徐海确实没有一动不动地趴在地头”与上述事实相矛盾，故为假。"
+      },
+      "id": "call_L7XQGrDionnfCEV1jnxZBcqy",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3550,
+    "output_tokens": 584,
+    "total_tokens": 4134,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

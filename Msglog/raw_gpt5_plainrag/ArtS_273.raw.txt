@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_s1uP8NNcdN6FRvDDIw4E6RMY",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"1) 前提仅表述“小张觉着P（小李是故意撒娇）”。2) “觉着/觉得”为非叙实（非事实）类信念动词，不预设P为真，也不推出¬P。3) 因而无法根据前提判断“¬P（小李不是故意撒娇）”的真伪。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 373,
+      "prompt_tokens": 3421,
+      "total_tokens": 3794,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1280
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d6a2f8f2-79f3-49f6-a165-c911abaa7e68-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "1) 前提仅表述“小张觉着P（小李是故意撒娇）”。2) “觉着/觉得”为非叙实（非事实）类信念动词，不预设P为真，也不推出¬P。3) 因而无法根据前提判断“¬P（小李不是故意撒娇）”的真伪。结论：不能确定。"
+      },
+      "id": "call_s1uP8NNcdN6FRvDDIw4E6RMY",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3421,
+    "output_tokens": 373,
+    "total_tokens": 3794,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1280
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

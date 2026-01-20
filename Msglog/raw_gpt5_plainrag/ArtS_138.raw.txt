@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_2WWKH7u0VQFA5MBwB5Z4Lnjk",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本为对“推算”这一认知/推理动词的否定表述：“小张没有推算p”。\\n- 否定态度/推理类动词并不投射其补足语命题p为真或为假。\\n- 因此仅据该句，无法判断“已经有人遭殃了”（p）的真伪，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1913,
+      "prompt_tokens": 3388,
+      "total_tokens": 5301,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1792,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d940885f-ef0e-431a-9d2a-65bbac8a648e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本为对“推算”这一认知/推理动词的否定表述：“小张没有推算p”。\n- 否定态度/推理类动词并不投射其补足语命题p为真或为假。\n- 因此仅据该句，无法判断“已经有人遭殃了”（p）的真伪，结论为不能确定。"
+      },
+      "id": "call_2WWKH7u0VQFA5MBwB5Z4Lnjk",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3388,
+    "output_tokens": 1913,
+    "total_tokens": 5301,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1792
+    }
+  }
+}

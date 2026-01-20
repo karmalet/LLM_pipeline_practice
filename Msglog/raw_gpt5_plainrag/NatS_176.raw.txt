@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_lLQSCwxHYQhBHzTFxsvNroNV",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅转述一位当地干部对学生“素质太差”的感叹与认为，属于主观评价；“感叹/认为”不具备事实性承诺，未提供客观证据。因此无法根据文本判定这些学生的素质究竟好坏，命题真伪不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 932,
+      "prompt_tokens": 3359,
+      "total_tokens": 4291,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0d705505-b940-42cd-90f9-858a6553afba-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅转述一位当地干部对学生“素质太差”的感叹与认为，属于主观评价；“感叹/认为”不具备事实性承诺，未提供客观证据。因此无法根据文本判定这些学生的素质究竟好坏，命题真伪不确定。"
+      },
+      "id": "call_lLQSCwxHYQhBHzTFxsvNroNV",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3359,
+    "output_tokens": 932,
+    "total_tokens": 4291,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

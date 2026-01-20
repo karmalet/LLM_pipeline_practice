@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hGECC61FIxnwjb8dpX056YGy",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 命题形式：文本为“没猜到[小李没生病]”，其中嵌入命题P＝“小李没生病”。\\n- 语义分析：动词“猜到”并非典型叙实动词；“没猜到P”只说明主体未成功作出该猜测，并不保证P的真或假。\\n- 真值推断：从“没猜到P”无法推出P为真或为假，因此也无法推出其否命题“小李生病了”为真或为假。\\n- 结论：无法确定假设的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2603,
+      "prompt_tokens": 3062,
+      "total_tokens": 5665,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fca05d0f-9547-4e5d-94d4-d987a4e426ab-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 命题形式：文本为“没猜到[小李没生病]”，其中嵌入命题P＝“小李没生病”。\n- 语义分析：动词“猜到”并非典型叙实动词；“没猜到P”只说明主体未成功作出该猜测，并不保证P的真或假。\n- 真值推断：从“没猜到P”无法推出P为真或为假，因此也无法推出其否命题“小李生病了”为真或为假。\n- 结论：无法确定假设的真伪。"
+      },
+      "id": "call_hGECC61FIxnwjb8dpX056YGy",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3062,
+    "output_tokens": 2603,
+    "total_tokens": 5665,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

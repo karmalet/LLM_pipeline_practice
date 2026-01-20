@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_GXMdCJNYdeIkrrwep4cEtqLA",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 前提为否定式“没有觉察到P”。“觉察到/意识到”在否定环境下不具备事实性，不蕴含其宾语小句P为真。\\n- 因而无法从“他没有觉察到爱情不是必须的”推出P（爱情不是必须的）的真假，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1771,
+      "prompt_tokens": 3705,
+      "total_tokens": 5476,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1664,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--940593f2-30c6-41b8-a267-1caa9230f623-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 前提为否定式“没有觉察到P”。“觉察到/意识到”在否定环境下不具备事实性，不蕴含其宾语小句P为真。\n- 因而无法从“他没有觉察到爱情不是必须的”推出P（爱情不是必须的）的真假，结论为不能确定。"
+      },
+      "id": "call_GXMdCJNYdeIkrrwep4cEtqLA",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3705,
+    "output_tokens": 1771,
+    "total_tokens": 5476,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1664
+    }
+  }
+}

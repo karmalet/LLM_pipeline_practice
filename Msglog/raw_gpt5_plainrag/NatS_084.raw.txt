@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_09xPTj56ip57WV3YbmMhD2N5",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“姥姥早猜到她要回来”，属“猜到/估计”类推测，并非事实断言。\\n- 句子未交代“她”是否真的回来，也未说明她的主观打算。\\n- 因此无法据此判断“她确实没打算回来”为真或为假，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 947,
+      "prompt_tokens": 2845,
+      "total_tokens": 3792,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b46f72ea-dd80-45cd-ad3b-4b371d7c2ed9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“姥姥早猜到她要回来”，属“猜到/估计”类推测，并非事实断言。\n- 句子未交代“她”是否真的回来，也未说明她的主观打算。\n- 因此无法据此判断“她确实没打算回来”为真或为假，结论为不能确定。"
+      },
+      "id": "call_09xPTj56ip57WV3YbmMhD2N5",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2845,
+    "output_tokens": 947,
+    "total_tokens": 3792,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

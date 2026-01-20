@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_JGn0Iqz4XcTzRV7USevGEMMQ",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“感叹”仅表明处长的主观评价与态度，报道的是他认为“应该改一改”，并不等于叙述事实或作者的肯定立场；而假设中的“确实”要求事实性确认。仅据文本无法判断该评价为事实，故不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2659,
+      "prompt_tokens": 3307,
+      "total_tokens": 5966,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2560,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9713d1b4-fa20-482a-a568-b03d23826494-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“感叹”仅表明处长的主观评价与态度，报道的是他认为“应该改一改”，并不等于叙述事实或作者的肯定立场；而假设中的“确实”要求事实性确认。仅据文本无法判断该评价为事实，故不能确定。"
+      },
+      "id": "call_JGn0Iqz4XcTzRV7USevGEMMQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3307,
+    "output_tokens": 2659,
+    "total_tokens": 5966,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2560
+    }
+  }
+}

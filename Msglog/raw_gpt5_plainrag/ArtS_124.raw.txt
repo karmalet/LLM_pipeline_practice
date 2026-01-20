@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_vDVTI2IoorqUSi65R2LzE6bi",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"1) 句子结构：不觉着[小李不是故意撒娇]，是否定“觉得”的态度，而非断言命题本身。2) “觉得/认为”属非叙实谓词，肯定或否定其态度都不预设或蕴含所嵌句的真值。3) 因此，从“张不觉得小李不是故意撒娇”不能推出“小李是故意撒娇”或其反面。结论：真假不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 784,
+      "prompt_tokens": 3556,
+      "total_tokens": 4340,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--79a7b174-1cbc-4403-a50e-4843692d55d4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "1) 句子结构：不觉着[小李不是故意撒娇]，是否定“觉得”的态度，而非断言命题本身。2) “觉得/认为”属非叙实谓词，肯定或否定其态度都不预设或蕴含所嵌句的真值。3) 因此，从“张不觉得小李不是故意撒娇”不能推出“小李是故意撒娇”或其反面。结论：真假不确定。"
+      },
+      "id": "call_vDVTI2IoorqUSi65R2LzE6bi",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3556,
+    "output_tokens": 784,
+    "total_tokens": 4340,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

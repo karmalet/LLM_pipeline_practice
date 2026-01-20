@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_QalPV8jhtvi8W7JTy4MUyHgf",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“知道/不知道”属叙实（factive）谓词，否定不改变对宾语小句的预设。由“小张不知道[需要带钱包]”可预设命题p=“需要带钱包”为真；而假设断言¬p=“不需要带钱包”，与前述预设相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1263,
+      "prompt_tokens": 2996,
+      "total_tokens": 4259,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9411be05-ef61-48aa-bc9e-5d197ea059bc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“知道/不知道”属叙实（factive）谓词，否定不改变对宾语小句的预设。由“小张不知道[需要带钱包]”可预设命题p=“需要带钱包”为真；而假设断言¬p=“不需要带钱包”，与前述预设相矛盾，故为假。"
+      },
+      "id": "call_QalPV8jhtvi8W7JTy4MUyHgf",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2996,
+    "output_tokens": 1263,
+    "total_tokens": 4259,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

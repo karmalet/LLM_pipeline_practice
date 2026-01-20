@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Ysu7W1Okj7ko6T7o9ZKC0upm",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本述说：女司机“起先以为只要得了大病保险公司就给掏钱”，但“后来才知道保险公司保的只是保单上规定的几种大病”。“以为…后来才知道…”表明最初信念为假，真实情况是仅对保单列明的大病赔付，而非所有大病都赔。因此“确实不是只要得大病保险公司就给掏钱”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1154,
+      "prompt_tokens": 3709,
+      "total_tokens": 4863,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c6cfb036-a2e1-48d3-8244-b3a91d6a394b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本述说：女司机“起先以为只要得了大病保险公司就给掏钱”，但“后来才知道保险公司保的只是保单上规定的几种大病”。“以为…后来才知道…”表明最初信念为假，真实情况是仅对保单列明的大病赔付，而非所有大病都赔。因此“确实不是只要得大病保险公司就给掏钱”为真。"
+      },
+      "id": "call_Ysu7W1Okj7ko6T7o9ZKC0upm",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3709,
+    "output_tokens": 1154,
+    "total_tokens": 4863,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

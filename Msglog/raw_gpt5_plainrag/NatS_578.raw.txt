@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_31wpkNQLzo3QACu8ojSXih2l",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本称“美方…毫无根据地污蔑中国政府泄露了有关信息”。\\n- “污蔑”与“毫无根据”表明说话人断定该指控为虚假。\\n- 因此在文本立场下，可推知“中国政府没有泄露有关信息”。故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 938,
+      "prompt_tokens": 3213,
+      "total_tokens": 4151,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1aedb348-887e-4be1-b0e5-38ddd9a130fb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本称“美方…毫无根据地污蔑中国政府泄露了有关信息”。\n- “污蔑”与“毫无根据”表明说话人断定该指控为虚假。\n- 因此在文本立场下，可推知“中国政府没有泄露有关信息”。故假设为真。"
+      },
+      "id": "call_31wpkNQLzo3QACu8ojSXih2l",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3213,
+    "output_tokens": 938,
+    "total_tokens": 4151,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

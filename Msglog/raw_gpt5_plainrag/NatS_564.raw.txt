@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_55tjqvV7xoF0G1RAhvvYUSKn",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"步骤1：文本称法方指责布什政府“污蔑”法国与萨达姆政权有同谋关系。步骤2：“污蔑/诽谤”是反叙实谓词，语义上 presuppose 被指称内容为假。步骤3：因此，“法国与萨达姆有同谋”这一命题为假，可推出“确实没有同谋关系”。结论：假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1791,
+      "prompt_tokens": 3731,
+      "total_tokens": 5522,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1664,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 2304
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f50aa9da-c1cb-41d5-9b35-69a3e201c39b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "步骤1：文本称法方指责布什政府“污蔑”法国与萨达姆政权有同谋关系。步骤2：“污蔑/诽谤”是反叙实谓词，语义上 presuppose 被指称内容为假。步骤3：因此，“法国与萨达姆有同谋”这一命题为假，可推出“确实没有同谋关系”。结论：假设为真。"
+      },
+      "id": "call_55tjqvV7xoF0G1RAhvvYUSKn",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3731,
+    "output_tokens": 1791,
+    "total_tokens": 5522,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 2304
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1664
+    }
+  }
+}

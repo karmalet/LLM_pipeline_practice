@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_3zJKDScyb3W46lpGNA0s7fMS",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“一些…成员国埋怨法德挑头反战”。\\n- “埋怨”属非叙实谓词，表达抱怨者的主观看法，不预设其宾语命题为真。\\n- 因而无法据此确认“法德确实挑头反战”的真伪，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 435,
+      "prompt_tokens": 3263,
+      "total_tokens": 3698,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2ce098ef-a743-4192-9c39-b2763240183d-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“一些…成员国埋怨法德挑头反战”。\n- “埋怨”属非叙实谓词，表达抱怨者的主观看法，不预设其宾语命题为真。\n- 因而无法据此确认“法德确实挑头反战”的真伪，结论为不能确定。"
+      },
+      "id": "call_3zJKDScyb3W46lpGNA0s7fMS",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3263,
+    "output_tokens": 435,
+    "total_tokens": 3698,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_zg3qonX1Zjj9GiH1MCkgrQy2",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 识别关键信号词：“污蔑”。\\n- 语义常识与给定准则：用“污蔑/诬陷”描述某指控，预设该指控内容为假（反叙实）。\\n- 文中“美方污蔑中方搞虚假宣传” ⇒ 命题“中方搞虚假宣传”为假。\\n- 因而“中方确实没搞虚假宣传”为真。\\n结论：T。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1293,
+      "prompt_tokens": 3431,
+      "total_tokens": 4724,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--39ecff01-8fcd-4a2f-a5c1-bf2bccd33990-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 识别关键信号词：“污蔑”。\n- 语义常识与给定准则：用“污蔑/诬陷”描述某指控，预设该指控内容为假（反叙实）。\n- 文中“美方污蔑中方搞虚假宣传” ⇒ 命题“中方搞虚假宣传”为假。\n- 因而“中方确实没搞虚假宣传”为真。\n结论：T。"
+      },
+      "id": "call_zg3qonX1Zjj9GiH1MCkgrQy2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3431,
+    "output_tokens": 1293,
+    "total_tokens": 4724,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

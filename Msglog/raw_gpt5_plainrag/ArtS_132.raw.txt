@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_BqAP1vGyxcgVx7QXnJSLa9BK",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“想”属于非叙实动词，仅表达说话者的主观判断，不保证其补句真值。文本只是说话者认为“小李不是故意撒娇”，无法据此断定事实是否如此，因此无法判断“小李是故意撒娇”的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 477,
+      "prompt_tokens": 3792,
+      "total_tokens": 4269,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6595b847-1ea0-4b43-89f7-4679e9a492fc-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“想”属于非叙实动词，仅表达说话者的主观判断，不保证其补句真值。文本只是说话者认为“小李不是故意撒娇”，无法据此断定事实是否如此，因此无法判断“小李是故意撒娇”的真伪。"
+      },
+      "id": "call_BqAP1vGyxcgVx7QXnJSLa9BK",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3792,
+    "output_tokens": 477,
+    "total_tokens": 4269,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

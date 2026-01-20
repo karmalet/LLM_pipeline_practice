@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_I95OEvjniyrzMaG8POZgObx4",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本明确叙述：记者“遇见”几十名二年级学生在老师带领下欢快地跳韵律操。\\n- “遇见”属于感知类动词，通常指说话者对真实场景的直接感知，支持所述事件确实发生。\\n- 因此，假设与文本一致，可判为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 624,
+      "prompt_tokens": 3199,
+      "total_tokens": 3823,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--06b11fd3-e9e1-49b7-a11d-23188f434dbe-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本明确叙述：记者“遇见”几十名二年级学生在老师带领下欢快地跳韵律操。\n- “遇见”属于感知类动词，通常指说话者对真实场景的直接感知，支持所述事件确实发生。\n- 因此，假设与文本一致，可判为真。"
+      },
+      "id": "call_I95OEvjniyrzMaG8POZgObx4",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3199,
+    "output_tokens": 624,
+    "total_tokens": 3823,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

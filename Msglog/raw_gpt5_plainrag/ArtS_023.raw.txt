@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_dymPF8rPdwKoGRL912YRCxaX",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"步骤1：动词“觉察出”属于事实性（类“知道/发现”）的认知动词，一般预设其补语命题为真。步骤2：文本称“小张觉察出足球是巧克力做的”。步骤3：据此可推出“足球是巧克力做的”为真，选择T。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2537,
+      "prompt_tokens": 2644,
+      "total_tokens": 5181,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--2003bc1a-d490-4fa5-8057-e568ce6a2260-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "步骤1：动词“觉察出”属于事实性（类“知道/发现”）的认知动词，一般预设其补语命题为真。步骤2：文本称“小张觉察出足球是巧克力做的”。步骤3：据此可推出“足球是巧克力做的”为真，选择T。"
+      },
+      "id": "call_dymPF8rPdwKoGRL912YRCxaX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2644,
+    "output_tokens": 2537,
+    "total_tokens": 5181,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

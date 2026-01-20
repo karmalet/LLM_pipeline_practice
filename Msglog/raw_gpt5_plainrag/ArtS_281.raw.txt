@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_g5yJiCkYTRF33U1BdQ7O0zAT",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"原句含非叙实动词“想”（think），其补语“[小李是故意撒娇]”的真值不被预设或保证。因此无法从原句推出该命题为真，也无法推出其否命题为真，故对“小李不是故意撒娇”无法确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1060,
+      "prompt_tokens": 3737,
+      "total_tokens": 4797,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--55e74d22-70b4-4c57-bd93-42f6544c2beb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "原句含非叙实动词“想”（think），其补语“[小李是故意撒娇]”的真值不被预设或保证。因此无法从原句推出该命题为真，也无法推出其否命题为真，故对“小李不是故意撒娇”无法确定。"
+      },
+      "id": "call_g5yJiCkYTRF33U1BdQ7O0zAT",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3737,
+    "output_tokens": 1060,
+    "total_tokens": 4797,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 960
+    }
+  }
+}

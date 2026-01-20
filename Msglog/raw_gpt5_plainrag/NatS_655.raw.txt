@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_EmpGD93heEZS2qhtiLOqjZi9",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“意识到”属于叙实（factive）谓词，通常预设其所带从句为真。文本中引述布特弗利卡的话：“非洲已经意识到……它自己必须不惜一切、付出巨大的努力。”因此可推出该命题被当作事实接受，假设所述命题成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1769,
+      "prompt_tokens": 3405,
+      "total_tokens": 5174,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1664,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0f1b8f56-5b4c-45ca-8ddc-c7dd84cb3973-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“意识到”属于叙实（factive）谓词，通常预设其所带从句为真。文本中引述布特弗利卡的话：“非洲已经意识到……它自己必须不惜一切、付出巨大的努力。”因此可推出该命题被当作事实接受，假设所述命题成立。"
+      },
+      "id": "call_EmpGD93heEZS2qhtiLOqjZi9",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3405,
+    "output_tokens": 1769,
+    "total_tokens": 5174,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1664
+    }
+  }
+}

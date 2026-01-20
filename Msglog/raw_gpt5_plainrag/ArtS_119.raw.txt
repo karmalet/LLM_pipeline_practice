@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Mvh8IGVUgtYB4LW3PiTgq0lb",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中“怀疑”属于非叙实态度动词，只表达小张对“小麦产量不会增加”这一命题的怀疑/猜测，不能断定其真伪。\\n- 因此，无法从文本确定“今年的棉花产量会增加”是否为真或为假。故结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 493,
+      "prompt_tokens": 3391,
+      "total_tokens": 3884,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1165abf2-4a29-44b4-b82d-513f5226ea88-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中“怀疑”属于非叙实态度动词，只表达小张对“小麦产量不会增加”这一命题的怀疑/猜测，不能断定其真伪。\n- 因此，无法从文本确定“今年的棉花产量会增加”是否为真或为假。故结论为不能确定。"
+      },
+      "id": "call_Mvh8IGVUgtYB4LW3PiTgq0lb",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3391,
+    "output_tokens": 493,
+    "total_tokens": 3884,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

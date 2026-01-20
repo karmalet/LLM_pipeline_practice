@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_TnlKqLgTDsTqACnaSR3arIEM",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本说“欧安组织的报告和美国现场记者的报道证实”某命题，即“在北约空袭南联盟之后，才导致了科索沃暴力冲突升级”。“证实”是使宾语小句为真的叙实性谓词，因此该命题为真。假设与被证实的命题一致，故判断为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2800,
+      "prompt_tokens": 3156,
+      "total_tokens": 5956,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2688,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--4bbb974a-8616-441e-9ca4-a63d51ce6c9f-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本说“欧安组织的报告和美国现场记者的报道证实”某命题，即“在北约空袭南联盟之后，才导致了科索沃暴力冲突升级”。“证实”是使宾语小句为真的叙实性谓词，因此该命题为真。假设与被证实的命题一致，故判断为真。"
+      },
+      "id": "call_TnlKqLgTDsTqACnaSR3arIEM",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3156,
+    "output_tokens": 2800,
+    "total_tokens": 5956,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2688
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_tTuZ9i9nay9OzZFeUT2DivVD",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"前提明确说“现在谁也不再怀疑信息是个大产业”，即普遍接受“信息是个大产业”为真；“不再怀疑P”=承认P。假设“信息确实不是个大产业”与之矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 924,
+      "prompt_tokens": 3751,
+      "total_tokens": 4675,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 832,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1aa4ba6a-8e9d-4986-b2c1-3158dd7ae22b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "前提明确说“现在谁也不再怀疑信息是个大产业”，即普遍接受“信息是个大产业”为真；“不再怀疑P”=承认P。假设“信息确实不是个大产业”与之矛盾，故为假。"
+      },
+      "id": "call_tTuZ9i9nay9OzZFeUT2DivVD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3751,
+    "output_tokens": 924,
+    "total_tokens": 4675,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 832
+    }
+  }
+}

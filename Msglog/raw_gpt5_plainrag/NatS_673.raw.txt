@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_vzDqOPv0OY88nvqul3Uo186n",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确说“遇见五六位青年农民冒着大雨赶来卖草”。“遇见”是事实性描述， presupposes 确有其人其事发生。因此可推出确实有五六位青年农民冒雨来卖草，与假设一致。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 604,
+      "prompt_tokens": 3284,
+      "total_tokens": 3888,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f4d3b17c-75e9-4a56-ad73-d1ae5a353322-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确说“遇见五六位青年农民冒着大雨赶来卖草”。“遇见”是事实性描述， presupposes 确有其人其事发生。因此可推出确实有五六位青年农民冒雨来卖草，与假设一致。"
+      },
+      "id": "call_vzDqOPv0OY88nvqul3Uo186n",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3284,
+    "output_tokens": 604,
+    "total_tokens": 3888,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ASkJNZnJE4yADo6yoda14FF1",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中说“看到他上百次地引用…谈话录音或笔记”，显示其掌握大量相关材料。\\n- 说话人“非常羡慕他手里有那么多‘私藏’”，情感类动词通常预设所述事实成立，并与前句的客观迹象相印证。\\n- 因此可推知“他手里确实有很多私藏”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1278,
+      "prompt_tokens": 3492,
+      "total_tokens": 4770,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1152,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d2682d50-1b5a-4263-a994-4ab8de2bbbfb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中说“看到他上百次地引用…谈话录音或笔记”，显示其掌握大量相关材料。\n- 说话人“非常羡慕他手里有那么多‘私藏’”，情感类动词通常预设所述事实成立，并与前句的客观迹象相印证。\n- 因此可推知“他手里确实有很多私藏”为真。"
+      },
+      "id": "call_ASkJNZnJE4yADo6yoda14FF1",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3492,
+    "output_tokens": 1278,
+    "total_tokens": 4770,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1152
+    }
+  }
+}

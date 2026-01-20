@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_fano235DlUqhin0hSK8ZAGiQ",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"解析：前提为“小张没有声称P”，其中P=“小李没有偷吃蛋糕”。“声称”属于非叙实动词，不预设其补语命题为真；且否定式“没有声称P”既不蕴涵P，也不蕴涵¬P。故无法由前提判断P（即“小李没有偷吃蛋糕”）的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 827,
+      "prompt_tokens": 3495,
+      "total_tokens": 4322,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5428609e-2a08-4ff1-9b1c-65e322943ef0-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "解析：前提为“小张没有声称P”，其中P=“小李没有偷吃蛋糕”。“声称”属于非叙实动词，不预设其补语命题为真；且否定式“没有声称P”既不蕴涵P，也不蕴涵¬P。故无法由前提判断P（即“小李没有偷吃蛋糕”）的真伪。"
+      },
+      "id": "call_fano235DlUqhin0hSK8ZAGiQ",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3495,
+    "output_tokens": 827,
+    "total_tokens": 4322,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

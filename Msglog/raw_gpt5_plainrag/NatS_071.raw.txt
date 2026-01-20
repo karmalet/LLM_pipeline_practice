@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_MiL0WCQ30R3psKnGr9zHwazf",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只说“两名国民党士兵…猜到他是共产党的省主席”。“猜到”属于非叙实/非事实类谓词，不预设命题为真，猜测可能对也可能不对。因此仅凭该句无法确定他是否确为共产党的省主席，结论不成立也不必然为假，故为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 623,
+      "prompt_tokens": 3320,
+      "total_tokens": 3943,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1cad66b5-88b4-4ec6-b9b0-9b55ee696819-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只说“两名国民党士兵…猜到他是共产党的省主席”。“猜到”属于非叙实/非事实类谓词，不预设命题为真，猜测可能对也可能不对。因此仅凭该句无法确定他是否确为共产党的省主席，结论不成立也不必然为假，故为不能确定。"
+      },
+      "id": "call_MiL0WCQ30R3psKnGr9zHwazf",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3320,
+    "output_tokens": 623,
+    "total_tokens": 3943,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

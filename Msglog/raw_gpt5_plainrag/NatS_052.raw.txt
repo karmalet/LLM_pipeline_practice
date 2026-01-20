@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_yEuwKDZzySAaqC9ib3NGJJwp",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“我猜他多半偷偷睡着了”属于猜测性表述，表达的是不确定的推测而非事实承诺；“多半”仅提高可能性，不保证为真。由此无法确定他是否偷偷睡着，更无法断言“确实没有”。因此根据给定文本，假设真伪不可判定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2473,
+      "prompt_tokens": 3454,
+      "total_tokens": 5927,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2368,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--72d41861-0fdc-41f9-acb3-f23e35ca1df6-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“我猜他多半偷偷睡着了”属于猜测性表述，表达的是不确定的推测而非事实承诺；“多半”仅提高可能性，不保证为真。由此无法确定他是否偷偷睡着，更无法断言“确实没有”。因此根据给定文本，假设真伪不可判定。"
+      },
+      "id": "call_yEuwKDZzySAaqC9ib3NGJJwp",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3454,
+    "output_tokens": 2473,
+    "total_tokens": 5927,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2368
+    }
+  }
+}

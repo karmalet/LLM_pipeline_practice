@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_s56UmduJHXQIisi6QyoxMyAj",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“污蔑X为P”意味着对P的指控是虚假的。文本说“小张污蔑小李不守信用”，即命题“小李不守信用”为假，因此其否命题“小李守信用”为真，故假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 598,
+      "prompt_tokens": 3348,
+      "total_tokens": 3946,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 512,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8376b60d-ec14-41d0-9be0-6829d1d81fd9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“污蔑X为P”意味着对P的指控是虚假的。文本说“小张污蔑小李不守信用”，即命题“小李不守信用”为假，因此其否命题“小李守信用”为真，故假设成立。"
+      },
+      "id": "call_s56UmduJHXQIisi6QyoxMyAj",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3348,
+    "output_tokens": 598,
+    "total_tokens": 3946,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 512
+    }
+  }
+}

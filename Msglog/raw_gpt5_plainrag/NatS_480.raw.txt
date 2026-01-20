@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_aqRtLoZ8exx17eVNuNokjbG6",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- “我心里清楚”是叙实动词用法，预设其后宾语小句为真。\\n- 文本断言：我之所以仓促上阵而未彻底失败，“更多的只是靠精神上的力量”。\\n- 假设改为“更多的确实不只是靠精神上的力量”，否定了“只是”。\\n- 与文本断言相矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2238,
+      "prompt_tokens": 3171,
+      "total_tokens": 5409,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2112,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--9b506086-d33f-40b3-930d-f25b5fcd7059-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- “我心里清楚”是叙实动词用法，预设其后宾语小句为真。\n- 文本断言：我之所以仓促上阵而未彻底失败，“更多的只是靠精神上的力量”。\n- 假设改为“更多的确实不只是靠精神上的力量”，否定了“只是”。\n- 与文本断言相矛盾，故为假。"
+      },
+      "id": "call_aqRtLoZ8exx17eVNuNokjbG6",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3171,
+    "output_tokens": 2238,
+    "total_tokens": 5409,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2112
+    }
+  }
+}

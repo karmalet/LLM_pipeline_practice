@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ll3SWUJ5opkNrg9gUtHcDObD",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是说“很多环保人士感叹人类是在‘自挖坟墓’”，这是态度/评价性的感叹，并非对命题的事实性断言。\\n- “感叹P”不蕴含P为真，也不蕴含P为假。\\n- 因此无法据此判断“人类确实不是在‘自挖坟墓’”的真假。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1154,
+      "prompt_tokens": 3463,
+      "total_tokens": 4617,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1024,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0448fd71-821c-4474-9ad9-da1d7b1b63eb-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是说“很多环保人士感叹人类是在‘自挖坟墓’”，这是态度/评价性的感叹，并非对命题的事实性断言。\n- “感叹P”不蕴含P为真，也不蕴含P为假。\n- 因此无法据此判断“人类确实不是在‘自挖坟墓’”的真假。结论：不能确定。"
+      },
+      "id": "call_ll3SWUJ5opkNrg9gUtHcDObD",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3463,
+    "output_tokens": 1154,
+    "total_tokens": 4617,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1024
+    }
+  }
+}

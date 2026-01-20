@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_cvZ6Y99xDvfO9Co92Z01MyDm",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“羡慕”属于情感类叙实（类事实）谓词，一般预设其宾语小句为真。由“小张羡慕[小李不戴眼镜]”可推知宾语小句成立，因此可判断“小李不戴眼镜”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 864,
+      "prompt_tokens": 3361,
+      "total_tokens": 4225,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--700ae7a1-5d73-4d08-901c-78aa523822ed-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“羡慕”属于情感类叙实（类事实）谓词，一般预设其宾语小句为真。由“小张羡慕[小李不戴眼镜]”可推知宾语小句成立，因此可判断“小李不戴眼镜”为真。"
+      },
+      "id": "call_cvZ6Y99xDvfO9Co92Z01MyDm",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3361,
+    "output_tokens": 864,
+    "total_tokens": 4225,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

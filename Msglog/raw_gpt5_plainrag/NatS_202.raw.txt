@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_dbNmNGupCwl9ug88sSqIETX2",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅表述“妻子怀疑他得了神经病”，属于主观怀疑，不构成对其是否患病的事实性确认；且无其他信息佐证或否定其患病与否。因此无法从文本判断“他确实没得神经病”真伪，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 357,
+      "prompt_tokens": 3493,
+      "total_tokens": 3850,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c2f49f51-e07f-4cb9-bb24-4be0f502d1ef-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅表述“妻子怀疑他得了神经病”，属于主观怀疑，不构成对其是否患病的事实性确认；且无其他信息佐证或否定其患病与否。因此无法从文本判断“他确实没得神经病”真伪，结论为不能确定。"
+      },
+      "id": "call_dbNmNGupCwl9ug88sSqIETX2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3493,
+    "output_tokens": 357,
+    "total_tokens": 3850,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

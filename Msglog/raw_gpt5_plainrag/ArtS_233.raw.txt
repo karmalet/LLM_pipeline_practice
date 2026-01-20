@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ydDUPdkXDZORAsfvlkKWIog8",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“小张没有数落徒弟的招式太明显”只是否定了“数落/责备”这一言语行为的发生，不对“徒弟的招式是否明显”给出真值承诺；“数落”也非叙实动词，且其被否定时不带出补句真伪。因此无法由此推断“徒弟的招式不明显”或“明显”。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 762,
+      "prompt_tokens": 3363,
+      "total_tokens": 4125,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--21016df0-5b63-4851-a7ba-197bd57f0f76-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“小张没有数落徒弟的招式太明显”只是否定了“数落/责备”这一言语行为的发生，不对“徒弟的招式是否明显”给出真值承诺；“数落”也非叙实动词，且其被否定时不带出补句真伪。因此无法由此推断“徒弟的招式不明显”或“明显”。"
+      },
+      "id": "call_ydDUPdkXDZORAsfvlkKWIog8",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3363,
+    "output_tokens": 762,
+    "total_tokens": 4125,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

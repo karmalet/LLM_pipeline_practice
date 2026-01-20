@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Fh4HK99DlwdcU5bd2wFWnsm6",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“不记得”属于（半）叙实类；当其宾语小句描述已然事实（现实性事态）时，一般触发对宾语小句的真值预设，即无论肯否，“（不）记得P”都倾向于预设P为真。此处宾语“小李没吃早饭”是过去事实类命题，故由“小张不记得小李没吃早饭”可推知“小李没吃早饭”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1676,
+      "prompt_tokens": 3520,
+      "total_tokens": 5196,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1536,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8f6fabed-9160-4a32-9633-85181174bd26-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“不记得”属于（半）叙实类；当其宾语小句描述已然事实（现实性事态）时，一般触发对宾语小句的真值预设，即无论肯否，“（不）记得P”都倾向于预设P为真。此处宾语“小李没吃早饭”是过去事实类命题，故由“小张不记得小李没吃早饭”可推知“小李没吃早饭”为真。"
+      },
+      "id": "call_Fh4HK99DlwdcU5bd2wFWnsm6",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3520,
+    "output_tokens": 1676,
+    "total_tokens": 5196,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1536
+    }
+  }
+}

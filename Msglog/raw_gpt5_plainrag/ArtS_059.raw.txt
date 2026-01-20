@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_M7Ur8BokNZvumTvf0Nhzd1KC",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“清楚”属叙实/事实性谓词，补句内容被当作已成立。文本断言：小李不会离开这里（为真）。假设“小李会离开这里”与该事实矛盾，因此为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 661,
+      "prompt_tokens": 3273,
+      "total_tokens": 3934,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1536
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--542b5c7d-19ab-485e-a5bc-2b8144f1d15e-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“清楚”属叙实/事实性谓词，补句内容被当作已成立。文本断言：小李不会离开这里（为真）。假设“小李会离开这里”与该事实矛盾，因此为假。"
+      },
+      "id": "call_M7Ur8BokNZvumTvf0Nhzd1KC",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3273,
+    "output_tokens": 661,
+    "total_tokens": 3934,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1536
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

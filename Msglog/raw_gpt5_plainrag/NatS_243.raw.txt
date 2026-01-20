@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_HHooszyoty58oUdLDg44F975",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文中出现“我记得她总是穿无跟的鞋子”。\\n- “记得”通常是叙实/事实性谓词，倾向于确保其宾语小句为真（带有事实性预设）。\\n- 因此可推出“她总是穿无跟的鞋子”为真。\\n- 结论：假设成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 818,
+      "prompt_tokens": 3272,
+      "total_tokens": 4090,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d8e12182-2362-418a-bc30-d553facfe4e2-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文中出现“我记得她总是穿无跟的鞋子”。\n- “记得”通常是叙实/事实性谓词，倾向于确保其宾语小句为真（带有事实性预设）。\n- 因此可推出“她总是穿无跟的鞋子”为真。\n- 结论：假设成立。"
+      },
+      "id": "call_HHooszyoty58oUdLDg44F975",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3272,
+    "output_tokens": 818,
+    "total_tokens": 4090,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

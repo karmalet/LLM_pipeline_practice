@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_tWqKp8N22lhTqHfGecsDGE0l",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “装作/假装”类动词对状态类、认知类宾语小句通常是反叙实，预设宾语命题为假（如“装作是外国人”→其实不是外国人）。\\n- 本例宾语小句是“（小张）知道两人的关系”，属认知状态。\\n- 故由“小张装作知道两人的关系”可推出：他其实不知道两人的关系。\\n结论：hypothesis 为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1227,
+      "prompt_tokens": 3355,
+      "total_tokens": 4582,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1088,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--dc0e3c04-1a1e-4aee-ac42-ebba68868ba0-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “装作/假装”类动词对状态类、认知类宾语小句通常是反叙实，预设宾语命题为假（如“装作是外国人”→其实不是外国人）。\n- 本例宾语小句是“（小张）知道两人的关系”，属认知状态。\n- 故由“小张装作知道两人的关系”可推出：他其实不知道两人的关系。\n结论：hypothesis 为真。"
+      },
+      "id": "call_tWqKp8N22lhTqHfGecsDGE0l",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3355,
+    "output_tokens": 1227,
+    "total_tokens": 4582,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1088
+    }
+  }
+}

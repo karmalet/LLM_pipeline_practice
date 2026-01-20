@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_AO7tyoWC0OJncqDnRRNVDKpx",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文本仅说明“叶江川几次感叹孩子们的棋大有发展前途”，这是主观感叹/评价。\\n- “感叹”不承诺命题真值，无法据此推出“确实”大有前途。\\n- 文本也未提供相反证据。\\n- 故无法判断该命题真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 690,
+      "prompt_tokens": 3516,
+      "total_tokens": 4206,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c0b4159f-51aa-4303-be22-b7c1e041291c-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文本仅说明“叶江川几次感叹孩子们的棋大有发展前途”，这是主观感叹/评价。\n- “感叹”不承诺命题真值，无法据此推出“确实”大有前途。\n- 文本也未提供相反证据。\n- 故无法判断该命题真伪。"
+      },
+      "id": "call_AO7tyoWC0OJncqDnRRNVDKpx",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3516,
+    "output_tokens": 690,
+    "total_tokens": 4206,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

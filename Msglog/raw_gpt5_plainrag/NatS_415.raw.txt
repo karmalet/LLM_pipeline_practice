@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_YGh3rCoBepK0xQlBUFW5eNGF",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本中明确写道“记者…目睹，几名老妇人正在昏暗的灯光下给死去的禾花雀拔毛”。“目睹”为感知动词，通常将其宾语小句作为事实陈述，且与假设内容一致，因此可判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 673,
+      "prompt_tokens": 3699,
+      "total_tokens": 4372,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--30ea2918-cad6-4a78-8e03-cdab55f0ba56-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本中明确写道“记者…目睹，几名老妇人正在昏暗的灯光下给死去的禾花雀拔毛”。“目睹”为感知动词，通常将其宾语小句作为事实陈述，且与假设内容一致，因此可判定为真。"
+      },
+      "id": "call_YGh3rCoBepK0xQlBUFW5eNGF",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3699,
+    "output_tokens": 673,
+    "total_tokens": 4372,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

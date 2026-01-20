@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_Q3de8o6E2Je1m26QTcPlkrQI",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“看出”通常是事实性（类比“知道/发现”），其后命题被当作成立。文本“小张看出咖啡里没有加牛奶”因此蕴含“咖啡里没有加牛奶”为真，和假设一致，判真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 796,
+      "prompt_tokens": 3007,
+      "total_tokens": 3803,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 704,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0939a747-2b83-4333-8742-be0c50e44f82-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“看出”通常是事实性（类比“知道/发现”），其后命题被当作成立。文本“小张看出咖啡里没有加牛奶”因此蕴含“咖啡里没有加牛奶”为真，和假设一致，判真。"
+      },
+      "id": "call_Q3de8o6E2Je1m26QTcPlkrQI",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3007,
+    "output_tokens": 796,
+    "total_tokens": 3803,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 704
+    }
+  }
+}

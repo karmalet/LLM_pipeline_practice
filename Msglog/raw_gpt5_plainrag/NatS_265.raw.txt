@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_36VV3Oeab9lxc4njPkxtr3Tx",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“假装”类动词的宾语若为动作性（如“摔倒、看电影、啼哭”），其所指命题为真；若为状态性（如“失败、害怕、专心致志”），为假。句中“把鞋带解开”为动作性宾语，因此可推得其动作（解开鞋带）确已发生，故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2425,
+      "prompt_tokens": 4076,
+      "total_tokens": 6501,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2304,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--332bef9f-83c7-4b1d-862c-685506d1b488-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“假装”类动词的宾语若为动作性（如“摔倒、看电影、啼哭”），其所指命题为真；若为状态性（如“失败、害怕、专心致志”），为假。句中“把鞋带解开”为动作性宾语，因此可推得其动作（解开鞋带）确已发生，故假设为真。"
+      },
+      "id": "call_36VV3Oeab9lxc4njPkxtr3Tx",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 4076,
+    "output_tokens": 2425,
+    "total_tokens": 6501,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2304
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_5XMHMxnGi1R3JJMflEFWvpRf",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"“望见”属于感知类半叙实动词，类似“看见/听见”。在肯定直陈句且无情态干预时，其宾语小句被默认为已发生的事实。文本叙述“侧身望见老诗人刘章和夫人走了进来”，无否定或可能性标记，故可推出他们确实走了进来。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 503,
+      "prompt_tokens": 3255,
+      "total_tokens": 3758,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6fda991d-fab3-44e4-99c2-015f62928bd9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "“望见”属于感知类半叙实动词，类似“看见/听见”。在肯定直陈句且无情态干预时，其宾语小句被默认为已发生的事实。文本叙述“侧身望见老诗人刘章和夫人走了进来”，无否定或可能性标记，故可推出他们确实走了进来。"
+      },
+      "id": "call_5XMHMxnGi1R3JJMflEFWvpRf",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3255,
+    "output_tokens": 503,
+    "total_tokens": 3758,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

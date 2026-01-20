@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_CO6iUlJfKwXHeR2K7LuE8zwA",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅说明“姆贝基批评西方国家忽视非洲经济”。“批评”属于非叙实谓词，不预设其宾语命题（西方国家忽视非洲经济）为真或为假。因此无法从文本确定西方国家是否真的忽视非洲经济。假设“西方国家确实没有忽视非洲经济”既未得到支持也未被否定，结论为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 703,
+      "prompt_tokens": 3915,
+      "total_tokens": 4618,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--373edacc-87f8-436a-9a5a-d321422bd194-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅说明“姆贝基批评西方国家忽视非洲经济”。“批评”属于非叙实谓词，不预设其宾语命题（西方国家忽视非洲经济）为真或为假。因此无法从文本确定西方国家是否真的忽视非洲经济。假设“西方国家确实没有忽视非洲经济”既未得到支持也未被否定，结论为不能确定。"
+      },
+      "id": "call_CO6iUlJfKwXHeR2K7LuE8zwA",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3915,
+    "output_tokens": 703,
+    "total_tokens": 4618,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_BSKdvzKd3UbeVxfra7Uq1Vq2",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“警方怀疑有劫机分子混在其中”，属于非叙实/不预设真值的表述。\\n- “怀疑”不等于事实成立，也未给出进一步证据或确认。\\n- 因此，无法据此断定确实有劫机分子混在其中。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2538,
+      "prompt_tokens": 2756,
+      "total_tokens": 5294,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2432,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--ab397ac5-d04f-4b76-93b0-6a8ab888f709-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“警方怀疑有劫机分子混在其中”，属于非叙实/不预设真值的表述。\n- “怀疑”不等于事实成立，也未给出进一步证据或确认。\n- 因此，无法据此断定确实有劫机分子混在其中。"
+      },
+      "id": "call_BSKdvzKd3UbeVxfra7Uq1Vq2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 2756,
+    "output_tokens": 2538,
+    "total_tokens": 5294,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2432
+    }
+  }
+}

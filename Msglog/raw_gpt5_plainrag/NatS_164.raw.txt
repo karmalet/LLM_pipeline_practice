@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_oCjlWWF64f2aAAzLowSo0Y5x",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只表明“叶江川几次感叹孩子们的棋大有发展前途”，即主语对命题的情感性评价/看法；“感叹”属非事实性态度述谓，不能保证其宾语命题为真。因此既不能据此断定“有前途”为真，也无法推出其否定“确实没有前途”为真或为假，真值不确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 893,
+      "prompt_tokens": 3841,
+      "total_tokens": 4734,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--c8fd51a1-8240-442e-acec-2e42a14394d1-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只表明“叶江川几次感叹孩子们的棋大有发展前途”，即主语对命题的情感性评价/看法；“感叹”属非事实性态度述谓，不能保证其宾语命题为真。因此既不能据此断定“有前途”为真，也无法推出其否定“确实没有前途”为真或为假，真值不确定。"
+      },
+      "id": "call_oCjlWWF64f2aAAzLowSo0Y5x",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3841,
+    "output_tokens": 893,
+    "total_tokens": 4734,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

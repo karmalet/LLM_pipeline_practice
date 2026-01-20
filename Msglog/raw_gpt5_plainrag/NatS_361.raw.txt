@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_ZTkfBW7V0pG6RBVrIJVG9oo4",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- “看见”发生在“梦里”，属于梦见而非现实目击，宾语小句不被事实化。\\n- 叙述“醒来时我还把梦境当作现实”表明那只是梦境，被误当成真实，现实中并未发生该情景。\\n- 故“人们确实有说有笑地进进出出”不成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2359,
+      "prompt_tokens": 3441,
+      "total_tokens": 5800,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2240,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--1998b17a-cd88-4124-b0e9-6d6371509cd8-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- “看见”发生在“梦里”，属于梦见而非现实目击，宾语小句不被事实化。\n- 叙述“醒来时我还把梦境当作现实”表明那只是梦境，被误当成真实，现实中并未发生该情景。\n- 故“人们确实有说有笑地进进出出”不成立。"
+      },
+      "id": "call_ZTkfBW7V0pG6RBVrIJVG9oo4",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3441,
+    "output_tokens": 2359,
+    "total_tokens": 5800,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2240
+    }
+  }
+}

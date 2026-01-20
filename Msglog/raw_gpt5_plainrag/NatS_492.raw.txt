@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_892fXQBPeD7RWvtq1fwEeMtX",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只表述“有人声言这是‘外省部长抢本省人土地’”，属于声言类转述，不承诺命题真值；无法由此推出该说法为真或为假。因此对“这确实不是外省部长抢本省人土地”不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 733,
+      "prompt_tokens": 3216,
+      "total_tokens": 3949,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--8026820d-2af2-4149-a368-5f23296b03f7-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只表述“有人声言这是‘外省部长抢本省人土地’”，属于声言类转述，不承诺命题真值；无法由此推出该说法为真或为假。因此对“这确实不是外省部长抢本省人土地”不能确定。"
+      },
+      "id": "call_892fXQBPeD7RWvtq1fwEeMtX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3216,
+    "output_tokens": 733,
+    "total_tokens": 3949,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

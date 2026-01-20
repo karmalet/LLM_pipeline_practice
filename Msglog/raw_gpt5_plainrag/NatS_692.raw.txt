@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_MNgwSwZtG1xzN7yAqTun81WE",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文中“负责人向记者证实，他们至今没有…做出认定”。“证实”使其后内容为真。\\n- 故可确定：截至目前，他们没有对该行为性质作出认定。\\n- 假设声称“确实已经…做出了认定”，与前提相矛盾。\\n- 结论：假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 687,
+      "prompt_tokens": 3383,
+      "total_tokens": 4070,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--92390c16-6849-4e52-9773-4afa23d0c2a4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文中“负责人向记者证实，他们至今没有…做出认定”。“证实”使其后内容为真。\n- 故可确定：截至目前，他们没有对该行为性质作出认定。\n- 假设声称“确实已经…做出了认定”，与前提相矛盾。\n- 结论：假。"
+      },
+      "id": "call_MNgwSwZtG1xzN7yAqTun81WE",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3383,
+    "output_tokens": 687,
+    "total_tokens": 4070,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

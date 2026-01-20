@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_S27yDOtMzd1RmpeB9uZX8rmX",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中只是说“有人埋怨米拉没有旗帜鲜明地支持哈亚图”，这是他人的指责/看法，并非事实陈述。\\n- 同时“米拉对此指责难以接受”表明他并不认可该指责。\\n- 因此无法据此确定米拉是否确实没有旗帜鲜明地支持。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 882,
+      "prompt_tokens": 3647,
+      "total_tokens": 4529,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--fc358e0a-dbc5-4f82-925b-5dd7b44d6145-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中只是说“有人埋怨米拉没有旗帜鲜明地支持哈亚图”，这是他人的指责/看法，并非事实陈述。\n- 同时“米拉对此指责难以接受”表明他并不认可该指责。\n- 因此无法据此确定米拉是否确实没有旗帜鲜明地支持。"
+      },
+      "id": "call_S27yDOtMzd1RmpeB9uZX8rmX",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3647,
+    "output_tokens": 882,
+    "total_tokens": 4529,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}

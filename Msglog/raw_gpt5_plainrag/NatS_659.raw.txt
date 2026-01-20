@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_4cGtRUptNUk4po70DKg00i0D",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) “意识到”与“知道”同属叙实（factive）动词，预设其宾语小句为真。2) 文本说“我们已经意识到，技术进步不断延伸、拓展，永无尽头”，据叙实预设可推出该命题为真。3) 假设重述该命题，因此为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 498,
+      "prompt_tokens": 3292,
+      "total_tokens": 3790,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--13f0e025-25d0-4490-99b4-d5cfa9009e65-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) “意识到”与“知道”同属叙实（factive）动词，预设其宾语小句为真。2) 文本说“我们已经意识到，技术进步不断延伸、拓展，永无尽头”，据叙实预设可推出该命题为真。3) 假设重述该命题，因此为真。"
+      },
+      "id": "call_4cGtRUptNUk4po70DKg00i0D",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3292,
+    "output_tokens": 498,
+    "total_tokens": 3790,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

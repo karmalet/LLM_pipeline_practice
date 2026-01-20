@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_TAmGGASsV5cQ4wp6BrZorMiF",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) 句中“她污蔑二人是娼妓出身”使用了“污蔑”，属于反叙实谓词，常规语义是“所说内容不属实”。\\n2) 因此嵌入命题“二人是娼妓出身”为假。\\n3) 其否定命题“二人不是娼妓出身”为真，与假设一致，故判断为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 578,
+      "prompt_tokens": 3483,
+      "total_tokens": 4061,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--b46bc332-a866-4545-b460-522e914ffb87-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) 句中“她污蔑二人是娼妓出身”使用了“污蔑”，属于反叙实谓词，常规语义是“所说内容不属实”。\n2) 因此嵌入命题“二人是娼妓出身”为假。\n3) 其否定命题“二人不是娼妓出身”为真，与假设一致，故判断为真。"
+      },
+      "id": "call_TAmGGASsV5cQ4wp6BrZorMiF",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3483,
+    "output_tokens": 578,
+    "total_tokens": 4061,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

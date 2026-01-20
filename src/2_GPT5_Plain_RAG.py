@@ -303,7 +303,7 @@ if __name__ == "__main__":
         print("reason:", reason[:300] + ("..." if len(reason) > 300 else ""))
 
         # 정답/예측 저장
-        gold = query_data.get("label") or query_data.get("gold") or query_data.get("answer")
+        gold = query_data.get("answer")
         if gold:
             y_true.append(gold)
             y_pred.append(pred_label)

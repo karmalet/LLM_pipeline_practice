@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_n4bm6GrOJnJ6fFX07RZngYzT",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只是说“他”声言“美国是全世界和平的最大敌人”。“声言”属于非叙实表述，只报告主语的说法，并不保证内容真或假。因此无法仅据此判断“美国确实不是全世界和平的敌人”的真假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 732,
+      "prompt_tokens": 3388,
+      "total_tokens": 4120,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--6165ea02-943b-4c67-9006-fb8b3a417e68-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只是说“他”声言“美国是全世界和平的最大敌人”。“声言”属于非叙实表述，只报告主语的说法，并不保证内容真或假。因此无法仅据此判断“美国确实不是全世界和平的敌人”的真假。"
+      },
+      "id": "call_n4bm6GrOJnJ6fFX07RZngYzT",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3388,
+    "output_tokens": 732,
+    "total_tokens": 4120,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

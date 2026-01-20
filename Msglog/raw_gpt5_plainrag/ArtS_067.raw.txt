@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_y3oDeqYapMh78gywuHFM6zzU",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“哀叹”属于情绪类事实动词，通常预设其补语命题为真；该预设在否定下仍投射。文本说“小张没有哀叹‘幸福不会从天上掉下来’”，由预设可知“幸福不会从天上掉下来”为真，因此与假设“幸福会从天上掉下来”相矛盾，故假设为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1658,
+      "prompt_tokens": 3921,
+      "total_tokens": 5579,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1536,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--f64a5b4c-d7d1-4fd8-a76f-09c46dc069a4-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“哀叹”属于情绪类事实动词，通常预设其补语命题为真；该预设在否定下仍投射。文本说“小张没有哀叹‘幸福不会从天上掉下来’”，由预设可知“幸福不会从天上掉下来”为真，因此与假设“幸福会从天上掉下来”相矛盾，故假设为假。"
+      },
+      "id": "call_y3oDeqYapMh78gywuHFM6zzU",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3921,
+    "output_tokens": 1658,
+    "total_tokens": 5579,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1536
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_HKs1BtCBIDlNIFz3QoIL3vE0",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本只说明“小张认为P（小李不是故意撒娇）”。“认为”属于非叙实/意见类动词，不预设也不蕴含宾语小句P的真值，因此无法由此判断P是否为真。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 539,
+      "prompt_tokens": 3472,
+      "total_tokens": 4011,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 448,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1024
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--5457f8d1-cedf-4b83-bc3b-c03b29792858-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本只说明“小张认为P（小李不是故意撒娇）”。“认为”属于非叙实/意见类动词，不预设也不蕴含宾语小句P的真值，因此无法由此判断P是否为真。结论：不能确定。"
+      },
+      "id": "call_HKs1BtCBIDlNIFz3QoIL3vE0",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3472,
+    "output_tokens": 539,
+    "total_tokens": 4011,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1024
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 448
+    }
+  }
+}

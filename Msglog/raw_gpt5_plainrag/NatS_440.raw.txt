@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_d07bZUM22BWZ4ZSjjDJSRuF6",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"文本仅报道“一些美国学者开始批评使用这个‘方便的标签’是一项‘蹩脚的政策’”。“批评”属于立场/评价的表达，不预设其内容为真，不能据此断定该政策是否真为蹩脚。因此无法从文本判断“确实不是蹩脚的政策”的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1451,
+      "prompt_tokens": 3856,
+      "total_tokens": 5307,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1344,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1408
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--3ad7ebb3-15e1-456a-b375-dadf8cee1e12-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "文本仅报道“一些美国学者开始批评使用这个‘方便的标签’是一项‘蹩脚的政策’”。“批评”属于立场/评价的表达，不预设其内容为真，不能据此断定该政策是否真为蹩脚。因此无法从文本判断“确实不是蹩脚的政策”的真伪。"
+      },
+      "id": "call_d07bZUM22BWZ4ZSjjDJSRuF6",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3856,
+    "output_tokens": 1451,
+    "total_tokens": 5307,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1408
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1344
+    }
+  }
+}

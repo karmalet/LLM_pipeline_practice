@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_YtwSTnz4qLbKsJUTtxMsqWfM",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本明确给出因果评价：“这就充分暴露出我们的科普工作没有做到位”。该句直接断言科普工作未到位。假设“我们的科普工作确实没有做到位”与文本结论一致，故为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 341,
+      "prompt_tokens": 4010,
+      "total_tokens": 4351,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--016d2d9e-7d64-43c3-be87-8ecb1833efc0-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本明确给出因果评价：“这就充分暴露出我们的科普工作没有做到位”。该句直接断言科普工作未到位。假设“我们的科普工作确实没有做到位”与文本结论一致，故为真。"
+      },
+      "id": "call_YtwSTnz4qLbKsJUTtxMsqWfM",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 4010,
+    "output_tokens": 341,
+    "total_tokens": 4351,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_hYGgKHzI9byK3DkxR7rEAVm7",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- “假装”类动词在搭配状态性宾语小句时，预设该宾语小句为假。\\n- “小张假装不害怕打雷”中的宾语小句是“（小张）不害怕打雷”，属于状态性描述。\\n- 因而可推知“（小张）不害怕打雷”为假，其相反命题“（小张）害怕打雷”为真。\\n- 故假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1610,
+      "prompt_tokens": 4049,
+      "total_tokens": 5659,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1472,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--0b711f08-fc29-4003-aaf3-1f170fc318fa-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- “假装”类动词在搭配状态性宾语小句时，预设该宾语小句为假。\n- “小张假装不害怕打雷”中的宾语小句是“（小张）不害怕打雷”，属于状态性描述。\n- 因而可推知“（小张）不害怕打雷”为假，其相反命题“（小张）害怕打雷”为真。\n- 故假设为真。"
+      },
+      "id": "call_hYGgKHzI9byK3DkxR7rEAVm7",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 4049,
+    "output_tokens": 1610,
+    "total_tokens": 5659,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1472
+    }
+  }
+}

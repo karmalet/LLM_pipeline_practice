@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_mvQpgYcZX60kSjbcr3RKljGd",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“塞莱斯…哀叹自己腿脚不灵活”。\\n- “哀叹”属情感/评价类动词，非叙实，不保证其宾语小句（腿脚不灵活）的真值。\\n- 因而既不能据此推出“不灵活”为真，也不能推出“确实灵活”为真。故结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 2298,
+      "prompt_tokens": 3593,
+      "total_tokens": 5891,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2176,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bc6cd4f1-97a0-483a-a7f8-535e1450a191-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“塞莱斯…哀叹自己腿脚不灵活”。\n- “哀叹”属情感/评价类动词，非叙实，不保证其宾语小句（腿脚不灵活）的真值。\n- 因而既不能据此推出“不灵活”为真，也不能推出“确实灵活”为真。故结论：不能确定。"
+      },
+      "id": "call_mvQpgYcZX60kSjbcr3RKljGd",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3593,
+    "output_tokens": 2298,
+    "total_tokens": 5891,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 2176
+    }
+  }
+}

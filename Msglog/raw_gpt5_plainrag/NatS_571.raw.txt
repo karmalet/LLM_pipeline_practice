@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_XNv3UQhuBniGcYo13S50le9z",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"“污蔑”表示对他人进行不实指控，其宾语小句为假。文本说“有人污蔑朝鲜义勇队是中国部队”，据此可推得“朝鲜义勇队是中国部队”这句话为假，因此“朝鲜义勇队确实是中国部队”不成立。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 360,
+      "prompt_tokens": 3404,
+      "total_tokens": 3764,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 256,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--72bd51e0-e39f-41c3-82be-b7378cafe3fa-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "“污蔑”表示对他人进行不实指控，其宾语小句为假。文本说“有人污蔑朝鲜义勇队是中国部队”，据此可推得“朝鲜义勇队是中国部队”这句话为假，因此“朝鲜义勇队确实是中国部队”不成立。"
+      },
+      "id": "call_XNv3UQhuBniGcYo13S50le9z",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3404,
+    "output_tokens": 360,
+    "total_tokens": 3764,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 256
+    }
+  }
+}

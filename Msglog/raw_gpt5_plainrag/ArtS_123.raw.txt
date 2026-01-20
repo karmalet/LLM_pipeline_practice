@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_7KnxXA59Is2rz6M3RSEdtez2",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"步骤：1）“觉着/觉得”属于态度类非叙实谓词，只表达主体的看法；2）非叙实不预设其宾语小句为真；3）因此从“小张觉着小李是故意撒娇”不能推出“小李是故意撒娇”真假。结论：不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 426,
+      "prompt_tokens": 3555,
+      "total_tokens": 3981,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 320,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--d2baa6a4-f49b-40b1-b5c9-bc21cd7bec32-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "步骤：1）“觉着/觉得”属于态度类非叙实谓词，只表达主体的看法；2）非叙实不预设其宾语小句为真；3）因此从“小张觉着小李是故意撒娇”不能推出“小李是故意撒娇”真假。结论：不能确定。"
+      },
+      "id": "call_7KnxXA59Is2rz6M3RSEdtez2",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3555,
+    "output_tokens": 426,
+    "total_tokens": 3981,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 320
+    }
+  }
+}

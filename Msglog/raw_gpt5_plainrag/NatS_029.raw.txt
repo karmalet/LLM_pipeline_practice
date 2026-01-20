@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_XeNrjVXXb3s0ZSmTqQ4wgy1B",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"文本先给出数据对比：总体比例升至1.8%，但军官中仅1.2%，一直偏少；随后明确指出“这暴露出少数民族后裔仍不太容易进入军官队伍”。假设与该结论一致，因此可判定为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 479,
+      "prompt_tokens": 3294,
+      "total_tokens": 3773,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 384,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--06cb7444-c4cf-410d-af4f-fccb3422de26-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "文本先给出数据对比：总体比例升至1.8%，但军官中仅1.2%，一直偏少；随后明确指出“这暴露出少数民族后裔仍不太容易进入军官队伍”。假设与该结论一致，因此可判定为真。"
+      },
+      "id": "call_XeNrjVXXb3s0ZSmTqQ4wgy1B",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3294,
+    "output_tokens": 479,
+    "total_tokens": 3773,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 384
+    }
+  }
+}

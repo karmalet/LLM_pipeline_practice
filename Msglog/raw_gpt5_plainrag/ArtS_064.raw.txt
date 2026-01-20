@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_yqtnM7JJpYkm103IQSggwXiT",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"“哀叹”是表达态度/情绪的非事实性述谓，只表明小张认为或感到“经济发展已经停滞”，并不保证该命题在客观上为真。因此，仅根据给定文本，无法确定“经济发展已经停滞”的真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1569,
+      "prompt_tokens": 3253,
+      "total_tokens": 4822,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1472,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--385dd6dd-07b5-437c-926d-a4195fcab91b-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "“哀叹”是表达态度/情绪的非事实性述谓，只表明小张认为或感到“经济发展已经停滞”，并不保证该命题在客观上为真。因此，仅根据给定文本，无法确定“经济发展已经停滞”的真伪。"
+      },
+      "id": "call_yqtnM7JJpYkm103IQSggwXiT",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3253,
+    "output_tokens": 1569,
+    "total_tokens": 4822,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1472
+    }
+  }
+}

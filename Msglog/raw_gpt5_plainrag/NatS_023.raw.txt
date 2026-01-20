@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_IQKK8lwQGuqAt9QQq0sSMZ5W",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 前提中说这些迹象“都暴露出这是一场斗争”。\\n- 依据给定语义知识，“曝光/暴露出”类言语行为动词的宾语命题通常被承认为真（叙实）。\\n- 因此可推得命题“这是一场斗争”为真；“确实”仅加强语气，不改变命题内容。\\n- 结论：假设为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 706,
+      "prompt_tokens": 3579,
+      "total_tokens": 4285,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--bca70d31-365e-444f-9e3e-5b330ef64d54-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 前提中说这些迹象“都暴露出这是一场斗争”。\n- 依据给定语义知识，“曝光/暴露出”类言语行为动词的宾语命题通常被承认为真（叙实）。\n- 因此可推得命题“这是一场斗争”为真；“确实”仅加强语气，不改变命题内容。\n- 结论：假设为真。"
+      },
+      "id": "call_IQKK8lwQGuqAt9QQq0sSMZ5W",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3579,
+    "output_tokens": 706,
+    "total_tokens": 4285,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

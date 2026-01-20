@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_NRQ2h3YaasHnh5KVx34E7YPK",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- 文本：我“望见”刘章和夫人走了进来。\\n- “望见”属半叙实动词（类似看见），在无否定/情态修饰时蕴涵其宾语小句为真。\\n- 故“刘章和夫人走了进来”为真。\\n- 假设称“确实没有走进来”与文本蕴涵相矛盾，结论为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 772,
+      "prompt_tokens": 3154,
+      "total_tokens": 3926,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 640,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--27150bcf-e08f-4f2f-b334-f20482355ed9-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- 文本：我“望见”刘章和夫人走了进来。\n- “望见”属半叙实动词（类似看见），在无否定/情态修饰时蕴涵其宾语小句为真。\n- 故“刘章和夫人走了进来”为真。\n- 假设称“确实没有走进来”与文本蕴涵相矛盾，结论为假。"
+      },
+      "id": "call_NRQ2h3YaasHnh5KVx34E7YPK",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3154,
+    "output_tokens": 772,
+    "total_tokens": 3926,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 640
+    }
+  }
+}

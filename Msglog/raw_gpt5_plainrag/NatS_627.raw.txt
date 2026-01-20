@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rk5ICGj02QdVhW9D5D9rG66l",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中用“笔者以为”表明这是作者的主观看法，“以为/认为”为非事实性态度动词，不预设其后命题为真。\\n- “不失为……好办法”语气也较为委婉，而假设使用“确实”做出强事实判断。\\n- 因此，仅据该文本无法确定“这确实是正党风、扬正气的好办法”为真或为假，结论应为不能确定。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 717,
+      "prompt_tokens": 3380,
+      "total_tokens": 4097,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--76e8cfc8-43bd-4517-864e-6971216c2e19-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中用“笔者以为”表明这是作者的主观看法，“以为/认为”为非事实性态度动词，不预设其后命题为真。\n- “不失为……好办法”语气也较为委婉，而假设使用“确实”做出强事实判断。\n- 因此，仅据该文本无法确定“这确实是正党风、扬正气的好办法”为真或为假，结论应为不能确定。"
+      },
+      "id": "call_rk5ICGj02QdVhW9D5D9rG66l",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3380,
+    "output_tokens": 717,
+    "total_tokens": 4097,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

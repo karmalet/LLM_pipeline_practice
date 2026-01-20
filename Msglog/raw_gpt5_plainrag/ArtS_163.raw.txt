@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_zHtFseUPX5nb9ZKzoUyEJCyN",
+        "function": {
+          "arguments": "{\"label\":\"F\",\"reason\":\"- “碰见”属于叙实向表达，通常断言说话者所描述的相遇情景真实发生。\\n- 文本“小张碰见小李在上厕所”因此承认“小李在上厕所”为真。\\n- 假设“小李没在上厕所”与文本所断言事实直接矛盾，故为假。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 685,
+      "prompt_tokens": 3060,
+      "total_tokens": 3745,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 576,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 1152
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--be55e2d2-c580-482b-a3e5-f4e3b2a5a926-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "F",
+        "reason": "- “碰见”属于叙实向表达，通常断言说话者所描述的相遇情景真实发生。\n- 文本“小张碰见小李在上厕所”因此承认“小李在上厕所”为真。\n- 假设“小李没在上厕所”与文本所断言事实直接矛盾，故为假。"
+      },
+      "id": "call_zHtFseUPX5nb9ZKzoUyEJCyN",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3060,
+    "output_tokens": 685,
+    "total_tokens": 3745,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 1152
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 576
+    }
+  }
+}

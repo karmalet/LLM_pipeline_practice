@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_rtqs7rVtBuaU4YJtEYjnxWAW",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"1) 文中断言：小张“听出”[门外是小李的声音]。\\n2) “听出”属感知类（半叙实/叙实）谓词，在肯定式下通常预设其宾语小句为真；且句中无情态词或否定削弱此预设。\\n3) 因此可推出：门外确是小李的声音。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1020,
+      "prompt_tokens": 3358,
+      "total_tokens": 4378,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 896,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--109d5c55-eef8-4c2d-9e21-64d6aa642bee-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "1) 文中断言：小张“听出”[门外是小李的声音]。\n2) “听出”属感知类（半叙实/叙实）谓词，在肯定式下通常预设其宾语小句为真；且句中无情态词或否定削弱此预设。\n3) 因此可推出：门外确是小李的声音。"
+      },
+      "id": "call_rtqs7rVtBuaU4YJtEYjnxWAW",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3358,
+    "output_tokens": 1020,
+    "total_tokens": 4378,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 896
+    }
+  }
+}

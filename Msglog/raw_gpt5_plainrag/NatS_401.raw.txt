@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_VdIuD1UZrMrm0Gw5WglOapqp",
+        "function": {
+          "arguments": "{\"label\":\"U\",\"reason\":\"- 文中仅说“窦玉泉暗暗埋怨张普景不识时务死较劲”，这是对他人行为的主观评价/态度的呈现。\\n- “埋怨”不具叙实性，不预设其宾语小句为真，只表明埋怨者的看法。\\n- 文中没有独立事实依据来证实或证伪“张普景不识时务死较劲”，故无法确定假设真伪。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 1744,
+      "prompt_tokens": 3311,
+      "total_tokens": 5055,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 1600,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--92aef567-2f60-4737-a31c-6c33d456c738-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "U",
+        "reason": "- 文中仅说“窦玉泉暗暗埋怨张普景不识时务死较劲”，这是对他人行为的主观评价/态度的呈现。\n- “埋怨”不具叙实性，不预设其宾语小句为真，只表明埋怨者的看法。\n- 文中没有独立事实依据来证实或证伪“张普景不识时务死较劲”，故无法确定假设真伪。"
+      },
+      "id": "call_VdIuD1UZrMrm0Gw5WglOapqp",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 3311,
+    "output_tokens": 1744,
+    "total_tokens": 5055,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 1600
+    }
+  }
+}

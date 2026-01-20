@@ -1,0 +1,66 @@
+{
+  "content": "",
+  "additional_kwargs": {
+    "tool_calls": [
+      {
+        "id": "call_5hgovNV7fJWUL9iJx4nOuYlV",
+        "function": {
+          "arguments": "{\"label\":\"T\",\"reason\":\"- 文本：\\\"梁必达却假装糊涂\\\"。\\n- 语义规则：\\\"假装\\\"+状态性宾语（如“糊涂”）预设该状态并不真实，即宾语小句为假，其否定为真。\\n- 推论：既然是“假装糊涂”，则他实际上并不糊涂。\\n- 结论：假设“梁必达确实不糊涂”为真。\"}",
+          "name": "submit_judgment"
+        },
+        "type": "function"
+      }
+    ],
+    "refusal": null
+  },
+  "response_metadata": {
+    "token_usage": {
+      "completion_tokens": 906,
+      "prompt_tokens": 4292,
+      "total_tokens": 5198,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 768,
+        "rejected_prediction_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": 0,
+        "cached_tokens": 0
+      }
+    },
+    "model_name": "gpt-5-2025-08-07",
+    "system_fingerprint": null,
+    "finish_reason": "tool_calls",
+    "logprobs": null
+  },
+  "type": "ai",
+  "name": null,
+  "id": "run--cfe63d4b-3927-4bbc-b564-abf62a2e2560-0",
+  "example": false,
+  "tool_calls": [
+    {
+      "name": "submit_judgment",
+      "args": {
+        "label": "T",
+        "reason": "- 文本：\"梁必达却假装糊涂\"。\n- 语义规则：\"假装\"+状态性宾语（如“糊涂”）预设该状态并不真实，即宾语小句为假，其否定为真。\n- 推论：既然是“假装糊涂”，则他实际上并不糊涂。\n- 结论：假设“梁必达确实不糊涂”为真。"
+      },
+      "id": "call_5hgovNV7fJWUL9iJx4nOuYlV",
+      "type": "tool_call"
+    }
+  ],
+  "invalid_tool_calls": [],
+  "usage_metadata": {
+    "input_tokens": 4292,
+    "output_tokens": 906,
+    "total_tokens": 5198,
+    "input_token_details": {
+      "audio": 0,
+      "cache_read": 0
+    },
+    "output_token_details": {
+      "audio": 0,
+      "reasoning": 768
+    }
+  }
+}
