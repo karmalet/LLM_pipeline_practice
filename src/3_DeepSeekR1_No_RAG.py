@@ -42,28 +42,110 @@ def _disable_langsmith_env():
 # -----------------------------
 # 2) 유틸: JSON 파싱(DeepSeek 출력에서 label/reason만 추출)
 # -----------------------------
+LABEL_SET = {"T", "F", "U", "R"}
+ZH_MAP = {"真": "T", "假": "F", "不能确定": "U", "模型拒绝回答": "R"}
+
 def parse_json_response(text: str):
     """
-    DeepSeek 출력에서 JSON 객체만 파싱.
-    - ```json ... ``` 처리
-    - 여러 JSON이 있을 경우 마지막 객체 우선
+    DeepSeek 출력에서 최종 label/reason 추출(견고 버전)
+    - <think>...</think> 제거(하지만 reason이 없으면 think를 fallback으로 사용)
+    - codeblock(json) 우선 -> 없으면 문자열 내 마지막 JSON 객체를 파싱
+    - JSON이 없으면 여러 패턴 시도 (영어/중국어 키워드 모두 지원)
+    - 키는 label, answer, 答案 모두 허용
     """
-    try:
-        code_block_match = re.search(r"```json\s*(\{.*?\})\s*```", text, re.DOTALL)
-        if code_block_match:
-            json_str = code_block_match.group(1)
-        else:
-            json_matches = re.findall(r"\{.*?\}", text, re.DOTALL)
-            if not json_matches:
-                raise ValueError("No JSON object found.")
-            json_str = json_matches[-1]
+    raw = text or ""
 
-        data = json.loads(json_str.strip())
-        label = data.get("label", "R")
-        reason = data.get("reason", "")
-        return label, reason
+    # 1) think 내용 분리(있으면 reason 후보로 저장)
+    think_match = re.search(r"<think>(.*?)</think>", raw, flags=re.DOTALL)
+    think_txt = think_match.group(1).strip() if think_match else ""
+
+    # 2) think 블록 제거(파싱 안정화)
+    cleaned = re.sub(r"<think>.*?</think>\s*", "", raw, flags=re.DOTALL).strip()
+
+    # 3) ```json ... ``` 우선
+    code_block = re.search(r"```json\s*(\{[\s\S]*?\})\s*```", cleaned, flags=re.DOTALL)
+    if code_block:
+        json_str = code_block.group(1).strip()
+    else:
+        # 4) 문자열 내 JSON object 후보 모두 찾고 마지막 것 사용
+        matches = re.findall(r"\{[\s\S]*?\}", cleaned, flags=re.DOTALL)
+        if matches:
+            json_str = matches[-1].strip()
+        else:
+            # 5) JSON이 없으면 다양한 패턴 시도
+            # 패턴 1: "answer": "T", "answer": T, answer: "T", answer: T
+            # 패턴 2: 答案：T, 答案: T (중국어)
+            # 패턴 3: 마지막에 단독으로 T, F, U, R이 나오는 경우
+            simple_patterns = [
+                r'(?:"answer"\s*:\s*"?([TFUR])"?|answer\s*:\s*"?([TFUR])"?)',
+                r'(?:"label"\s*:\s*"?([TFUR])"?|label\s*:\s*"?([TFUR])"?)',
+                r'(?:答案|答)\s*[：:]\s*"?([TFUR])"?',
+                r'\b([TFUR])\s*$',  # 마지막에 단독으로 T, F, U, R
+            ]
+            
+            for pattern in simple_patterns:
+                simple_match = re.search(pattern, cleaned, flags=re.IGNORECASE | re.MULTILINE)
+                if simple_match:
+                    # 그룹 중 None이 아닌 첫 번째 값 찾기
+                    label = None
+                    for group in simple_match.groups():
+                        if group:
+                            label = group.upper()
+                            break
+                    
+                    if label and label in LABEL_SET:
+                        return label, think_txt
+            
+            # 6) 그래도 안되면 R 반환
+            return "R", think_txt
+
+    # 7) JSON 파싱 시도
+    try:
+        data = json.loads(json_str)
     except Exception as e:
+        # JSON 파싱 실패 시 간단한 패턴 재시도
+        simple_patterns = [
+            r'(?:"answer"\s*:\s*"?([TFUR])"?|answer\s*:\s*"?([TFUR])"?)',
+            r'(?:"label"\s*:\s*"?([TFUR])"?|label\s*:\s*"?([TFUR])"?)',
+            r'(?:答案|答)\s*[：:]\s*"?([TFUR])"?',
+            r'\b([TFUR])\s*$',
+        ]
+        
+        for pattern in simple_patterns:
+            simple_match = re.search(pattern, cleaned, flags=re.IGNORECASE | re.MULTILINE)
+            if simple_match:
+                label = None
+                for group in simple_match.groups():
+                    if group:
+                        label = group.upper()
+                        break
+                
+                if label and label in LABEL_SET:
+                    return label, think_txt
+        
         return "R", f"JSON parse error: {e}"
+
+    # 8) label 우선, 없으면 answer도 허용
+    label = (data.get("label") or data.get("answer") or "").strip()
+    label = label.upper()
+
+    # 중국어 값까지 대비
+    if label in ZH_MAP:
+        label = ZH_MAP[label]
+
+    if label not in LABEL_SET:
+        # label이 이상하면 R 처리 + reason 후보를 최대한 남김
+        reason = (data.get("reason") or "").strip()
+        if not reason:
+            reason = think_txt
+        return "R", reason
+
+    # 9) reason 없으면 think_txt로 채움
+    reason = (data.get("reason") or "").strip()
+    if not reason:
+        reason = think_txt
+
+    return label, reason
 
 
 # -----------------------------

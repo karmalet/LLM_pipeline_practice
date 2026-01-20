@@ -2,6 +2,15 @@
 
 </think>
 
-根据提供的前提，发言人指出美方无端指责中国政府泄露信息，并称这种行为是“以小人之心度君子之腹”，这表明美方的指控缺乏证据。因此，不能确定中国政府是否确实泄露了相关信息。
+根据前提"text"，发言人指出美方指责中国政府泄露信息是没有根据的，这属于污蔑。因此，无法确定"hypothesis"是否成立，因为 premise 中并未明确中国政府确实有此行为。
 
-答案：U
+"answer": "U"
+
+reasoning: The premise indicates that the U.S. is accusing China without evidence, which is a form of slander. However, this does not necessarily confirm or deny whether the Chinese government actually leaked information.
+
+**Step-by-Step Reasoning:**
+1. **Text Analysis**: The speaker accuses the U.S. of falsely blaming China for leaking information, calling it an "unfounded accusation."
+2. **Understanding Slander**: This means that the U.S. is spreading false claims against China.
+3. **Determining Factuality**: Since the text does not provide evidence that the Chinese government actually leaked information, we cannot confirm or deny the hypothesis.
+
+**Answer**: U

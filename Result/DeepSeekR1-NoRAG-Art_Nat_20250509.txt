@@ -3,19 +3,19 @@ deepseek-r1:14b
 Classification Report:
               precision    recall  f1-score   support
 
-           F       0.86      0.57      0.68       362
+           F       0.86      0.74      0.80       362
            R       0.00      0.00      0.00         0
-           T       0.85      0.55      0.67       374
-           U       0.51      0.54      0.52       264
+           T       0.84      0.71      0.77       374
+           U       0.50      0.70      0.58       264
 
-    accuracy                           0.55      1000
-   macro avg       0.55      0.41      0.47      1000
-weighted avg       0.76      0.55      0.63      1000
+    accuracy                           0.72      1000
+   macro avg       0.55      0.54      0.54      1000
+weighted avg       0.76      0.72      0.73      1000
 
 Confusion Matrix:
-Predicted label (열)    T    F    U   R
-True label (행)                        
-T                    205    3   77  89
-F                      6  205   59  92
-U                     30   31  142  61
-R                      0    0    0   0
+Predicted label (열)    T    F    U  R
+True label (행)                       
+T                    267    5  101  1
+F                      9  269   84  0
+U                     41   39  184  0
+R                      0    0    0  0
