@@ -1,3 +1,4 @@
+#core
 python-dotenv==1.1.0
 
 # LangChain core
@@ -9,7 +10,7 @@ langchain-text-splitters==0.3.8
 # Vector store
 faiss-cpu==1.10.0
 
-# Eval utils (당신 스크립트들이 이미 쓰는 구성)
+# Eval utils
 numpy==1.26.4
 pandas==2.2.3
 scikit-learn==1.6.1
