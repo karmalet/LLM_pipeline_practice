@@ -1,33 +1,87 @@
+# src/1_GPT5_No_RAG.py
+from __future__ import annotations
+
+import os
+import re
+import json
+import pickle
 from datetime import datetime
-from typing import Optional
-from langchain.embeddings import CacheBackedEmbeddings
-from langchain.storage import LocalFileStore
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.runnables import RunnablePassthrough, RunnableLambda
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_community.document_loaders import PDFPlumberLoader
-from langchain_community.vectorstores.faiss import FAISS
+
+import nest_asyncio
+from dotenv import load_dotenv
+
 from langchain_core.prompts import load_prompt
-from langchain_core.runnables import RunnableConfig
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_core.runnables import RunnablePassthrough, RunnableConfig
+from langchain_openai import ChatOpenAI
+
 from sklearn.metrics import classification_report, confusion_matrix
 import pandas as pd
-
 import numpy as np
-import pickle
 
-from llama_parse import LlamaParse
-from llama_index.core import SimpleDirectoryReader
-import os, re, json, pickle, nest_asyncio, tiktoken
-from dotenv import load_dotenv
-# from langchain_teddynote import logging
 
+# ============================================================
+# Config
+# ============================================================
 MODEL = "gpt-5"
+
 INPUT = "data/Art_Nat_20250509.json"
-DATA_name = re.findall(r"/(.+)\.json", INPUT)[0]
+DATA_name = re.findall(r"/(.+)\.json", INPUT)[0] if "/" in INPUT else re.findall(r"\\(.+)\.json", INPUT)[0]
+
+# ===== Local trace logging =====
+MSGLOG_DIR = "Msglog"
+RAW_DIR = os.path.join(MSGLOG_DIR, "raw_gpt5_norag")
+MSGLOG_PATH = os.path.join(MSGLOG_DIR, "GPT5-NoRAG-decision_msgs.jsonl")
+
+RESULT_DIR = "Result"
+SUBMIT_DIR = "submit"
+RESULT_TXT = os.path.join(RESULT_DIR, f"GPT5-NoRAG-{DATA_name}.txt")
+PKL_OUT = os.path.join(RESULT_DIR, f"GPT5-NoRAG-{DATA_name}-preds_golds.pkl")
 
 
-# === Tool-choice labels for deterministic parsing ===
+def ensure_dirs():
+    os.makedirs(MSGLOG_DIR, exist_ok=True)
+    os.makedirs(RAW_DIR, exist_ok=True)
+    os.makedirs(RESULT_DIR, exist_ok=True)
+    os.makedirs(SUBMIT_DIR, exist_ok=True)
+
+
+def dump_decision_msg(
+    path: str,
+    d_id: str,
+    question: str,
+    msg,  # AIMessage
+    final_label: str,
+    reasoning_txt: str,
+    cfg: dict,
+):
+    """JSONL (한 줄 = 한 문항). DeepSeek 쪽 로그 구조와 최대한 유사하게 저장."""
+    # AIMessage를 가능한 한 원형에 가깝게 덤프
+    try:
+        msg_dump = msg.model_dump()  # pydantic v2
+    except Exception:
+        try:
+            msg_dump = msg.dict()
+        except Exception:
+            msg_dump = {"type": type(msg).__name__, "content": getattr(msg, "content", "")}
+
+    rec = {
+        "timestamp": datetime.now().isoformat(timespec="seconds"),
+        "d_id": d_id,
+        "question": question,
+        "final_label": final_label,
+        "reasoning_txt": (reasoning_txt or ""),
+        "retrieved_docs": [],  # No-RAG이므로 빈 리스트 고정
+        "decision_msg": msg_dump,
+        "run_config": cfg,
+    }
+
+    with open(path, "a", encoding="utf-8") as f:
+        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
+# ============================================================
+# Tool-choice schema (No-RAG와 동일 패턴)
+# ============================================================
 TOOLS = [
     {
         "type": "function",
@@ -40,83 +94,76 @@ TOOLS = [
                     "label": {
                         "type": "string",
                         "enum": ["T", "F", "U", "R"],
-                        "description": "T=真, F=假, U=不能确定, R=模型拒绝回答"
+                        "description": "T=真, F=假, U=不能确定, R=模型拒绝回答",
                     },
                     "reason": {
                         "type": "string",
-                        "description": "先用自然语言(不超过1000字)给出简洁而清晰的推理过程，尽量精炼(step-by-step reasoning)。"
-                    }
+                        "description": "先用自然语言(不超过1000字)给出简洁而清晰的推理过程，尽量精炼(step-by-step reasoning)。",
+                    },
                 },
-                "required": ["label", "reason"]
-            }
-        }
+                "required": ["label", "reason"],
+            },
+        },
     }
 ]
 
 
 def format_nli_prompt(predicate, text, hypothesis, options):
-    q = f"""
+    return f"""
 请根据以下输入内容判断：
 - 前提（text）: {text}
 - 假设（hypothesis）: {hypothesis}
 - 判断依据: {predicate}
 - 选项（option）: {options}
-"""
-    return q
+""".strip()
+
+
+def parse_tool_result(ai_msg):
+    """GPT-5 tool_choice='required' 결과에서 label/reason을 안정적으로 추출"""
+    calls = getattr(ai_msg, "tool_calls", None)
+    if not calls:
+        raise ValueError("Empty tool_calls: model did not call submit_judgment")
+
+    first = calls[0]
+    args = first.get("args", {}) or {}
+
+    label = (args.get("label", "") or "").strip()
+    reason = (args.get("reason", "") or "").strip()
+
+    if label not in {"T", "F", "U", "R"}:
+        raise ValueError(f"Invalid label from tool args: {label}")
+    if not reason:
+        reason = "(no reason returned)"
+    return label, reason
 
 
 def NoRagChain():
-        # 프롬프트 로드
-        prompt = load_prompt("prompts/no-rag-final.yaml", encoding="utf-8")
-        print("프롬프트 로딩 완료")
+    prompt = load_prompt("prompts/no-rag-final.yaml", encoding="utf-8")
+    print("프롬프트 로딩 완료")
 
-        # Ollama 모델 지정
-        # llm = ChatOpenAI(model_name=MODEL, temperature=0)
-        llm = ChatOpenAI(model_name=MODEL, temperature=1, parallel_tool_calls=False)  # GPT-5는 temperature 조절 못함.
+    llm = ChatOpenAI(
+        model_name=MODEL,
+        temperature=1,              # GPT-5는 실험 일관성 위해 고정
+        parallel_tool_calls=False,  # tool_call 1회 강제에 유리
+    )
+    tool_llm = llm.bind_tools(TOOLS, tool_choice="required")
 
-        #1 정답을 말하는 체인 생성 (tool-choice 강제)
-        tool_llm = llm.bind_tools(TOOLS, tool_choice="required")
-        DECISION_CHAIN = (
-            {"question": RunnablePassthrough(),} 
-            | prompt.partial(
-                extra=("先用自然语言(不超过1000字)给出简洁而清晰的推理过程，尽量精炼(step-by-step reasoning)。\n"
-                       "随后调用一次函数 submit_judgment，并在其参数中填入 {label, reason}。\n"
-                       "不要调用其它函数；不要省略 reason。")
+    chain = (
+        {"question": RunnablePassthrough()}
+        | prompt.partial(
+            extra=(
+                "先用自然语言(不超过1000字)给出简洁而清晰的推理过程，尽量精炼(step-by-step reasoning)。\n"
+                "随后调用一次函数 submit_judgment，并在其参数中填入 {label, reason}。\n"
+                "不要调用其它函数；不要省略 reason。"
             )
-            | tool_llm
         )
-        return DECISION_CHAIN
+        | tool_llm
+    )
+    return chain
 
-def parse_tool_result(ai_msg):
-    """
-    ai_msg.tool_calls['arg']를 파싱
-    """
-    try:
-        calls = getattr(ai_msg, "tool_calls")
-        if calls:
-            try:
-                first = calls[0]
-                label = first['args'].get("label", "레이블 없음")
-                reason = first['args'].get("reason", "이유 없음").strip()
-                # if label in {"T", "F", "U", "R"}:
-                return label, reason
 
-            except Exception as e:
-                print(e)
-                input('TOLL call 파싱 에러 발생!!!')
-        else:
-            input('비어있는 TOOL CALL')
-    except Exception:
-        input('decision_msg가 비어 있음')
-
-# TP,FP,FN,TN 별 인덱스 뽑기
-def get_confusion_cell_indices(y_true, y_pred, labels=("T","F","U","R"), one_based=True):
-    """
-    혼동행렬의 각 (실제→예측) 셀에 들어가는 샘플 인덱스를 반환.
-    반환 형식: cell_idx[true_label][pred_label] = np.ndarray([...])
-
-    one_based=True 이면 1부터 시작하는 인덱스(보고용)로 반환합니다.
-    """
+# TP,FP,FN,TN 별 인덱스 뽑기 (원본 No-RAG 유틸 유지)
+def get_confusion_cell_indices(y_true, y_pred, labels=("T", "F", "U", "R"), one_based=True):
     y_true = np.asarray(y_true)
     y_pred = np.asarray(y_pred)
     add = 1 if one_based else 0
@@ -129,124 +176,102 @@ def get_confusion_cell_indices(y_true, y_pred, labels=("T","F","U","R"), one_bas
     return cell_idx
 
 
-def print_confusion_cells(y_true, y_pred, labels=("T","F","U","R"), one_based=True, max_show=50):
-    """
-    각 셀의 개수와(필요하면) 앞부분 인덱스를 프린트.
-    max_show: 너무 길면 앞에서부터 max_show개만 표시.
-    """
-    cells = get_confusion_cell_indices(y_true, y_pred, labels, one_based)
-    for t in labels:
-        for p in labels:
-            idx = cells[t][p]
-            n = len(idx)
-            head = np.array2string(idx[:max_show], separator=", ")
-            tail = "" if n <= max_show else f" ... (+{n - max_show} more)"
-            print(f"{t}→{p}: {n}개 {head}{tail}")
-    return cells
-
-
 if __name__ == "__main__":
-    # API 키 정보 로드
+    ensure_dirs()
     load_dotenv(dotenv_path="./.env")
-    nest_asyncio.apply()  # LLAMA parser
-    # logging.langsmith(f"{MODEL}-NoRAG-{DATA_name}")
+    nest_asyncio.apply()
+
+    # LangSmith 사용 금지(안전하게 off)
+    os.environ["LANGCHAIN_TRACING_V2"] = "false"
+    os.environ["LANGCHAIN_API_KEY"] = ""
+    os.environ["LANGCHAIN_PROJECT"] = ""
 
     with open(INPUT, encoding="utf-8") as f:
         data = json.load(f)
 
+    chain = NoRagChain()
+
     results = []
-
-    DECISION_CHAIN = NoRagChain()
-
-    for query_data in data[:1]:
-        id = query_data["d_id"]
-        question = format_nli_prompt(
-            predicate=query_data["predicate"],
-            text=query_data["text"],
-            hypothesis=query_data["hypothesis"],
-            options={"T": "真", "F": "假", "U": "不能确定", "R": "模型拒绝回答"},
-        )
-        cfg = RunnableConfig(
-            run_name=f"{id}",
-            tags=[f"d_id:{id}", "NoRAG", DATA_name],
-            metadata={
-                "d_id": id,
-                "type": query_data.get("type"),
-                "predicate": query_data.get("predicate"),
-            },
-        )
-
-        # 1 모델 호출
-        decision_msg = DECISION_CHAIN.invoke(question, config=cfg)
-        # 간단ver.
-        # decision_msg = DECISION_CHAIN.invoke(question)
-        print(f'*** {id} ***')
-        print(decision_msg)
-
-        # 3 최종 라벨 파싱 (tool choice)
-        final_label, reasoning_txt = parse_tool_result(decision_msg)
-        # 간단ver.
-        # final_label, reasoning_txt = parse_tool_result(decision_msg.content)
-
-        # # 4 LangSmith에 reasoning을 기록 (LLM 재호출 없이)
-        # RunnableLambda(lambda x: x).with_config(
-        #     run_name=f"{cfg['run_name']}#reasoning",  # 리스트에서 쉽게 구분되도록 suffix
-        #     tags=cfg["tags"],  # d_id:... 등 기존 태그 재사용
-        #     metadata={**cfg["metadata"], "reasoning_txt": reasoning_txt},
-        # ).invoke(None)  # no-op 실행 → LangSmith에 한 줄 남김
-
-        # 모델의 응답 기록
-        print(f"{id}_最终答案:", final_label)
-        result = {"answer": final_label}
-        result["d_id"] = id
-        result["predicate"] = query_data["predicate"]
-        result["final_label"] = final_label
-        result["reasoning_txt"] = reasoning_txt
-        results.append(result)
-
-        # Gold 표시
-        print(f"{id}_Gold:", query_data["answer"])
-
-    # 정답과 예측 비교
-    gold_dict = {query_data["d_id"]: query_data["answer"] for query_data in data}
-    comparison = []
     preds, golds = [], []
 
-    for pred in results:
-        d_id = pred["d_id"]
-        model_ans = pred["answer"]
-        gold_ans = gold_dict.get(d_id, "정답 없음")
+    for q in data:
+        d_id = q["d_id"]
 
-        comparison.append(
-            {
-                "d_id": d_id,
-                "predicate": pred["predicate"],
-                "model_prediction": model_ans,
-                "gold_answer": gold_ans,
-                "match": model_ans == gold_ans,
-            }
+        question = format_nli_prompt(
+            predicate=q["predicate"],
+            text=q["text"],
+            hypothesis=q["hypothesis"],
+            options={"T": "真", "F": "假", "U": "不能确定", "R": "模型拒绝回答"},
         )
 
-        if gold_ans in {"T", "F", "U", "R"} and model_ans in {"T", "F", "U", "R"}:
-            preds.append(model_ans)
-            golds.append(gold_ans)
-        else:
-            print(f'gold_answer:{gold_ans}\nmodel_answer:{model_ans}')
-            input('문제 발생: gold_ans에 답이 없거나 model_ans에 답이 없음')
+        cfg = RunnableConfig(
+            run_name=str(d_id),
+            tags=[f"d_id:{d_id}", "NoRAG", DATA_name],
+            metadata={"d_id": d_id, "type": q.get("type"), "predicate": q.get("predicate")},
+        )
 
-    # 평가 출력
-    print("\nClassification Report:")
-    a = classification_report(golds, preds, zero_division=0)
-    print(a)
-    labels=["T", "F", "U", "R"]
-    print("Confusion Matrix:")
-    b = confusion_matrix(golds, preds, labels=labels)
-    cm_df = pd.DataFrame(b,
-                         index=pd.Index(labels, name="True label (행)"),
-                         columns=pd.Index(labels, name="Predicted label (열)")
-                         )
-    print(cm_df.to_string())
+        ai_msg = chain.invoke(question, config=cfg)
+        final_label, reasoning_txt = parse_tool_result(ai_msg)
 
-    cells = get_confusion_cell_indices(golds, preds, labels, one_based=True)
+        # ===== (1) raw 저장: 모델 응답 원형 =====
+        try:
+            raw = json.dumps(ai_msg.model_dump(), ensure_ascii=False, indent=2)
+        except Exception:
+            raw = str(ai_msg)
 
+        with open(os.path.join(RAW_DIR, f"{d_id}.raw.txt"), "w", encoding="utf-8") as f:
+            f.write(raw)
 
+        # ===== (2) JSONL 누적 저장 =====
+        dump_decision_msg(
+            path=MSGLOG_PATH,
+            d_id=d_id,
+            question=question,
+            msg=ai_msg,
+            final_label=final_label,
+            reasoning_txt=reasoning_txt,
+            cfg=dict(cfg),
+        )
+
+        print(f"*** {d_id} ***")
+        print("final:", final_label, "| gold:", q.get("answer", "(no gold)"))
+
+        results.append({"d_id": d_id, "predicate": q["predicate"], "answer": final_label, "reason": reasoning_txt})
+
+        gold = q.get("answer")
+        if gold in {"T", "F", "U", "R"} and final_label in {"T", "F", "U", "R"}:
+            preds.append(final_label)
+            golds.append(gold)
+
+    # submit 저장
+    out_path = os.path.join(SUBMIT_DIR, f"submit_{MODEL}-NoRAG-{DATA_name}.json")
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+    print(f"\nOK: wrote {out_path}")
+
+    # 평가 + 파일 저장
+    rep = ""
+    cm_df = None
+    if golds:
+        rep = classification_report(golds, preds, digits=4, zero_division=0)
+        cm = confusion_matrix(golds, preds, labels=["T", "F", "U", "R"])
+        cm_df = pd.DataFrame(
+            cm,
+            index=pd.Index(["T", "F", "U", "R"], name="True"),
+            columns=pd.Index(["T", "F", "U", "R"], name="Pred"),
+        )
+
+        with open(PKL_OUT, "wb") as f:
+            pickle.dump({"preds": preds, "golds": golds}, f)
+
+        with open(RESULT_TXT, "w", encoding="utf-8") as f:
+            f.write(f"{MODEL} No-RAG\n\n")
+            f.write("Classification Report:\n")
+            f.write(rep + "\n\n")
+            f.write("Confusion Matrix:\n")
+            f.write(cm_df.to_string() + "\n")
+
+        print("\n[Classification Report]\n", rep)
+        print("\n[Confusion Matrix]\n", cm_df.to_string())
+    else:
+        print("\nINFO: gold 라벨이 없어 평가를 생략했습니다.")

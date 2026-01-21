@@ -30,6 +30,8 @@ from llama_index.core import SimpleDirectoryReader
 from datetime import datetime
 
 MSGLOG_DIR = "Msglog"
+RESULT_TXT = f"Result/GPT5-PlainRAG-{DATA_name}.txt"
+PKL_OUT = "DeepSeekR1-PlainRAG-preds_golds.pkl"
 RAW_DIR = os.path.join(MSGLOG_DIR, "raw_gpt5_plainrag")
 MSGLOG_PATH = os.path.join(MSGLOG_DIR, "GPT5-PlainRAG-decision_msgs.jsonl")
 
@@ -404,6 +406,21 @@ if __name__ == "__main__":
     # 5) 평가(정답이 있는 경우)
     if y_true:
         print("\n[Classification Report]")
-        print(classification_report(y_true, y_pred, digits=4))
+        rep = classification_report(y_true, y_pred, digits=4)
+        print(rep)
         print("\n[Confusion Matrix] (labels: T,F,U,R)")
-        print(confusion_matrix(y_true, y_pred, labels=["T", "F", "U", "R"]))
+        cm_df = confusion_matrix(y_true, y_pred, labels=["T", "F", "U", "R"])
+        print()
+
+    # 파일로 저장
+    os.makedirs("Result", exist_ok=True)
+    with open(PKL_OUT, "wb") as f:
+        pickle.dump({"preds": y_pred, "golds": y_true}, f)
+
+    with open(RESULT_TXT, "w", encoding="utf-8") as f:
+        f.write(f"{MODEL}, k = {VECTOR_SEARCH_TOP_K}\n\n")
+        f.write("Classification Report:\n")
+        f.write(rep)
+        f.write("\nConfusion Matrix:\n")
+        f.write(cm_df.to_string())
+        f.write("\n")
