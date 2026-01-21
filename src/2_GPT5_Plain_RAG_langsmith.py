@@ -26,55 +26,6 @@ from sklearn.metrics import classification_report, confusion_matrix
 from llama_parse import LlamaParse
 from llama_index.core import SimpleDirectoryReader
 
-# ===== (NEW) Local trace logging =====
-from datetime import datetime
-
-MSGLOG_DIR = "Msglog"
-RESULT_TXT = f"Result/GPT5-PlainRAG-{DATA_name}.txt"
-PKL_OUT = "DeepSeekR1-PlainRAG-preds_golds.pkl"
-RAW_DIR = os.path.join(MSGLOG_DIR, "raw_gpt5_plainrag")
-MSGLOG_PATH = os.path.join(MSGLOG_DIR, "GPT5-PlainRAG-decision_msgs.jsonl")
-
-def ensure_dirs():
-    os.makedirs(MSGLOG_DIR, exist_ok=True)
-    os.makedirs(RAW_DIR, exist_ok=True)
-
-def dump_decision_msg(
-    path: str,
-    d_id: str,
-    question: str,
-    msg,  # AIMessage
-    final_label: str,
-    reasoning_txt: str,
-    cfg: dict,
-    retrieved_docs=None,
-):
-    """DeepSeek 쪽 JSONL 로그 포맷과 최대한 유사하게 저장."""
-    if retrieved_docs is None:
-        retrieved_docs = []
-
-    # AIMessage를 가능한 한 “원형”에 가깝게 덤프 (tool_calls 포함)
-    try:
-        msg_dump = msg.model_dump()  # pydantic v2
-    except Exception:
-        try:
-            msg_dump = msg.dict()
-        except Exception:
-            msg_dump = {"type": type(msg).__name__, "content": getattr(msg, "content", "")}
-
-    rec = {
-        "timestamp": datetime.now().isoformat(timespec="seconds"),
-        "d_id": d_id,
-        "question": question,
-        "final_label": final_label,
-        "reasoning_txt": (reasoning_txt or ""),
-        "retrieved_docs": retrieved_docs,
-        "decision_msg": msg_dump,
-        "run_config": cfg,
-    }
-
-    with open(path, "a", encoding="utf-8") as f:
-        f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 # ============================================================
 # Config
@@ -304,12 +255,8 @@ def PlainRagChain(vectorstore, docid_map):
 # Main
 # ============================================================
 if __name__ == "__main__":
-    ensure_dirs()
     load_dotenv()
     nest_asyncio.apply()  # LlamaParse (async) 대응
-    os.environ["LANGCHAIN_TRACING_V2"] = "false"
-    os.environ["LANGCHAIN_API_KEY"] = ""
-    os.environ["LANGCHAIN_PROJECT"] = ""
 
     # 1) 데이터 로드
     with open(INPUT, encoding="utf-8") as f:
@@ -325,7 +272,7 @@ if __name__ == "__main__":
     y_true, y_pred = [], []
 
     # (실습 단계에서는 1개만. 논문 실험 시엔 data 전체로 확장)
-    for query_data in data:
+    for query_data in data[:1]:
         d_id = query_data["d_id"]
 
         question = format_nli_prompt(
@@ -369,32 +316,6 @@ if __name__ == "__main__":
                 "reason": reason,
             }
         )
-        
-        # ===== (NEW) raw + jsonl trace 저장 =====
-        # raw는 “모델 응답 원형”을 최대한 남기기 (content + tool_calls)
-        try:
-            raw = json.dumps(ai_msg.model_dump(), ensure_ascii=False, indent=2)
-        except Exception:
-            raw = str(ai_msg)
-
-        # 3) raw 저장
-        os.makedirs(RAW_DIR, exist_ok=True)
-
-        with open(os.path.join(RAW_DIR, f"{d_id}.raw.txt"), "w", encoding="utf-8") as f:
-            f.write(raw)
-
-        # 4) JSONL 기록 (DeepSeek와 동일 개념의 로컬 트레이스)
-        dump_decision_msg(
-            path=MSGLOG_PATH,
-            d_id=d_id,
-            question=question,
-            msg=ai_msg,
-            final_label=pred_label,
-            reasoning_txt=reason,   # GPT-5는 tool reason을 reasoning_txt로 저장
-            cfg=dict(config),
-            retrieved_docs=[],      # GPT-5 Plain-RAG에서도 원하면 retrieved_docs를 여기에 넣을 수 있음
-        )
-
 
     # 4) 제출/로그 저장
     os.makedirs("submit", exist_ok=True)
@@ -406,21 +327,6 @@ if __name__ == "__main__":
     # 5) 평가(정답이 있는 경우)
     if y_true:
         print("\n[Classification Report]")
-        rep = classification_report(y_true, y_pred, digits=4)
-        print(rep)
+        print(classification_report(y_true, y_pred, digits=4))
         print("\n[Confusion Matrix] (labels: T,F,U,R)")
-        cm_df = confusion_matrix(y_true, y_pred, labels=["T", "F", "U", "R"])
-        print()
-
-    # 파일로 저장
-    os.makedirs("Result", exist_ok=True)
-    with open(PKL_OUT, "wb") as f:
-        pickle.dump({"preds": y_pred, "golds": y_true}, f)
-
-    with open(RESULT_TXT, "w", encoding="utf-8") as f:
-        f.write(f"{MODEL}, k = {VECTOR_SEARCH_TOP_K}\n\n")
-        f.write("Classification Report:\n")
-        f.write(rep)
-        f.write("\nConfusion Matrix:\n")
-        f.write(cm_df.to_string())
-        f.write("\n")
+        print(confusion_matrix(y_true, y_pred, labels=["T", "F", "U", "R"]))
