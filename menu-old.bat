@@ -75,53 +75,34 @@ REM ==================================================
 
 REM --- Preflight for GPT-5 pipelines ---
 :ENSURE_ENV_GPT5
-set "_NEED_SETUP=0"
-
-call :CHECK_VENV || set "_NEED_SETUP=1"
-if "%_NEED_SETUP%"=="0" (
-  call :CHECK_IMPORTS_GPT5 || set "_NEED_SETUP=1"
-)
-
-if "%_NEED_SETUP%"=="1" (
-  echo "[!] Environment not ready. Running GPT-5 setup once..."
+call :CHECK_VENV || (
+  echo [!] No .venv found. Running setup (gpt5)
   powershell -NoProfile -ExecutionPolicy Bypass -File "env\windows\setup_py311.ps1" -profile gpt5
 )
-
-REM setup 후 최종 검증(1회)
-call :CHECK_VENV || (
-  echo [X] .venv still missing after setup.
-  exit /b 1
+call :CHECK_IMPORTS_GPT5 || (
+  echo [!] Required packages missing in .venv. Re-running setup (gpt5)
+  powershell -NoProfile -ExecutionPolicy Bypass -File "env\windows\setup_py311.ps1" -profile gpt5
 )
 call :CHECK_IMPORTS_GPT5 || (
-  echo [X] Setup finished but imports still fail. Please run setup manually or open an issue.
+  echo [X] Setup finished but imports still fail. Please open an issue or run setup manually.
   exit /b 1
 )
-
 exit /b 0
 
 REM --- Preflight for DeepSeek pipelines ---
 :ENSURE_ENV_DEEPSEEK
-set "_NEED_SETUP=0"
-
-call :CHECK_VENV || set "_NEED_SETUP=1"
-if "%_NEED_SETUP%"=="0" (
-  call :CHECK_IMPORTS_DEEPSEEK || set "_NEED_SETUP=1"
-)
-
-if "%_NEED_SETUP%"=="1" (
-  echo "[!] Environment not ready. Running DeepSeek setup once..."
+call :CHECK_VENV || (
+  echo [!] No .venv found. Running setup (deepseek)
   powershell -NoProfile -ExecutionPolicy Bypass -File "env\windows\setup_py311.ps1" -profile deepseek
 )
-
-call :CHECK_VENV || (
-  echo [X] .venv still missing after setup.
-  exit /b 1
+call :CHECK_IMPORTS_DEEPSEEK || (
+  echo [!] Required packages missing in .venv. Re-running setup (deepseek)
+  powershell -NoProfile -ExecutionPolicy Bypass -File "env\windows\setup_py311.ps1" -profile deepseek
 )
 call :CHECK_IMPORTS_DEEPSEEK || (
-  echo [X] Setup finished but imports still fail. Please run setup manually or open an issue.
+  echo [X] Setup finished but imports still fail. Please open an issue or run setup manually.
   exit /b 1
 )
-
 exit /b 0
 
 :CHECK_VENV

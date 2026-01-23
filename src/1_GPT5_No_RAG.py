@@ -194,7 +194,7 @@ if __name__ == "__main__":
     results = []
     preds, golds = [], []
 
-    for q in data:
+    for q in data[146:154]:
         d_id = q["d_id"]
 
         question = format_nli_prompt(
@@ -235,6 +235,8 @@ if __name__ == "__main__":
 
         print(f"*** {d_id} ***")
         print("final:", final_label, "| gold:", q.get("answer", "(no gold)"))
+        if reasoning_txt:
+            print(f"reason: {reasoning_txt}\n")
 
         results.append({"d_id": d_id, "predicate": q["predicate"], "answer": final_label, "reason": reasoning_txt})
 
