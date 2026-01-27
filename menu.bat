@@ -14,13 +14,18 @@ pushd "%~dp0" >nul
 :MENU
 cls
 echo ==================================================
-echo   LLM Pipeline Practice - One Click Runner
+echo   LLM Pipeline - One Click Runner
 echo   (Windows 11 / Python 3.11)
 echo ==================================================
 echo.
 echo [ Environment Setup ]
+<<<<<<< HEAD
 echo   1. Cloud API environment (GPT-5)
 echo   2. Local environment setup (DeepSeek-R1:xb)
+=======
+echo   1. Install CLOUD environment (GPT-5)
+echo   2. Install LOCAL environment (DeepSeek)
+>>>>>>> 2855732947ac339ee349c8d0af6bc274e95a078d
 echo.
 echo [ Run Experiments ]
 echo   3. GPT-5 No-RAG

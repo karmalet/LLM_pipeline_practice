@@ -272,7 +272,7 @@ if __name__ == "__main__":
     y_true, y_pred = [], []
 
     # (실습 단계에서는 1개만. 논문 실험 시엔 data 전체로 확장)
-    for query_data in data[:1]:
+    for query_data in data[:3]:
         d_id = query_data["d_id"]
 
         question = format_nli_prompt(
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 
     # 4) 제출/로그 저장
     os.makedirs("submit", exist_ok=True)
-    out_path = f"submit/submit_{MODEL}-PlainRAG-{DATA_name}.json"
+    out_path = f"submit/submit_{MODEL}-PlainRAG-LangSmith.json"
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(results, f, ensure_ascii=False, indent=2)
     print(f"\nOK: wrote {out_path}")
