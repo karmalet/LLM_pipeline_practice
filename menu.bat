@@ -19,8 +19,8 @@ echo   (Windows 11 / Python 3.11)
 echo ==================================================
 echo.
 echo [ Environment Setup ]
-echo   1. GPT-5 Plain-RAG environment
-echo   2. DeepSeek-R1 Plain-RAG environment
+echo   1. Cloud API environment (GPT-5)
+echo   2. Local environment setup (DeepSeek-R1:xb)
 echo.
 echo [ Run Experiments ]
 echo   3. GPT-5 No-RAG
